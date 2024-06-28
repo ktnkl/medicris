@@ -1,0 +1,6 @@
+<div class="container type-2"> 
+  <div class="type-2__header"></div>
+  <div class="type-2__text"></div>
+  <div class="type-2__link"></div>
+  <div class="moving-stroke"></div>
+</div>
