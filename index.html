@@ -3,241 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/pages/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>MEDICRIS</title>
 </head>
 <body>
-  <div class="container"> <!-- первая страница -->
-  <header class="logo">
-    <img src="/media/main_page/logo.svg" alt="" class="logo__item">
+  <header class="container-sm bg d-flex justify-content-center">
+    <img src="/media/main_page/logo.svg" alt="" class=" ">
   </header>
-  <main>
-    <div class="photos-wrapper">
-      <img src="media/main_page/f.png" class="photos-wrapper__item" id="f" alt="">
-      <img src="media/main_page/m.png" class="photos-wrapper__item" id="m" alt="">
-      <div class="text-n-buttons">
-        <div class="text m w300 s20">
-          <p>УПРАВЛЯЙТЕ</p>
-          <p>ВНЕШНОСТЬЮ,</p>
-          <p>ЗДОРОВЬЕМ</p>
-          <p>И КАЧЕСТВОМ</p>
-          <p>ЖИЗНИ</p>
-          <img src="media/main_page/arrow.svg" alt="">
-        </div>
-        <div class="buttons">
-          <a href="#" class="buttons__protocol ma w700 s10">ДЛЯ ЖЕНЩИН</a>
-          <div class=" m w500 s12">ПЕРСОНАЛЬНЫЙ ПРОТОКОЛ</div>
-          <a href="#" class="buttons__protocol ma w700 s10">ДЛЯ МУЖЧИН</a>
+  <div class="container-sm first-page bg-1 position-relative">
+    <div class="row photos-wrapper">
+      <img class="col-6 photos-wrapper__item" src="media/main_page/f.png" alt="">
+      <img src="media/main_page/m.png" class="col-6 photos-wrapper__item" alt="">
+    </div>
+    <div class="row t-n-b position-absolute top-0 start-0 d-flex flex-column justify-content-evenly align-items-center text-center">
+      <div class="col-12 t-n-b__text fw-light s20">
+        УПРАВЛЯЙТЕ
+        ВНЕШНОСТЬЮ,
+        ЗДОРОВЬЕМ
+        И КАЧЕСТВОМ
+        ЖИЗНИ
+      </div>
+      <img class="col-12 t-n-b__arrow" src="media/main_page/arrow.svg" alt="">
+      <div class="col-12">
+        <div class="row t-n-b__buttons d-flex flex-row align-items-center fw-bold s10">
+          <div class="col t-n-b__buttons__f">ДЛЯ ЖЕНЩИН</div>
+          <div class="col t-n-b__buttons__t">ПЕРСОНАЛЬНЫЙ ПРОТОКОЛ</div>
+          <div class="col t-n-b__buttons__m">ДЛЯ МУЖЧИН</div>
         </div>
       </div>
     </div>
-  </main>
-</div> <!-- первая страница -->
-<div class="menu"> <!--меню-->
-  <div class="menu-item">
-    <img class="menu-item__pic" src="media/menu/menu.png">
-    <div class="menu-item__name m w500 s10">Меню</div>
-  </div>
-  <div class="menu-item"><img class="menu-item__pic" src="media/menu/akzii.png">
-    <div class="menu-item__name m w500 s10">Акции</div>
-  </div>
-  <div class="menu-item">
-    <img class="menu-item__pic" src="media/menu/profile.png">
-    <div class="menu-item__name m w500 s10">Профиль</div>
-  </div>
-  <div class="menu-item">
-    <img class="menu-item__pic" src="media/menu/svaz.png">
-    <div class="menu-item__name m w500 s10">Связь</div>
-  </div>
-  <div class="menu-item">
-    <img class="menu-item__pic" src="media/menu/zapis.png">
-    <div class="menu-item__name m w500 s10">Запись</div>
-  </div>
-</div> <!--меню-->
-<div class="container page-2"> <!--вторая страница-->
-  <div class="main-text m w300 s26">
-    <p>КЛИНИКА MEDICRIS —  ОТВЕТСТВЕННАЯ*</p>
-    <p>ЭСТЕТИЧЕСКАЯ</p>
-    <p>МЕДИЦИНА,</p>
-    <p>ПОМОГАЮЩАЯ</p>
-    <p>ОСТАВАТЬСЯ</p>
-    <p>НА ВЫСОТЕ!</p>
-  </div>
-  <div class="subtext m w500 s12">Эльвира Айзекс, основатель клиники </div>
-  <div class="note m w300 s12 italic">
-    <p>В 2023 году MEDICRIS</p>
-    <p>присвоен статус</p>
-    <p>Клинической Базы</p>
-    <p>НМХЦ им. Н.И.Пирогова</p> 
-  </div>
-  <div class="footer ma w700 s12">О КЛИНИКЕ</div>
-  <img src="media/main_page/arrow.svg" alt="" class="page-2__arrow">
-</div> <!--вторая страница-->
-<div class="container gradient"></div>
-<div class="container type-2 abilities"> <!--возможности-->
-  <div class="type-2__header header-abilities m w400 s12">НАШИ ВОЗМОЖНОСТИ</div>
-  <div class="type-2__text m w400 s18">
-    <p>127 ВЫСОКО–</p>
-    <p>ТЕХНОЛОГИЧНЫХ</p>
-    <p>ПРОЦЕДУР</p>
-  </div>
-  <div class="type-2__link"><img src="media/type-2/ellipse.svg" alt=""></div>
-  <div class="moving-stroke"></div>
-</div> <!--возможности-->
-<!--врачи-->
-<div class="container type-2 doctors">
-<div class="type-2__text m w400 s18">
-  <p>КОМАНДА ВРАЧЕЙ</p>
-  <p>ВЫСОКОЙ</p>
-  <p>КВАЛИФИКАЦИИ</p>
-</div>
-<div class="type-2__link"><img src="media/type-2/ellipse.svg" alt=""></div>
-<div class="moving-stroke"></div>
-</div> <!--врачи-->
-<!--оборудование-->
-<div class="container type-2 equip">
-  <div class="type-2__text m w400 s18">
-    <p>ИННОВАЦИОННОЕ</p>
-    <p>ОБОРУДОВАНИЕ</p>
-    <p>И ПРЕПАРАТЫ</p>
-  </div>
-  <div class="type-2__link"><img src="media/type-2/ellipse.svg" alt=""></div>
-  <div class="moving-stroke"></div>
-  </div> <!--оборудование-->
-  <!--клиника-->
-<div class="container type-2 clinic">
-  <div class="type-2__text m w400 s18">
-    <p>ОСОБЫЙ КОМФОРТ</p>
-    <p>В ОСОБНЯКЕ</p>
-    <p>У САДОВОГО КОЛЬЦА</p>
-  </div>
-  <div class="type-2__link"><img src="media/type-2/ellipse.svg" alt=""></div>
-  <div class="moving-stroke"></div>
-</div> <!--клиника-->
-<div class="container philosofy-1"> <!--философия-->
-  <div class="philosofy-1__title m w300 s12">
-    НАША ФИЛОСОФИЯ
-  </div>
-  <div class="philosofy-1__text m w300 s20">
-    СИСТЕМНЫЙ ПОДХОД — КЛЮЧ К ГАРМОНИИ КРАСОТЫ И ЗДОРОВЬЯ
-  </div>
-  <div>
-    <img src="media/philosofy/1.png" alt="">
-  </div>
-</div> <!--философия-->
-<div class="container principles"> <!--принципы-->
-  <div class="principle-wrapper">
-  <div class="principles__number">
-    1
-  </div>
-  <div class="principles__title">
-    ИНТЕГРАТИВНЫЙ <br>
-ПОДХОД
-  </div>
-  <div class="principles__text">
-    Подходим к пациенту, как единому физическому и социальному организму, учитывая весь комплекс особенностей его здоровья и потребностей  
-  </div>
-  </div>
-  <div class="principle-wrapper">
-  <div class="principles__number">
-    2
-  </div>
-  <div class="principles__title">
-    ПРИНЦИП ПРЕВЕНТИВНОСТИ
-  </div>
-  <div class="principles__text">
-    Применяем таргетную диагностику для  выявления причин существующих проблем, а также предупреждение развития новых
-  </div>
-  </div>
-  <div class="principle-wrapper">
-  <div class="principles__number">
-    3
-  </div>
-  <div class="principles__title">
-    БЕЗОПАСНОСТЬ ВОЗДЕЙСТВИЯ
-  </div>
-  <div class="principles__text">
-    Все консультации и процедуры в клинике проводятся только квалифицированными врачами на сертифицированных оборудовании и препаратах
-  </div>
-  </div>
-  <div class="principle-wrapper">
-  <div class="principles__number">
-    4
-  </div>
-  <div class="principles__title">
-    ГЛУБОКАЯ
-    ПЕРСОНАЛИЗАЦИЯ
-  </div>
-  <div class="principles__text">
-    Мы углубили персональный подход и создали онлайн-инструмент – ПЕРСОНАЛЬНЫЙ ПРОТОКОЛ – позволяющий пациенту и врачу заранее подготовиться к приёму в клинике и получить ожидаемый результат 
-  </div>
-  </div>
-  <div class="arrow-link">
-  <div class="arrow-link__text ma w700 s12">
-    СОСТАВИТЬ ПРОТОКОЛ
-  </div>
-  <img src="media/main_page/arrow.svg" alt="" class="arrow-link__img" >
-  </div>
-</div> <!--принципы-->
-<div class="container threeg">
+  </div>  
 
-</div>
-<div class="container feedback"> <!--отзывы-->
-  <div class="feedback__title m w300 s12">
-    ОТЗЫВЫ ПАЦИЕНТОВ
-  </div>
-  <div class="feedback__text m italic w400 s22">
-    Я пришла, не зная с чего начать, и ушла совершенно спокойная, с пониманием дальнейшего плана действий...
-  </div>
-  <div class="feedback__source m w700 s12">ЧИТАТЬ ИСТОЧНИК</div>
-  <div class="feedback-procedure">
-    <div class="feedback-procedure__title m w500 s12">ПРОЦЕДУРА</div>
-    <div class="feedback-procedure__name m w500 s14">Консультация врача-косметолога</div>
-    <div class="small-arrow"><img src="media/review/Vector.png" alt=""></div>
-  </div>
-  
-  <div class="feedback-doctor">
-    <div class="feedback-doctor__title m w500 s12">
-      ВРАЧ
+  <div class="menu container bg text-center fw-medium s10">
+    <div class="row">
+    <div class="col justify-self-center">
+      <img class="" src="media/menu/menu.png">
+      <div class="">Меню</div>
     </div>
-    <div class="feedback-doctor__name m w500 s14">
-      Булавина М.С.
+    <div class="col">
+      <img class="" src="media/menu/akzii.png">
+      <div class="">Акции</div>
     </div>
-    <div class="small-arrow"><img src="media/review/Vector.png" alt=""></div>
-  </div>
-  <div class="feedback__scroller m w700 s18">
-    1/7
-  </div>
-</div> <!--отзывы-->
-<div class="container rate">
-  <div class="rate__title">
-    НЕЗАВИСИМЫЙ РЕЙТИНГ
-  </div>
-  <div class="rate-yandex">
-    <div class="rate-star">
-      *
+    <div class="col justify-self-center">
+      <img class="" src="media/menu/profile.png">
+      <div class="">Профиль</div></div>
+    <div class="col">
+      <img class="" src="media/menu/svaz.png">
+      <div class="">Связь</div>
     </div>
-    <div class="rate-yandex__number">
-      5
-    </div>
-    <div class="rate-yandex__subtitle">
-      Яндекс Карты
+    <div class="col">
+      <img class="" src="media/menu/zapis.png">
+      <div class="">Запись</div>
     </div>
   </div>
-  <div class="rate-google">
-    <div class="rate-star">
-      *
-    </div>
-    <div class="rate-google__number">
-      4.8
-    </div>
-    <div class="rate-google__subtitle">
-      google
-    </div>
   </div>
-</div>
+
+  <div class="container d-flex flex-column justify-content-evenly page-2 "> <!--вторая страница-->
+    <div class="d-flex flex-column row">
+      <div class="col-10 page-2__main-text fw-light s26">
+      КЛИНИКА MEDICRIS —  ОТВЕТСТВЕННАЯ <span class="fw-bold">*</span>
+      ЭСТЕТИЧЕСКАЯ
+      МЕДИЦИНА,
+      ПОМОГАЮЩАЯ
+      ОСТАВАТЬСЯ
+      НА ВЫСОТЕ!
+      </div>
+      <div class="page-2__subtext fw-medium s12 col">Эльвира Айзекс, основатель клиники </div>
+    </div>
+
+    <div class="row d-flex flex-row-reverse">
+      <div class="col-6 page-2__note w300 s12 fst-italic">
+      В 2023 году MEDICRIS
+      присвоен статус
+      Клинической Базы
+      НМХЦ им. Н.И.Пирогова 
+      </div>
+    </div>
+    <div class="row d-flex flex-row justify-content-center align-content-center">
+      <div class="page-2__footer ma w700 s12 col">О КЛИНИКЕ</div>
+      <img src="media/main_page/arrow.svg" alt="" class="page-2__arrow col">
+    </div>
+  </div> <!--вторая страница-->
+
+  <div class="container gradient"></div>
+
+  <div class="container type-2 abilities fw-normal d-flex flex-column justify-content-between "> <!--возможности-->
+    <div class="row align-items-center justify-content-center type-2__header header-abilities s12">НАШИ ВОЗМОЖНОСТИ</div>
+    <div class="row type-2__bottom align-items-center d-flex justify-content-between">
+      <div class="col-6 type-2__bottom__text s18">
+        127 ВЫСОКО–
+        ТЕХНОЛОГИЧНЫХ
+        ПРОЦЕДУР
+      </div>
+      <div class="col-3 type-2__bottom__link"><img src="media/type-2/ellipse.svg" alt=""></div>
+    </div>
+  </div> <!--возможности-->
+
+  <div class="container type-2 doctors fw-normal d-flex flex-column justify-content-between "> <!--врачи-->
+    <div class="row type-2__bottom align-items-center d-flex justify-content-between">
+      <div class="row align-items-center justify-content-center type-2__header header-abilities s12">НАШИ ВОЗМОЖНОСТИ</div>
+      <div class="col-6 type-2__bottom__text s18">
+        КОМАНДА ВРАЧЕЙ ВЫСОКОЙ КВАЛИФИКАЦИИ
+      </div>
+      <div class="col-3 type-2__bottom__link"><img src="media/type-2/ellipse.svg" alt=""></div>
+    </div>
+  </div> <!--врачи-->
+
+  <div class="container type-2 equip fw-normal d-flex flex-column justify-content-between "> <!--оборудование-->
+    <div class="row type-2__bottom align-items-center d-flex justify-content-between">
+      <div class="row align-items-center justify-content-center type-2__header header-abilities s12">НАШИ ВОЗМОЖНОСТИ</div>
+      <div class="col-6 type-2__bottom__text s18">
+        ИННОВАЦИОННОЕ ОБОРУДОВАНИЕ И ПРЕПАРАТЫ
+      </div>
+      <div class="col-3 type-2__bottom__link"><img src="media/type-2/ellipse.svg" alt=""></div>
+    </div>
+  </div> <!--оборудование-->
+
+  <div class="container type-2 clinic fw-normal d-flex flex-column justify-content-between "> <!--клиника-->
+    <div class="row type-2__bottom align-items-center d-flex justify-content-between">
+      <div class="row align-items-center justify-content-center type-2__header header-abilities s12">НАШИ ВОЗМОЖНОСТИ</div>
+      <div class="col-6 type-2__bottom__text s18">
+        ОСОБЫЙ КОМФОРТ В ОСОБНЯКЕ У САДОВОГО КОЛЬЦА
+      </div>
+      <div class="col-3 type-2__bottom__link"><img src="media/type-2/ellipse.svg" alt=""></div>
+    </div>
+  </div> <!--клиника-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
