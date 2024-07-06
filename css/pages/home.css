@@ -10,6 +10,10 @@
   margin: 0;
   color: #000; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+
 .ma {
   font-family: "Montserrat alternates"; }
 
@@ -170,8 +174,6 @@
   background-color: #fff;
   padding: 155px 20px;
   border-bottom: #000 solid 2px; }
-  .rate__star {
-    transform: scale(0.1); }
   .rate__number {
     font-size: 70px;
     color: #fff;
@@ -191,7 +193,8 @@
   .footer__title {
     margin: 30px; }
   .footer__socials {
-    transform: scale(0.7); }
+    transform: scale(0.7);
+    padding: 0; }
   .footer__adress {
     margin-top: 42px; }
   .footer__map-img {
@@ -205,5 +208,18 @@
       border-bottom: #000 solid 2px; }
   .footer__navimg {
     transform: scale(0.5); }
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .parallax__layer {
+    position: absolute;
+    inset: 0; }
+  .parallax__image {
+    transform: translateZ(0); }
+  .parallax__text {
+    transform: translateZ(-2px) scale(3); }
 
 /*# sourceMappingURL=home.css.map */
