@@ -73,8 +73,11 @@ a {
 
 .first-page {
   position: relative;
+  height: 100vh;
   
   .photos-wrapper {
+    height: 100vh;
+    overflow-y: hidden;
     &__item {
       object-fit: scale-down;
       

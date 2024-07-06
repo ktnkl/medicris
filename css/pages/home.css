@@ -43,9 +43,13 @@ a {
   background-color: #f2f2f2; }
 
 .first-page {
-  position: relative; }
-  .first-page .photos-wrapper__item {
-    object-fit: scale-down; }
+  position: relative;
+  height: 100vh; }
+  .first-page .photos-wrapper {
+    height: 100vh;
+    overflow-y: hidden; }
+    .first-page .photos-wrapper__item {
+      object-fit: scale-down; }
   .first-page .t-n-b {
     height: 100vh;
     padding-top: 37px;
