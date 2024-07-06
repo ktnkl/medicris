@@ -42,14 +42,17 @@ a {
 .bg-1 {
   background-color: #f2f2f2; }
 
+.header img {
+  object-fit: cover; }
+
 .first-page {
   position: relative;
   height: 100vh; }
   .first-page .photos-wrapper {
-    height: 100vh;
-    overflow-y: hidden; }
+    height: 100vh; }
     .first-page .photos-wrapper__item {
-      object-fit: scale-down; }
+      object-fit: scale-down;
+      overflow-y: hidden; }
   .first-page .t-n-b {
     height: 100vh;
     padding-top: 37px;
@@ -178,6 +181,8 @@ a {
   background-color: #fff;
   padding: 155px 20px;
   border-bottom: #000 solid 2px; }
+  .rate__title {
+    padding-bottom: 80px; }
   .rate__number {
     font-size: 70px;
     color: #fff;

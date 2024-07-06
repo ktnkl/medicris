@@ -67,9 +67,11 @@ a {
 }
 
 .header {
-  // position: sticky;
-  // top: 0;
+  & img {
+    object-fit: cover;
+  }
 }
+
 
 .first-page {
   position: relative;
@@ -77,10 +79,10 @@ a {
   
   .photos-wrapper {
     height: 100vh;
-    overflow-y: hidden;
+    
     &__item {
       object-fit: scale-down;
-      
+      overflow-y: hidden;
     } 
   }
 
@@ -270,8 +272,8 @@ a {
   padding: 155px 20px;
   border-bottom: #000 solid 2px;
 
-  &__star {
-    // transform: scale(0.1);
+  &__title {
+    padding-bottom: 80px;
   }
   &__number {
     font-size: 70px;
