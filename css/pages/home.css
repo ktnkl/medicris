@@ -7,7 +7,11 @@
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  color: #000; }
+
+.ma {
+  font-family: "Montserrat alternates"; }
 
 .s10 {
   font-size: 10px; }
@@ -21,8 +25,12 @@
   font-size: 20px; }
 .s22 {
   font-size: 22px; }
+.s23 {
+  font-size: 23px; }
 .s26 {
   font-size: 26px; }
+.s27 {
+  font-size: 27px; }
 
 .bg {
   background-color: #f9f9f9; }
@@ -77,9 +85,10 @@
     min-height: 14vh;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    padding: 0; }
+    padding: 20px; }
     .type-2__bottom__link {
-      padding: 20px; }
+      padding: 0;
+      width: 60px; }
 
 .abilities {
   background: url("../../media/type-2/bg1.png");
@@ -98,5 +107,103 @@
 .clinic {
   background: url("../../media/type-2/bg4.png");
   background-size: cover; }
+
+.philosofy {
+  height: 100vh;
+  padding: 50px 20px;
+  background-color: #f2f2f2; }
+  .philosofy__img {
+    width: 90vw; }
+
+.principle {
+  background-color: #f2f2f2;
+  padding: 20px; }
+  .principle-wrapper {
+    margin-bottom: 20px; }
+    .principle-wrapper__number {
+      border: #000 solid 1px;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      margin: 0 20px; }
+
+.arrow-link__img {
+  height: 40px;
+  transform: rotate(270deg);
+  margin-left: 20px; }
+
+.threeg {
+  height: 100vh;
+  background-image: url(../../media/3g.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.feedback {
+  height: 100vh;
+  padding: 52px 20px;
+  padding-bottom: 0;
+  color: #000;
+  background-color: #fff; }
+  .feedback__source {
+    color: #08e5be;
+    align-self: flex-end; }
+  .feedback-item__title {
+    color: rgba(0, 0, 0, 0.4); }
+  .feedback-item__subtitle {
+    padding: auto; }
+  .feedback-item__img {
+    transform: scale(0.25);
+    padding: 0; }
+  .feedback__scroller {
+    border-top: #000 solid 2px;
+    border-bottom: #000 solid 2px;
+    padding: 38px 0; }
+    .feedback__scroller__l {
+      transform: rotate(90deg);
+      margin: 0 30px; }
+    .feedback__scroller__r {
+      transform: rotate(270deg);
+      margin: 0 30px; }
+
+.rate {
+  height: 100vh;
+  background-color: #fff;
+  padding: 155px 20px;
+  border-bottom: #000 solid 2px; }
+  .rate__star {
+    transform: scale(0.1); }
+  .rate__number {
+    font-size: 70px;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.news {
+  padding: 0 20px; }
+  .news__title {
+    padding: 52px; }
+
+.message {
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%); }
+
+.footer {
+  padding: 20px; }
+  .footer__title {
+    margin: 30px; }
+  .footer__socials {
+    transform: scale(0.7); }
+  .footer__adress {
+    margin-top: 42px; }
+  .footer__map-img {
+    margin: 20px; }
+  .footer__maps {
+    border-top: #000 solid 2px;
+    padding: 15px 0; }
+    .footer__maps_last {
+      padding: 15px 0;
+      border-top: #000 solid 2px;
+      border-bottom: #000 solid 2px; }
+  .footer__navimg {
+    transform: scale(0.5); }
 
 /*# sourceMappingURL=home.css.map */
