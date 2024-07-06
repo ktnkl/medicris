@@ -1,9 +1,8 @@
-* {
-  margin: 0;
-  padding: 0; }
-
 :root {
   --bs-body-font-family: 'Montserrat', sans-serif; }
+
+html, body {
+  overflow-x: hidden; }
 
 * {
   padding: 0;
