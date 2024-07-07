@@ -20,6 +20,8 @@ a {
   font-size: 0.625rem; }
 .s12 {
   font-size: 0.75rem; }
+  .s12__grey {
+    color: rbga(0, 0, 0, 0.5); }
 .s14 {
   font-size: 14px; }
 .s18 {
@@ -42,7 +44,7 @@ a {
   background-color: #f2f2f2; }
 
 .header__img {
-  min-height: 80px;
+  min-height: 40px;
   background: url(../../media/main_page/logo.png) center no-repeat;
   background-size: contain; }
 
