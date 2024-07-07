@@ -25,11 +25,11 @@ a {
 }
 .s {
   &10 {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   &12 {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   &14 {
@@ -37,7 +37,7 @@ a {
   }
 
   &18 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   &20 {
@@ -69,8 +69,12 @@ a {
 }
 
 .header {
-  & img {
-    object-fit: cover;
+
+  &__img {
+    min-height: 80px;
+    background: url(../../media/main_page/logo.png) center no-repeat;
+    background-size:contain;
+
   }
 }
 
@@ -81,9 +85,12 @@ a {
   
   .photos-wrapper {
     height: 100vh;
-    
+    background: 
+    url(../../media/main_page/f.png) left bottom  no-repeat,
+    url(../../media/main_page/m.png) right bottom no-repeat;
     &__item {
-      object-fit: scale-down;
+      height: 100%;
+      width: auto;
       overflow-y: hidden;
     } 
   }
@@ -105,9 +112,7 @@ a {
       background-color: rgba(8, 229, 190, 0.45);
       color: #000;
       border-radius: 50px;
-  
-      padding: 20px 10px;
-      margin: 15px;
+
       min-height: 9vh;
 
       &__f, &__m {

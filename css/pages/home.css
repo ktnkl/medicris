@@ -17,13 +17,13 @@ a {
   font-family: "Montserrat alternates"; }
 
 .s10 {
-  font-size: 10px; }
+  font-size: 0.625rem; }
 .s12 {
-  font-size: 12px; }
+  font-size: 0.75rem; }
 .s14 {
   font-size: 14px; }
 .s18 {
-  font-size: 18px; }
+  font-size: 1.125rem; }
 .s20 {
   font-size: 20px; }
 .s22 {
@@ -41,16 +41,20 @@ a {
 .bg-1 {
   background-color: #f2f2f2; }
 
-.header img {
-  object-fit: cover; }
+.header__img {
+  min-height: 80px;
+  background: url(../../media/main_page/logo.png) center no-repeat;
+  background-size: contain; }
 
 .first-page {
   position: relative;
   height: 100vh; }
   .first-page .photos-wrapper {
-    height: 100vh; }
+    height: 100vh;
+    background: url(../../media/main_page/f.png) left bottom no-repeat, url(../../media/main_page/m.png) right bottom no-repeat; }
     .first-page .photos-wrapper__item {
-      object-fit: scale-down;
+      height: 100%;
+      width: auto;
       overflow-y: hidden; }
   .first-page .t-n-b {
     height: 100vh;
@@ -65,8 +69,6 @@ a {
       background-color: rgba(8, 229, 190, 0.45);
       color: #000;
       border-radius: 50px;
-      padding: 20px 10px;
-      margin: 15px;
       min-height: 9vh; }
       .first-page .t-n-b__buttons__f, .first-page .t-n-b__buttons__m {
         border: #000 solid 1px;
