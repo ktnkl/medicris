@@ -102,24 +102,26 @@ a {
 
 .first-page {
   position: relative;
-  height: 100vh;
+  height: 617px;
+  background-color:#EBE8E599;
+  ;
   
   .photos-wrapper {
-    height: 100vh;
+    height: 617px;
     background: 
-    url(../../media/main_page/f.png) left bottom  no-repeat,
-    url(../../media/main_page/m.png) right bottom no-repeat;
+    url(../../media/main_page/f.png) left top no-repeat,
+    url(../../media/main_page/m.png) right top no-repeat;
     &__item {
-      height: 100%;
+      height: 617px;
       width: auto;
       overflow-y: hidden;
     } 
   }
 
   .t-n-b {
-    height: 100vh;
-    padding-top: 7vh;
-    padding-bottom: 37px;
+    height: 677px;
+    padding-top: 37px;
+    padding-bottom: 0;
     &__text{
       height: 120px;
       line-height: 24px;
@@ -128,15 +130,15 @@ a {
   
     &__arrow {
       width: 40px;
-      margin-top: 12vh;
+      margin-top: 70px;
     }
   
     &__buttons {
       background-color: rgba(8, 229, 190, 0.45);
       color: #000;
       border-radius: 50px;
-      margin-top: 43vh;
-      min-height: 9vh;
+      margin-top: 252px;
+      min-height: 70px;
 
       &__f, &__m {
         border: #000 solid 1px;
@@ -149,12 +151,14 @@ a {
 }
 
 .page-2 {
-  // background: linear-gradient(180deg, rgba(8, 229, 190, 0) 12%, rgba(8, 229, 190, 0.6) 99.5%) 1177px;
-
-  height: 100vh;
+  height: 617px;
   padding-left: 20px;
   padding-right: 20px;
+  
 
+  &__main-text {
+    margin-top: 84px;
+  }
   &__subtext {
     margin-top: 26px;
   }
@@ -177,12 +181,14 @@ a {
 
 .gradient {
     height: 1177px;
-    background: linear-gradient(180deg, rgba(8, 229, 190, 0) 12%, rgba(8, 229, 190, 0.6) 99.5%);
+    background:
+    linear-gradient(180deg, rgba(8, 229, 190, 0) 12%, rgba(8, 229, 190, 0.6) 99.5%),
+    #F2F0EE;
     mix-blend-mode: multiply;
 }
 
 .type-2 {
-  height: 100vh;
+  height: 617px;
 
   &__header {
     color: #f2f2f2;
@@ -236,7 +242,7 @@ a {
 }
 
 .philosofy {
-  height: 100vh;
+  height: 619px;
   padding: 50px 20px;
   background-color: #f2f2f2;
 
@@ -279,7 +285,7 @@ a {
 }
 
 .threeg {
-  height: 100vh;
+  height: 620px;
   background-image: url(../../media/3g.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,7 +297,7 @@ a {
   padding-bottom: 0;
   margin-bottom: 1px;
   color:#000;
-  background-color: #fff;
+  background-color: #f2f2f2;
   &__text {
     margin-top: 83px;
   }
@@ -337,7 +343,7 @@ a {
 
 .rate {
   height: 100vh;
-  background-color: #fff;
+  background-color: #f2f2f2;
   padding: 26vh 20px;
   padding-bottom: 0;
   margin-bottom: 1px;
@@ -376,7 +382,7 @@ a {
   // height: 100vh;
   padding: 0 20px;
   padding-bottom: 100px;
-  
+  background-color: #f2f2f2;
 
   &-item__text {
     line-height: 16px;
@@ -406,6 +412,7 @@ a {
 
 .footer {
   padding: 20px;
+  background-color: #fff;
   &__title {
     margin: 30px;
   }
