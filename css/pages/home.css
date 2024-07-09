@@ -236,7 +236,7 @@ a {
     padding-bottom: 80px; }
   .rate__number {
     font-size: 70px;
-    color: #fff;
+    color: #f2f2f2;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   .rate__border {
     position: absolute;
