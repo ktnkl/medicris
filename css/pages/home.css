@@ -192,6 +192,7 @@ a {
   height: 100vh;
   padding: 52px 20px;
   padding-bottom: 0;
+  margin-bottom: 1px;
   color: #000;
   background-color: #fff; }
   .feedback__text {
@@ -225,6 +226,7 @@ a {
   height: 100vh;
   background-color: #fff;
   padding: 26vh 20px;
+  border-top: #000 solid 1px;
   position: relative; }
   .rate__title {
     padding-bottom: 80px; }
@@ -232,13 +234,6 @@ a {
     font-size: 70px;
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-  .rate::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border-bottom: #000 solid 1px;
-    margin-right: 20px; }
 
 .news {
   padding: 0 20px;
