@@ -90,9 +90,17 @@ a {
 }
 
 .header {
-
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 10px 20px;
+  margin-bottom: 64px;
+  &-plug {
+    height: 64px;
+  }
   &__img {
     height: 44px;
+    
     background: url(../../media/main_page/logo.svg) center no-repeat;
     background-size:contain;
 
@@ -144,6 +152,20 @@ a {
         border: #000 solid 1px;
         border-radius: 50px;
         padding: 10px;
+        font-family: Montserrat Alternates;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+
+      }
+      &__t {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 13px;
+        text-align: center;
       }
     }
   
@@ -196,14 +218,19 @@ a {
   }
 
   &__bottom {
-    min-height: 14vh;
+    height: 84px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 20px;
-    padding-top: 10px;
+    padding: 10px 20px;
     
     &__text {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
       line-height: 22px;
+      letter-spacing: 0.03em;
+      text-align: left;
+
     }
 
     &__link {
@@ -265,13 +292,27 @@ a {
       margin: 0 20px;
     }
     &__title {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 700;
       line-height: 16px;
+      letter-spacing: 0.1em;
+      text-align: left;
+
       margin-bottom: 15px;
       margin-top: 5px;
     }
     &__text {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 300;
       line-height: 14.88px;
+      text-align: left;
+
       margin-bottom: 20px;
+    }
+    &__link {
+      margin-bottom: 20px
     }
   }
 }
@@ -292,7 +333,7 @@ a {
 }
 
 .feedback {
-  height: 100vh;
+  height: 618px;
   padding: 52px 20px;
   padding-bottom: 0;
   margin-bottom: 1px;
@@ -300,6 +341,13 @@ a {
   background-color: #f2f2f2;
   &__text {
     margin-top: 83px;
+
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24.2px;
+
   }
   &__source {
     color: rgb(8, 229, 190);
@@ -311,10 +359,24 @@ a {
     padding-right: 0;
     &__title {
       color: rgba(0, 0, 0, 0.4);
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.2px;
+      letter-spacing: 0.07em;
+      text-align: left;
+      margin-bottom: 8px;
     }
 
     &__subtitle {
       padding: auto;
+
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      text-align: left;
+
     }
 
     &__img {
@@ -322,7 +384,8 @@ a {
       padding: 0;
     }
   }
-  &__item2 {
+  &-item2 {
+    height: 30px;
     padding-top: 0;
   }
 
@@ -342,32 +405,45 @@ a {
 }
 
 .rate {
-  height: 100vh;
+  height: 618px;
   background-color: #f2f2f2;
-  padding: 26vh 20px;
+  padding: 0 20px;
   padding-bottom: 0;
-  margin-bottom: 1px;
   position: relative;
 
   &__title {
+    padding-top: 155px;
     padding-bottom: 80px;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.2px;
+    letter-spacing: 0.07em;
+
   }
   &__number {
-    font-size: 70px;
-    color: #f2f2f2;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    
+    width: 111px;
+    height: 89px;
+    margin: 15px 0;
   }
-  &__border {
-    
-    position: absolute;
+  &-wrapper {
+    padding-bottom: 214px;
     border-bottom: #000 solid 1px;
-    bottom: 0;
-    right: 20px;
-    
-    width: 353px;
+  }
+  &__subtitle {
+    width: 111px;
+    height: 23px;
+    object-fit: scale-down;
+    padding: 0;
     
   }
+  // &__border {
+  //   border-bottom: #000 solid 1px;
+    
+  //   width: 100%;
+    
+  // }
   // &::after {
   //   content: "";
   //   position: absolute;
@@ -379,7 +455,7 @@ a {
 }
 
 .news {
-  // height: 100vh;
+
   padding: 0 20px;
   padding-bottom: 100px;
   background-color: #f2f2f2;
@@ -394,19 +470,19 @@ a {
 }
 
 .message {
-  height: 100vh;
+  height: 673px;
   background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
   ;
   &__text {
-    margin-top: 14vh;
+    margin-top: 97px;
     line-height: 35px;
   }
   &__author {
-    margin-top: 8vh;
+    margin-top: 53px;
     line-height: 14px;
   }
   &__link {
-    margin-top: 28vh;
+    margin-top: 187px;
   }
 }
 
@@ -454,23 +530,23 @@ a {
   
 }
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+// .parallax {
+//   perspective: 1px;
+//   height: 100vh;
+//   overflow-x: hidden;
+//   overflow-y: auto;
 
-    &__layer {
-      position: absolute;
-      inset: 0;
-    }
-    &__image {
-      transform: translateZ(0);
-      background-attachment: fixed;
-    }
-    &__text {
-      transform: translateZ(-1px) scale(2);
+//     &__layer {
+//       position: absolute;
+//       inset: 0;
+//     }
+//     &__image {
+//       transform: translateZ(0);
+//       background-attachment: fixed;
+//     }
+//     &__text {
+//       transform: translateZ(-1px) scale(2);
 
-    }
-}
+//     }
+// }
 
