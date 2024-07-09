@@ -339,7 +339,8 @@ a {
   height: 100vh;
   background-color: #fff;
   padding: 26vh 20px;
-  border-top: #000 solid 1px;
+  padding-bottom: 0;
+  margin-bottom: 1px;
   position: relative;
 
   &__title {
@@ -349,6 +350,16 @@ a {
     font-size: 70px;
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
+  }
+  &__border {
+    
+    position: absolute;
+    border-bottom: #000 solid 1px;
+    bottom: 0;
+    right: 20px;
+    
+    width: 353px;
     
   }
   // &::after {
@@ -413,9 +424,11 @@ a {
 
   &__maps {
     border-top: #000 solid 2px;
-    padding: 15px 0;
+    margin: 0 10px;
+    padding: 15px 0px;
     &_last {
       padding: 15px 0;
+      margin: 0 10px;
       border-top: #000 solid 2px;
       border-bottom: #000 solid 2px;
     }
@@ -424,10 +437,14 @@ a {
   &__navimg {
     transform: scale(.5);
   }
-  
+
   &__dropdown {
     display: none;
   }
+  &-license {
+    margin-bottom: 100px;
+  }
+  
 }
 
 .parallax {
@@ -450,8 +467,3 @@ a {
     }
 }
 
-.services {
-  &__img {
-  
-  }
-}
