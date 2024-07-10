@@ -56,10 +56,10 @@ a {
   position: fixed;
   top: 0;
   z-index: 1;
-  padding: 10px 20px;
-  margin-bottom: 64px; }
+  padding: 10px 20px; }
   .header-plug {
-    height: 64px; }
+    height: 64px;
+    background-color: #f9f9f9; }
   .header__img {
     height: 44px;
     background: url(../../media/main_page/logo.svg) center no-repeat;
@@ -158,9 +158,14 @@ a {
       width: 60px;
       transform: rotate(270deg); }
 
-.menu img {
-  width: 19px;
-  height: 19px; }
+.menu {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: #f8f8f8;
+  height: 60px img;
+    height-width: 19px;
+    height-height: 19px; }
 
 .abilities {
   background: url("../../media/type-2/bg1.webp");
@@ -230,7 +235,6 @@ a {
   height: 618px;
   padding: 52px 20px;
   padding-bottom: 0;
-  margin-bottom: 1px;
   color: #000;
   background-color: #f2f2f2; }
   .feedback__text {
@@ -263,11 +267,12 @@ a {
       line-height: 14px;
       text-align: left; }
     .feedback-item__img {
-      transform: scale(0.25) translateX(150%);
+      transform: scale(0.25) translateX(150%) translateY(-150%);
       padding: 0; }
   .feedback-item2 {
     height: 30px;
-    padding-top: 0; }
+    padding-top: 0;
+    position: relative; }
   .feedback__scroller {
     margin: 0px;
     border-top: #000 solid 1px;
@@ -297,13 +302,16 @@ a {
     height: 89px;
     margin: 15px 0; }
   .rate-wrapper {
-    padding-bottom: 214px;
-    border-bottom: #000 solid 1px; }
+    padding-bottom: 214px; }
   .rate__subtitle {
     width: 111px;
     height: 23px;
     object-fit: scale-down;
     padding: 0; }
+  .rate__border {
+    border-bottom: #000 solid 1px;
+    padding: 0 20px;
+    width: 100%; }
 
 .news {
   padding: 0 20px;
@@ -350,7 +358,30 @@ a {
     transform: scale(0.5); }
   .footer__dropdown {
     display: none; }
+    .footer__dropdown_station {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 10.8px;
+      text-align: left;
+      padding-bottom: 12px; }
+    .footer__dropdown_dist {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 10px;
+      text-align: left;
+      color: #999;
+      padding-bottom: 14px; }
+    .footer__dropdown_desc {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      padding-bottom: 24px; }
   .footer-license {
-    margin-bottom: 100px; }
+    margin-bottom: 160px; }
 
 /*# sourceMappingURL=home.css.map */
