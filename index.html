@@ -79,7 +79,7 @@
   </div>
 
   <div class="parallax">
-  <div class="container-sm d-flex flex-column justify-content-between page-2 parallax__layer parallax__text"> <!--вторая страница-->
+  <div class="container-sm d-flex flex-column justify-content-between page-2 parallax__layer parallax__text" id="page-2"> <!--вторая страница-->
     <div class="d-flex flex-column row">
       <div class="col page-2__main-text fw-light s26 lh__35">
       КЛИНИКА <span class="fst-italic">MEDICRIS</span> — <br>
@@ -106,10 +106,10 @@
     </div>
   </div> <!--вторая страница-->
 
-  <div class="container-sm gradient parallax__layer parallax__image"></div>
+  <div class="container-sm gradient parallax__layer parallax__image" id="gradient"></div>
   </div>
 
-  <div class="container-sm type-2 abilities fw-normal d-flex flex-column justify-content-end"> <!--возможности-->
+  <div class="container-sm type-2 abilities fw-normal d-flex flex-column justify-content-end" id="abilities"> <!--возможности-->
     <div class="row align-items-center justify-items-end header-abilities">
       <div class="col type-2__header">НАШИ ВОЗМОЖНОСТИ</div>
     </div>
@@ -128,7 +128,7 @@
     </div>
   </div> <!--возможности-->
 
-  <div class="container-sm type-2 doctors fw-normal d-flex flex-column justify-content-end "> <!--врачи-->
+  <div class="container-sm type-2 doctors fw-normal d-flex flex-column justify-content-end " id="doctors"> <!--врачи-->
     <div class="row type-2__bottom align-items-center d-flex justify-content-between">
       <div class="col p-0 type-2__bottom__text s18">
         КОМАНДА ВРАЧЕЙ<br>
@@ -155,13 +155,13 @@
         И ПРЕПАРАТЫ
       </div>
       <img src="media/type-2/ellipse_arr.svg" alt="" class="col-3 type-2__bottom__link">
-  </div> <!--оборудование-->
+  </div> 
   <div class="row">
     <div class="type2__bottom__string col p-0">
       <div id="marquee-3">LIFTERA-A &emsp; MEDIOSTAR NEXT PRO &emsp; PROFHILO</div>
     </div>
   </div>
-  </div>
+  </div> <!--оборудование-->
 
   <div class="container-sm type-2 clinic fw-normal d-flex flex-column justify-content-end "> <!--клиника-->
     <div class="row type-2__bottom align-items-center d-flex justify-content-between">
@@ -263,8 +263,8 @@
       <div class="col fw-light s12 feedback__title text-center">ОТЗЫВЫ ПАЦИЕНТОВ</div>
     </div>
     <div class="swiper-container-feedback">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
+      <div class="swiper-container-feedback-wrapper">
+        <div class="swiper-container-feedback-slide">
         <div class="row">
           <div class="col fw-normal fst-italic s22 feedback__text">
             Я пришла, не зная с чего начать, и ушла совершенно спокойная, с пониманием дальнейшего плана действий...
@@ -299,7 +299,7 @@
           </div>
         </div>
       </div> <!--slide-->
-      <div class="swiper-slide">
+      <div class="swiper-container-feedback-slide">
         <div class="row">
           <div class="col fw-normal fst-italic s22 feedback__text">
             Профессионально, безболезненно, отлично!
@@ -335,7 +335,7 @@
           </div>
         </div>
       </div> <!--slide2-->
-      <div class="swiper-slide">
+      <div class="swiper-container-feedback-slide">
         <div class="row">
           <div class="col fw-normal fst-italic s22 feedback__text">
             Действительно хорошая клиника. Обратился по вопросу удаления папиллом. Весь вопрос занял 45 минут.
@@ -370,12 +370,48 @@
           </div>
         </div>
       </div> <!--slide3-->
+      <div class="swiper-container-feedback-slide">
+        <div class="row">
+          <div class="col fw-normal fst-italic s22 feedback__text">
+            Профессионально, безболезненно, отлично!
+            Удаляла у Марии Сергеевны папилломы. Было комфортно...
+          </div>
+        </div>
+        <div class="row">
+          <div class="col fw-bold s12 feedback__source text-end">
+            ЧИТАТЬ ИСТОЧНИК
+          </div>
+        </div>
+        <div class="row feedback-item">
+          <div class="col fw-medium s12 feedback-item__title">
+            ПРОЦЕДУРА
+          </div>
+
+          <div class="row d-flex justify-content-between pe-0 feedback-item2">
+            <div class="col-10 align-self-start fw-medium s14 feedback-item__subtitle">
+              Удаление папиллом электрокоагуляцией
+            </div>
+            <img src="media/review/Vector.svg" alt="" class="col feedback-item__img align-self-start">
+          </div>
+        </div>
+        <div class="row feedback-item">
+          <div class="col fw-medium s12 feedback-item__title">
+            ВРАЧ
+          </div>
+          <div class="row pe-0 feedback-item2">
+            <div class="col-10 fw-medium s14 feedback-item__subtitle">
+            Булавина М.С.
+            </div>
+            <img src="media/review/Vector.svg" alt="" class="col-2 feedback-item__img">
+          </div>
+        </div>
+      </div> <!--slide2-->
     </div>
-    <div class="row feedback__scroller">
+    <div class="row feedback-container-feedback-scroller">
       <div class="col-12 fw-bold s18  text-center align-self-center">
-        <img src="media/review/Arrow_11.svg" alt="" class="feedback__scroller__l">
+        <img src="media/review/Arrow_11.svg" alt="" class="feedback__scroller__l swiper-button-prev">
         1/7
-        <img src="media/review/Arrow_10.svg" alt="" class="feedback__scroller__r">
+        <img src="media/review/Arrow_10.svg" alt="" class="feedback__scroller__r swiper-button-next">
       </div>
     </div> 
   </div>
@@ -626,5 +662,6 @@
   <script src="swipers.js" type="module"></script>
   <script src="run_string.js"></script>
   <script src="dropdowns.js"></script>
+  <script src="parallax.js"></script>
 </body>
 </html>

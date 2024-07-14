@@ -174,10 +174,14 @@ a {
 }
 
 .page-2 {
+  background-color: #F2F0EE;
   height: 617px;
   padding-left: 20px;
   padding-right: 20px;
-  
+  &-active {
+    position: fixed;
+    top: 46px;
+  }
 
   &__main-text {
     margin-top: 84px;
@@ -204,15 +208,17 @@ a {
 
 .gradient {
     height: 1177px;
-    background:
-    linear-gradient(180deg, rgba(8, 229, 190, 0) 12%, rgba(8, 229, 190, 0.6) 99.5%),
-    #F2F0EE;
+    background: linear-gradient(180deg, rgba(8, 229, 190, 0) 12%, rgba(8, 229, 190, 0.6) 99.5%);
     mix-blend-mode: multiply;
 }
 
 .type-2 {
   height: 617px;
   position: relative;
+  &-active {
+    position: fixed;
+    top: 46px;
+  }
   &__header {
     color: #f2f2f2;
     padding-top: 52px;
@@ -584,6 +590,24 @@ a {
     margin-bottom: 160px;
   }
   
+}
+
+.swiper {
+  width: 100%;
+  &-container-feedback {
+    height: 406px;
+    &-wrapper {
+      height: 406px;
+    }
+    &-slide {
+      margin-right: 20px;
+      width: 100%;
+      &-active {
+        margin-right: 20px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 // .parallax {
