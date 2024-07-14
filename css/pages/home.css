@@ -370,10 +370,10 @@ a {
     margin-top: 187px; }
 
 .swiper {
-  width: 393px;
+  width: 100%;
   height: 620px; }
-  .swiper-container-feedback {
-    width: 100%; }
+  .swiper_slide > img {
+    object-fit: contain; }
 
 .footer {
   padding: 20px;
@@ -437,5 +437,24 @@ a {
       .swiper-container-feedback-slide-active {
         margin-right: 20px;
         width: 100%; }
+
+.slide-1 {
+  background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_1.png);
+  background-size: cover; }
+.slide-2 {
+  background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_2.png);
+  background-size: cover; }
+.slide-3 {
+  background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_3.png);
+  background-size: cover; }
+.slide-4 {
+  background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_4.png);
+  background-size: cover; }
+.slide-5 {
+  background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_5.png);
+  background-size: cover; }
+.slide-6 {
+  background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_6.png);
+  background-size: cover; }
 
 /*# sourceMappingURL=home.css.map */

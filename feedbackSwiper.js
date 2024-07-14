@@ -1,12 +1,11 @@
-const r = document.getElementById("r")
-const t = document.getElementById("t")
-const l = document.getElementById("l")
+const r = document.getElementById("r") 
+const t = document.getElementById("t") 
+const l = document.getElementById("l") 
 const slidesAmount = document.querySelectorAll("[data-slide-number]").length
-t.innerHTML = `1/${slidesAmount}`
-
+t.innerHTML = `1/${slidesAmount}` 
 r.addEventListener("click", () => {
   let lastActive = t.getAttribute('data-number')
-  if (lastActive != slidesAmount) {
+  if (lastActive != slidesAmount) { 
     if (lastActive == 1) {
       l.setAttribute('src', 'media/review/Arrow_black.svg')
       l.style.cssText = "transform: rotate(180deg)"
