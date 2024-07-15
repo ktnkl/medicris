@@ -4,7 +4,7 @@ const gradient = document.getElementById("gradient")
 
 
 window.addEventListener("scroll", () => {
-  console.log(scrollY)
+  
   if (Math.round(scrollY) > 617) {
     page2.classList.add('page-2-active')
     page2.style.cssText = 'opacity: 100'
