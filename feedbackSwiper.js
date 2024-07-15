@@ -7,13 +7,12 @@ r.addEventListener("click", () => {
   let lastActive = t.getAttribute('data-number')
   if (lastActive != slidesAmount) { 
     if (lastActive == 1) {
-      l.setAttribute('src', 'media/review/Arrow_black.svg')
-      l.style.cssText = "transform: rotate(180deg)"
+      // l.setAttribute('src', 'media/review/Arrow_black.svg')
+      l.style.cssText = "opacity: 100%"
     }
     let newActive = Number(lastActive) + 1
     if (newActive == slidesAmount) {
-      r.setAttribute('src', 'media/review/Arrow_grey.svg')
-      r.style.cssText = "transform: rotate(180deg)"
+      r.style.cssText = "opacity: 30%"
     }
     t.setAttribute('data-number', newActive)
     t.innerHTML = `${newActive}/${slidesAmount}`
@@ -26,13 +25,11 @@ l.addEventListener("click", () => {
   let lastActive = t.getAttribute('data-number')
   if (lastActive != 1) {
     if (lastActive == slidesAmount) {
-      r.setAttribute('src', 'media/review/Arrow_black.svg')
-      r.style.cssText = "transform: rotate(0deg)"
+      r.style.cssText = "opacity: 100%"
     }
     let newActive = Number(lastActive) - 1
     if (newActive == 1) {
-      l.setAttribute('src', 'media/review/Arrow_grey.svg')
-      l.style.cssText = "transform: rotate(0deg)"
+      l.style.cssText = "opacity: 30%"
     }
     t.setAttribute('data-number', newActive)
     t.innerHTML = `${newActive}/${slidesAmount}`

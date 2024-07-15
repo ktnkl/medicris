@@ -92,7 +92,7 @@ a {
 .header {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   padding: 10px 20px;
 
   &-plug {
@@ -132,9 +132,22 @@ a {
     padding-top: 37px;
     padding-bottom: 0;
     &__text{
+      /* УПРАВЛЯЙТЕ ВНЕШНОСТЬЮ, ЗДОРОВЬЕМ И КАЧЕСТВОМ ЖИЗНИ */
       height: 120px;
-      line-height: 24px;
+          
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
       font-size: 20px;
+      line-height: 24px;
+      /* or 120% */
+      text-align: center;
+      letter-spacing: 0.07em;
+          
+      color: #000000;
+          
+      mix-blend-mode: darken;
+
     }
   
     &__arrow {
@@ -144,32 +157,54 @@ a {
   
     &__buttons {
       background-color: rgba(8, 229, 190, 0.45);
+      backdrop-filter: blur(10px);
       color: #000;
+      width: 360px;
       border-radius: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
       margin-top: 252px;
       min-height: 70px;
-
       &__f, &__m {
         border: #000 solid 1px;
         border-radius: 50px;
-        padding: 10px;
-        font-family: Montserrat Alternates;
-        font-size: 10px;
-        font-weight: 700;
-        line-height: 12.19px;
-        letter-spacing: 0.03em;
-        text-align: center;
+        padding: 14px 0;
+        
+        width: 106px;
+        height: 10.83px;
 
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #000000;
       }
       &__t {
-        font-family: Montserrat;
-        font-size: 12px;
+        /* ПЕРСОНАЛЬНЫЙ ПРОТОКОЛ */
+        width: 114px;
+        height: 26px;
+        
+        font-family: 'Montserrat';
+        font-style: normal;
         font-weight: 500;
+        font-size: 12px;
         line-height: 13px;
+        /* or 108% */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+
+        color: #000000;
       }
     }
-  
   }
 }
 
@@ -186,11 +221,52 @@ a {
 
   &__main-text {
     margin-top: 84px;
+
+    /* КЛИНИКА MEDICRIS — ОТВЕТСТВЕННАЯ* ЭСТЕТИЧЕСКАЯ МЕДИЦИНА, ПОМОГАЮЩАЯ ОСТАВАТЬСЯ НА ВЫСОТЕ! */
+    width: 100%; //при значении из фигмы текст не вмещается
+    height: 467.56px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 35px;
+    /* or 135% */
+    letter-spacing: 0.07em;
+
+    color: #000000;
   }
   &__subtext {
     margin-top: 26px;
+    /* Эльвира Айзекс, основатель клиники */
+    width: 292px;
+    height: 14px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.07em;
+
+    color: #000000;
   }
   &__note {
+    /* В 2023 году MEDICRIS присвоен статус Клинической Базы НМХЦ им. Н.И.Пирогова */
+    width: 171.39px;
+    height: 137.83px;
+    
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    /* or 133% */
+    letter-spacing: 0.05em;
+    color: #000000;
     position: relative;
     &::before {
       content: "*";
@@ -214,48 +290,82 @@ a {
 }
 
 .type-2 {
+  transition: all 0.5s ease-out;
   height: 617px;
   position: relative;
+  z-index: 2;
   &-active {
     position: fixed;
     top: 46px;
+    z-index: 1;
   }
   &__header {
-    color: #f2f2f2;
-    padding-top: 52px;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16.2px;
-    letter-spacing: 0.07em;
-    text-align: center;
+    /* НАШИ ВОЗМОЖНОСТИ */
     position: absolute;
-    top: 0;
     width: 100%;
+    height: 16px;
+    left: 19.95px;
+    top: 52px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    /* or 16px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.07em;
+
+    color: #F2F0EE;
   }
 
   &__bottom {
     height: 84px;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7.5px);
     padding: 10px 20px;
-    
     &__text {
-      font-family: Montserrat;
-      font-size: 18px;
+      /* 127 ВЫСОКО–ТЕХНОЛОГИЧНЫХ ПРОЦЕДУР */
+      width: 278.67px;
+      height: 66px;
+      font-family: 'Montserrat';
+      font-style: normal;
       font-weight: 400;
+      font-size: 18px;
       line-height: 22px;
+      /* or 122% */
+      display: flex;
+      align-items: center;
       letter-spacing: 0.03em;
-      text-align: left;
+      color: #000000;
     }
 
     &__link {
       padding: 0;
-      width: 60px;
+      width: 58px;
       transform: rotate(270deg);
     }
     &__string {
       padding: 0;
+      /* MOVING STROKE */
+      width: 393px;
+      height: 42px;
+      &__text {
+        height: 15px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+
+        color: #000000;
+      }
     }
     
   }
@@ -264,61 +374,128 @@ a {
 .menu {
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #f8f8f8;
   height: 60px;
+  backdrop-filter: blur(50px);
+  text-align: center;
+
   &__img {
     width: 19px;
     height: 19px;
+  }
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    /* or 160% */
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+
+    mix-blend-mode: darken;
+
   }
 }
 
 .abilities {
   background: url("../../media/type-2/bg1.webp");
   background-size: cover;
+  margin-bottom: 617px;
   &-fixed {
     position: fixed !important;
     top: 2455px;
   }
+  
 }
 
 .doctors {
+  margin-top: 617px;
+  margin-bottom: 617px;
   background: url("../../media/type-2/bg2.webp");
   background-size: cover;
 }
 
 .equip {
+  margin-top: 617px;
+  margin-bottom: 617px;
   background: url("../../media/type-2/bg3.webp");
   background-size: cover;
 }
 
 .clinic {
+  margin-top: 617px;
+  margin-bottom: 617px;
   background: url("../../media/type-2/bg4.webp");
   background-size: cover;
 }
 
 .philosofy {
+  margin-top: 617px;
   height: 619px;
-  padding: 50px 20px;
+  padding-top: 50px;
   background-color: #f2f2f2;
+  &__title {
+    /* НАША ФИЛОСОФИЯ */
+    width: 353px;
+    height: 16px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 135%;
+    /* or 16px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.07em;
+
+    color: #000000;
+  }
+  &__text {
+    /* СИСТЕМНЫЙ ПОДХОД — КЛЮЧ К ГАРМОНИИ КРАСОТЫ И ЗДОРОВЬЯ */
+    height: 120px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    text-align: center;
+    letter-spacing: 0.07em;
+
+    color: #000000;
+
+    mix-blend-mode: darken;
+  }
 
   &__img {
-    width: 90vw;
+    width: 100%;
+    padding: 20px;
   }
 }
 
 .principle {
   background-color: #f2f2f2;
   padding: 20px;
+  width: 100%;
+  height: 686px;
 
   &-wrapper {
     margin-bottom: 20px;
     &__number {
+      font-family: Montserrat;
       border: #000 solid 1px;
       border-radius: 50%;
       height: 40px;
       width: 40px;
       margin: 0 20px;
+
     }
     &__title {
       font-family: Montserrat;
@@ -328,17 +505,21 @@ a {
       letter-spacing: 0.1em;
       text-align: left;
 
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       margin-top: 5px;
     }
     &__text {
-      font-family: Montserrat;
-      font-size: 12px;
-      font-weight: 300;
-      line-height: 14.88px;
-      text-align: left;
-
       margin-bottom: 20px;
+
+      width: 293px;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 124%;
+      /* or 15px */
+      color: #000000;
     }
     &__link {
       margin-bottom: 20px
@@ -351,6 +532,24 @@ a {
     height: 40px;
     transform: rotate(270deg);
     margin-left: 20px;
+  }
+  &__text {
+    width: 83px;
+    height: 15px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #000000;
   }
 }
 
@@ -378,9 +577,22 @@ a {
 
   }
   &__source {
-    color: rgb(8, 229, 190);
     align-self: flex-end;
     padding-right: 50px;
+    /* ЧИТАТЬ ИСТОЧНИК */
+    width: 141px;
+    height: 16px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 135%;
+    /* or 16px */
+    
+    letter-spacing: 0.07em;
+
+    color: #08E5BE;
   }
 
   &-item {
@@ -432,6 +644,8 @@ a {
       width: 50px;
       padding-right: 0;
       object-fit: scale-down;
+      transform: rotate(180deg);
+      opacity: 30%;
     }
     &__r {
       margin: 0 30px 0 0;
@@ -442,6 +656,20 @@ a {
     &__text {
       width: 20px;
       padding: 0;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #000000;
+
 
     }
   }
@@ -468,7 +696,6 @@ a {
     font-weight: 300;
     line-height: 16.2px;
     letter-spacing: 0.07em;
-
   }
   
   &__number {
@@ -477,7 +704,7 @@ a {
     margin: 15px 0;
   }
   &-wrapper {
-    padding-bottom: 214px;
+    padding-bottom: 225px;
   }
   &__subtitle {
     width: 111px;
@@ -499,14 +726,60 @@ a {
   padding: 0 20px;
   padding-bottom: 100px;
   background-color: #f2f2f2;
+  
+  &-arrow__text {
+    width: 90px;
+    height: 15px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+
+  }
 
   &-item__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 16px;
+    text-align: left;
+
   }
   &__title {
     padding: 52px;
-  }
+
+    /* НОВОСТИ MEDICRIS */
+
   
+  width: 353px;
+  height: 16px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 135%;
+  /* or 16px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.07em;
+
+  color: #000000;
+  }
 }
 
 .message {
@@ -535,7 +808,6 @@ a {
     & > img {
       object-fit: contain;
     }
-    
   }
 }
 
@@ -544,6 +816,31 @@ a {
   background-color: #fff;
   &__title {
     margin: 30px;
+    /* MEDICRIS — КЛИНИКА КРАСОТЫ */
+    width: 353px;
+    height: 24px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    color: #000000;
+    mix-blend-mode: darken;
+  }
+  &__info {
+    width: 353px;
+    height: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #000000;
+    mix-blend-mode: darken;
   }
 
   &__socials {
@@ -552,6 +849,17 @@ a {
 
   &__adress {
     margin-top: 42px;
+    
+    width: 353px;
+    height: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    mix-blend-mode: darken;
   }
 
   &__map-img {
@@ -562,6 +870,14 @@ a {
     border-top: #000 solid 2px;
     margin: 0 10px;
     padding: 15px 0px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    mix-blend-mode: darken;
     &_last {
       padding: 15px 0;
       margin: 0 10px;
@@ -605,6 +921,20 @@ a {
   }
   &-license {
     margin-bottom: 160px;
+    &__first {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+    &__others {
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+    }
   }
   
 }
