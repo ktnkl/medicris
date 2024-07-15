@@ -1,9 +1,0 @@
-шрифты: Montserrat w300 italic
-	Montserrat Alternates w700
-	Montserrat w500
-	Montserrat w400
-типы страниц:
-	главная
-	с зеленой полосой внизу
-	с жирной ссылкой внизу
-	не шаблонные
