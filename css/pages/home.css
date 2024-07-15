@@ -297,32 +297,24 @@ a {
 
 .abilities {
   background: url("../../media/type-2/bg1.webp");
-  background-size: cover;
-  margin-bottom: 617px; }
+  background-size: cover; }
   .abilities-fixed {
     position: fixed !important;
     top: 2455px; }
 
 .doctors {
-  margin-top: 617px;
-  margin-bottom: 617px;
   background: url("../../media/type-2/bg2.webp");
   background-size: cover; }
 
 .equip {
-  margin-top: 617px;
-  margin-bottom: 617px;
   background: url("../../media/type-2/bg3.webp");
   background-size: cover; }
 
 .clinic {
-  margin-top: 617px;
-  margin-bottom: 617px;
   background: url("../../media/type-2/bg4.webp");
   background-size: cover; }
 
 .philosofy {
-  margin-top: 617px;
   height: 619px;
   padding-top: 50px;
   background-color: #f2f2f2; }
