@@ -27,42 +27,14 @@ a {
 
 
 .s {
-  &10 {
-    font-size: 0.625rem;
-  }
-
-  &12 {
-    font-size: 0.75rem;
-    &__grey {
-      color: rbga(0, 0, 0, 0.5)
-    }
-  }
-
-  &14 {
-    font-size: 14px;
-  }
-
-  &18 {
-    font-size: 1.125rem;
-  }
-
   &20 {
     font-size: 20px;
   }
-
   &22 {
     font-size: 22px;
   }
-
   &23 {
     font-size: 23px;
-  }
-
-  &26 {
-    font-size: 26px;
-  }
-  &27 {
-    font-size: 27px;
   }
 }
 
@@ -196,7 +168,7 @@ a {
 }
 
 .page-2 {
-  transition: all 0.5s ease-out;
+  
   height: 617px;
   padding-left: 20px;
   padding-right: 20px;
@@ -316,6 +288,7 @@ a {
     padding: 10px 20px;
     &__text {
       /* 127 ВЫСОКО–ТЕХНОЛОГИЧНЫХ ПРОЦЕДУР */
+      padding: 0;
       width: 278.67px;
       height: 66px;
       font-family: 'Montserrat';
@@ -553,6 +526,14 @@ a {
   padding-bottom: 0;
   color:#000 !important;
   background-color: #f2f2f2;
+  &__title {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.2px;
+    letter-spacing: 0.07em;
+    text-align: center;
+  }
   &__text {
     margin-top: 60px;
     height: 152px;
@@ -775,12 +756,28 @@ a {
   background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
   ;
   &__text {
-    margin-top: 97px;
+    width: 352.43px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
     line-height: 35px;
+    /* or 130% */
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+    margin-top: 97px;
   }
   &__author {
     margin-top: 53px;
     line-height: 14px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    text-align: left;
   }
   &__link {
     margin-top: 187px;
@@ -866,6 +863,13 @@ a {
     color: #000000;
     mix-blend-mode: darken;
     &_last {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      mix-blend-mode: darken;
       padding: 15px 0;
       margin: 0 10px;
       border-top: #000 solid 2px;
