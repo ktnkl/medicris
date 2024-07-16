@@ -17,6 +17,14 @@ a {
 .ma {
   font-family: "Montserrat alternates"; }
 
+.ACC-6-MOB {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-align: left; }
+
 .s20 {
   font-size: 20px; }
 .s22 {
@@ -732,5 +740,80 @@ a {
 .slide-6 {
   background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_6.png);
   background-size: cover; }
+
+.page-1 {
+  padding: 0 20px; }
+  .page-1__header {
+    width: 353px;
+    height: 55.14px;
+    margin-top: 45px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    display: flex;
+    align-items: end; }
+  .page-1__breadcrumbs {
+    height: 12px;
+    margin-top: 9px;
+    padding-bottom: 19px;
+    border-bottom: solid #000 1px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    /* TEXT 2 */
+    color: #999999;
+    position: relative; }
+  .page-1-slider__l {
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 11px; }
+  .page-1-slider__t {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    color: #242424; }
+  .page-1-slider__r {
+    width: 50px;
+    height: 11px; }
+  .page-1__text {
+    display: flex;
+    justify-content: center;
+    width: 172px;
+    height: 60px; }
+  .page-1__price {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 37px 0; }
+  .page-1__button {
+    font-family: Montserrat Alternates;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 353px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    padding: 19px 75px 19px 75px;
+    gap: 10px;
+    border-radius: 50px;
+    opacity: 0px;
+    border: 1px solid #242424; }
+    .page-1__button:hover {
+      background: rgba(8, 229, 190, 0.5); }
 
 /*# sourceMappingURL=home.css.map */
