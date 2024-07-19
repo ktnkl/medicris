@@ -428,10 +428,12 @@ a {
       text-align: center;
       letter-spacing: 0.07em;
       color: #000000;
+      opacity: .6;
       mix-blend-mode: darken; }
     .first-page .t-n-b__arrow {
       width: 40px;
-      margin-top: 70px; }
+      margin-top: 70px;
+      opacity: .6; }
     .first-page .t-n-b__buttons {
       background-color: rgba(8, 229, 190, 0.45);
       backdrop-filter: blur(10px);
@@ -476,6 +478,7 @@ a {
         color: #000000; }
 
 .page-2 {
+  background-color: #f2f0ee;
   height: 617px;
   padding-left: 20px;
   padding-right: 20px; }
@@ -557,7 +560,7 @@ a {
     top: 52px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 135%;
     /* or 16px */
@@ -631,6 +634,8 @@ a {
     mix-blend-mode: darken; }
 
 .abilities {
+  position: sticky;
+  top: 0px;
   background: url("../../media/type-2/bg1.webp");
   background-size: cover; }
   .abilities-fixed {
@@ -857,9 +862,18 @@ a {
   padding: 0 20px;
   padding-bottom: 100px;
   background-color: #f2f2f2; }
+  .news-wrapper {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px; }
   .news-arrow__text {
     width: 90px;
     height: 15px;
+    margin-top: 16px;
+    margin-bottom: 22px;
     font-family: 'Montserrat Alternates';
     font-style: normal;
     font-weight: 700;
@@ -871,6 +885,9 @@ a {
     text-align: right;
     letter-spacing: 0.05em;
     color: #000000; }
+  .news-item {
+    width: 171px;
+    padding: 0; }
   .news-item__text {
     font-family: Montserrat;
     font-size: 14px;

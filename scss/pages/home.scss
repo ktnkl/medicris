@@ -563,16 +563,16 @@ color: #000000;
       /* or 120% */
       text-align: center;
       letter-spacing: 0.07em;
-          
-      color: #000000;
-          
-      mix-blend-mode: darken;
 
+      color: #000000;
+      opacity: .6;
+      mix-blend-mode: darken;
     }
   
     &__arrow {
       width: 40px;
       margin-top: 70px;
+      opacity: .6;
     }
   
     &__buttons {
@@ -629,7 +629,7 @@ color: #000000;
 }
 
 .page-2 {
-  
+  background-color: rgba(242, 240, 238, 1);
   height: 617px;
   padding-left: 20px;
   padding-right: 20px;
@@ -729,7 +729,7 @@ color: #000000;
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 135%;
     /* or 16px */
@@ -738,6 +738,7 @@ color: #000000;
     align-items: center;
     text-align: center;
     letter-spacing: 0.07em;
+    
 
     color: #F2F0EE;
   }
@@ -762,6 +763,7 @@ color: #000000;
       align-items: center;
       letter-spacing: 0.03em;
       color: #000000;
+
     }
 
     &__link {
@@ -823,6 +825,8 @@ color: #000000;
 }
 
 .abilities {
+  position: sticky;
+  top: 0px;
   background: url("../../media/type-2/bg1.webp");
   background-size: cover;
   // margin-bottom: 617px;
@@ -1138,10 +1142,19 @@ color: #000000;
   padding: 0 20px;
   padding-bottom: 100px;
   background-color: #f2f2f2;
-  
+  &-wrapper {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
   &-arrow__text {
     width: 90px;
     height: 15px;
+    margin-top: 16px;
+    margin-bottom: 22px;
 
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -1158,6 +1171,11 @@ color: #000000;
     color: #000000;
 
 
+  }
+
+  &-item {
+    width: 171px;
+    padding: 0;
   }
 
   &-item__text {
