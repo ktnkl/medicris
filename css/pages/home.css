@@ -404,7 +404,7 @@ a {
 .first-page {
   position: relative;
   height: 617px;
-  background-color: #EBE8E599; }
+  background-color: rgba(235, 232, 229, 0.6); }
   .first-page .photos-wrapper {
     height: 617px;
     background: url(../../media/main_page/m.png) right top no-repeat, url(../../media/main_page/f.png) left top no-repeat; }
@@ -428,7 +428,6 @@ a {
       text-align: center;
       letter-spacing: 0.07em;
       color: #000000;
-      opacity: .6;
       mix-blend-mode: darken; }
     .first-page .t-n-b__arrow {
       width: 40px;
@@ -543,6 +542,10 @@ a {
   background: linear-gradient(180deg, rgba(8, 229, 190, 0) 34%, rgba(8, 229, 190, 0.6) 99.5%);
   mix-blend-mode: multiply; }
 
+.sticky-container {
+  position: sticky;
+  top: 0px; }
+
 .type-2 {
   transition: all 0.5s ease-out;
   height: 617px;
@@ -634,8 +637,6 @@ a {
     mix-blend-mode: darken; }
 
 .abilities {
-  position: sticky;
-  top: 0px;
   background: url("../../media/type-2/bg1.webp");
   background-size: cover; }
   .abilities-fixed {
@@ -705,11 +706,22 @@ a {
       width: 40px;
       margin: 0 20px; }
     .principle-wrapper__title {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-align: left;
       margin-bottom: 10px;
       margin-top: 5px; }
     .principle-wrapper__text {
       margin-bottom: 20px;
-      width: 293px; }
+      width: 293px;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14.88px;
+      text-align: left; }
     .principle-wrapper__link {
       margin-bottom: 20px; }
 
@@ -737,7 +749,7 @@ a {
   height: 620px;
   background-image: url(../../media/3g.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
 
 .feedback {
   height: 618px;
