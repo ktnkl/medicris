@@ -2,6 +2,9 @@
 :root {
   --bs-body-font-family: 'Montserrat', sans-serif; }
 
+html, body {
+  overflow-x: clip; }
+
 * {
   padding: 0;
   margin: 0;
@@ -476,7 +479,7 @@ a {
 
 .page-2 {
   background-color: #f2f0ee;
-  height: 617px;
+  height: 100vh;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px; }
@@ -534,7 +537,7 @@ a {
       font-size: 26px;
       font-style: normal; }
   .page-2__link {
-    margin-bottom: 20px; }
+    margin-bottom: 125px; }
 
 .gradient {
   height: 1764px;
@@ -558,7 +561,7 @@ a {
     top: 52px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     line-height: 135%;
     /* or 16px */
@@ -593,30 +596,25 @@ a {
       width: 58px;
       transform: rotate(270deg); }
     .type-2__bottom__string {
+      /* MOVING STROKE */
+      width: 100%;
+      height: 42px;
       background-color: rgba(8, 229, 190, 0.45);
       backdrop-filter: blur(10px);
-      padding: 0;
-      /* MOVING STROKE */
-      width: 393px;
-      height: 42px; }
-      .type-2__bottom__string__text {
-        height: 15px;
-        background-color: rgba(8, 229, 190, 0.45);
-        backdrop-filter: blur(10px);
-        padding: 14px 0;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        /* identical to box height */
-        letter-spacing: 0.1em;
-        color: #000000; }
+      padding: 14px 0;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      /* identical to box height */
+      letter-spacing: 0.1em;
+      color: #000000; }
 
 .menu {
   position: fixed;
   bottom: 0;
-  z-index: 3;
+  z-index: 33;
   background-color: #f8f8f8;
   height: 60px;
   backdrop-filter: blur(50px);
