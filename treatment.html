@@ -106,14 +106,22 @@
   </div>
 
   <div class="container-sm procedure m-0">
-    <div class="row" style="padding: 0 20px;">
+    <div class="row">
       <div class="col procedure__title H2-MOB">О ПРОЦЕДУРЕ</div>
     </div>
     <div class="row procedure__radio">
-      <div class="col  FILTER-2-MOB"><div class="FILTER-2-MOB_choosen"></div> электрокоагуляция</div>
-      <div class="col  FILTER-2-MOB"><div class="FILTER-2-MOB_no"></div> удаление лазером</div>
+      <div 
+        class="col  FILTER-2-MOB choosen" 
+        data-procedure-id="1">
+        <div class="FILTER-2-MOB_choosen" data-procedure-radio="1"></div> электрокоагуляция
+      </div>
+      <div 
+        class="col  FILTER-2-MOB non-choosen"
+        data-procedure-id="2">
+        <div class="FILTER-2-MOB_no" data-procedure-radio="2"></div> удаление лазером
+      </div>
     </div>
-    <div class="procedure-slide">
+    <div class="procedure-slide" data-procedure-1="visible">
       <div class="card">
         <div class="row">
           <div class="col-6 card__l">для кого</div>
@@ -158,6 +166,49 @@
         При работе с папилломами электрокоагуляция позволяет деликатно, с малой травматизацией удалить образование вне зависимости от его формы и размера. Это возможно благодаря индивидуальному подбору температуры воздействия (от 40 до 300 ℃) и наличию разных по форме насадок (петля, булава, нож, игла, нить). Имеет минимальные сроки реабилитации.
       </div>
     </div>
+    <div class="procedure-slide " data-procedure-2="invisible">
+      <div class="card">
+        <div class="row">
+          <div class="col-6 card__l">для кого</div>
+          <div class="col-6 card__r">женщины, мужчины</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">возраст</div>
+          <div class="col-6 card__r">от 18 лет</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">зоны</div>
+          <div class="col-6 card__r">любые</div>
+        </div>
+        <div class="row">
+          <div class="col-4 card__l">аппарат</div>
+          <div class="col-8 card__r">СО2-ЛАЗЕР/ ЭРБИЕВЫЙ ЛАЗЕР</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">анестезия</div>
+          <div class="col-6 card__r">инъекции/аппликации</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">длительность</div>
+          <div class="col-6 card__r">30 сек - 2 мин</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">курс</div>
+          <div class="col-6 card__r">1 процедура</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">реабилитация</div>
+          <div class="col-6 card__r">7-14 дней</div>
+        </div>
+        <div class="row">
+          <div class="col-6 card__l">результат</div>
+          <div class="col-6 card__r">12-18 месяцев</div>
+        </div>
+      </div>
+      <div class="procedure__desc">
+        Лазерное удаление — метод основан на принципе неселективного фототермолиза. Благодаря определенной длине волны и источнику энергии лазерная энергия избирательно воздействует на воду. Вода в клетках нагревается и испаряется вместе с окружающими тканями папилломы. Такое действие называется абляцией. <br>В нашей клинике применяются два типа лазеров — СО2 и эрбиевый. Механизм их действия абсолютно идентичен. Разница лишь в длине волны (10600 нм и 2940 нм), что обеспечивает СО2-лазеру более глубокий эффект, достигающий на только верхнего, но и среднего слоя кожи. <br> В связи с тем, что паппиломы обычно не требуют глубокого воздействия, лазеры применяются дотаточно редко для их удаления.
+      </div>
+    </div>
   </div>
   <div class="container-sm yes-no">
     <div class="row">
@@ -166,13 +217,13 @@
           <div class="col">показания</div>
         </div>
         <div class="row YES-LIST">
-          <div class="col LIST-3-MOB">БОРОДАВКИ ПАПИЛЛОМЫ СЕБОРЕЙНЫЕ КЕРАТОМЫ КОНТАГИОЗНЫЙ МОЛЛЮСК</div>
+          <div class="col LIST-3-MOB yes-wrapper__item">БОРОДАВКИ ПАПИЛЛОМЫ СЕБОРЕЙНЫЕ КЕРАТОМЫ КОНТАГИОЗНЫЙ МОЛЛЮСК</div>
           
         </div>
       </div>
       <div class="col-6 no-wrapper">
         <div class="row">
-          <div class="col">
+          <div class="col p-0">
             противопоказания
           </div>
         </div>
@@ -245,7 +296,7 @@
     </div>
   </div>
     <div class="row protocol-video-wrapper">
-      <div class="protocol-video-wrapper-item">
+      <div class="protocol-video-wrapper-item" data-procedure-1="visible">
         <div class="row">
           <img src="media/treatment/protocol/protocol video.png" alt="" class="protocol-video-wrapper-item__img">
         </div>
@@ -260,7 +311,7 @@
           </div>
         </div>
       </div>
-      <div class="protocol-video-wrapper-item">
+      <div class="protocol-video-wrapper-item" data-procedure-2="invisible">
         <div class="row">
           <img src="media/treatment/protocol/protocol video_2.png" alt="" class="protocol-video-wrapper-item__img">
         </div>
@@ -292,7 +343,83 @@
           
         </div>
         <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
-          
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">электрокоагуляция</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">электро-РАДИОВОЛНОВОЙ МЕТОД</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">УДАЛЕНИЕ ЛАЗЕРОМ</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">КРИОДЕСТРУКЦИЯ</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">ХИМИЧЕСКОЕ УДАЛЕНИЕ</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">ХИРУРГИЧЕСКОЕ УДАЛЕНИЕ</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
+          <div class="FAQ-ITEM" style="height: inherit;">
+            <div class="FAQ-ITEM-TITLE">
+              <div class="FAQ-ITEM-TITLE-TEXT_sub">МЕХАНИЧЕСКОЕ УДАЛЕНИЕ</div>
+              
+              <img src="media/treatment/faq/plus.svg" class="FAQ-ITEM-TITLE-IMG closed" id="faq1">
+              
+            </div>
+            <div class="FAQ-ITEM-DROPDOWN" id="faq-body1">
+              
+            </div>
+          </div>
         </div>
       </div>
   
@@ -503,10 +630,49 @@
     <div class="row">
       <div class="col results__title H2-MOB">РЕЗУЛЬТАТЫ</div>
     </div>
-    <div class="slider-wrapper">
+    <div class="slider-wrapper" data-procedure-1="visible">
       <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="true" data-slide-number="1">
       <div class="row">
         <img src="media/treatment/temp/PIC 2.png" class="col results__img align-self-center">
+      </div>
+
+      <div class="row results__scroller  text-center align-self-center justify-items-end d-flex flex-row justify-content-around">
+        <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__l" id="l">
+        <div class="col results__scroller__text" id="t" data-number="1">1/2</div>
+        <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__r" id="r">
+      </div>
+
+      <div class="row results-item results-slide_bottom">
+        <div class="col fw-medium results-item__title">
+          ИНТЕРВАЛ
+        </div>
+        
+        <div class="row d-flex justify-content-between pe-0 results-item2">
+          <div class="col align-self-start fw-medium results-item__subtitle">
+            14 дней
+          </div>
+        </div>
+      
+        <div class="col fw-medium results-item__title">
+          ВРАЧ
+        </div>
+        
+        <div class="row pe-0 results-item2">
+          <div class="col align-self-start fw-medium results-item__subtitle">
+            Дерматолог-косметолог <br>Булавина М.С..
+          </div>
+          <img src="media/treatment/results/arrow small.svg" alt="" class="col results-item__img align-self-start">
+        </div>
+      </div>
+      </div>
+      
+      
+      
+    </div>
+    <div class="slider-wrapper" data-procedure-2="invisible">
+      <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="true" data-slide-number="1">
+      <div class="row">
+        <img src="media/treatment/temp/PIC_1.png" class="col results__img align-self-center">
       </div>
 
       <div class="row results__scroller  text-center align-self-center justify-items-end d-flex flex-row justify-content-around">
@@ -761,7 +927,7 @@
         </div>
       </div>
     </div>
-    <div class="PRICE-SECTION procedure-price-table">
+    <div class="PRICE-SECTION procedure-price-table" data-procedure-1="visible">
       <div class="PRICE-SECTION-HEADER">
         <div class="PRICE-SECTION-HEADER__top H4-MOB">
           УДАЛЕНИЕ ПАПИЛЛОМ  /ЭЛЕКТРОКОАГУЛЯЦИЯ/
@@ -896,6 +1062,141 @@
         </div>
       </div>
     </div>
+    <div class="PRICE-SECTION procedure-price-table" data-procedure-2="invisible">
+      <div class="PRICE-SECTION-HEADER">
+        <div class="PRICE-SECTION-HEADER__top H4-MOB">
+          УДАЛЕНИЕ ПАПИЛЛОМ  /СО2 И ЭРБИЕВЫЙ ЛАЗЕР/
+        </div>
+        <div class="PRICE-SECTION-HEADER__bottom">
+          <div class="PRICE-SECTION-HEADER__bottom_name">
+            НАИМЕНОВАНИЕ
+          </div>
+          <div class="PRICE-SECTION-HEADER__bottom-price">
+            <div class="PRICE-SECTION-HEADER__bottom-price_base">
+              ЦЕНА
+            </div>
+            <div class="PRICE-SECTION-HEADER__bottom-price_sale">
+              КЛУБНАЯ <br>ЦЕНА 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="PRICE-SECTION-ITEM">
+        <div class="PRICE-SECTION-ITEM__col-l">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
+            ПАПИЛЛОМА &lt; 2 ММ
+          </div>
+          
+        </div>
+        <div class="PRICE-SECTION-ITEM__col-r">
+          <div class="PRICE-SECTION-ITEM__col-r_price">
+            <div class="PRICE-SECTION-ITEM__col-r_price_l ">
+              1 000 ₽
+            </div>
+            <div class="PRICE-SECTION-ITEM__col-r_price_r">
+              880 ₽
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="PRICE-SECTION-ITEM">
+        <div class="PRICE-SECTION-ITEM__col-l">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
+            ПАПИЛЛОМА 3–5 ММ
+          </div>
+          
+        </div>
+        <div class="PRICE-SECTION-ITEM__col-r">
+          <div class="PRICE-SECTION-ITEM__col-r_price">
+            <div class="PRICE-SECTION-ITEM__col-r_price_l ">
+              1 500 ₽
+            </div>
+            <div class="PRICE-SECTION-ITEM__col-r_price_r">
+              1 320 ₽
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="PRICE-SECTION-ITEM">
+        <div class="PRICE-SECTION-ITEM__col-l">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
+            ПАПИЛЛОМА 6–10 ММ
+          </div>
+          
+        </div>
+        <div class="PRICE-SECTION-ITEM__col-r">
+          <div class="PRICE-SECTION-ITEM__col-r_price">
+            <div class="PRICE-SECTION-ITEM__col-r_price_l ">
+              2 500 ₽
+            </div>
+            <div class="PRICE-SECTION-ITEM__col-r_price_r">
+              2 200 ₽
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="PRICE-SECTION-ITEM">
+        <div class="PRICE-SECTION-ITEM__col-l">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
+            ПАПИЛЛОМА 11–20 ММ
+          </div>
+          
+        </div>
+        <div class="PRICE-SECTION-ITEM__col-r">
+          <div class="PRICE-SECTION-ITEM__col-r_price">
+            <div class="PRICE-SECTION-ITEM__col-r_price_l ">
+              3 500 ₽
+            </div>
+            <div class="PRICE-SECTION-ITEM__col-r_price_r">
+              3 080 ₽
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="PRICE-SECTION-ITEM">
+        <div class="PRICE-SECTION-ITEM__col-l">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
+            РАСПОЛОЖЕНИЕ<br>ПАПИЛЛОМЫ НА<br>ПОДВИЖНОМ ВЕКЕ
+          </div>
+          
+        </div>
+        <div class="PRICE-SECTION-ITEM__col-r">
+          <div class="PRICE-SECTION-ITEM__col-r_price">
+            <div class="PRICE-SECTION-ITEM__col-r_price_l ">
+              + 1000 ₽
+            </div>
+            <div class="PRICE-SECTION-ITEM__col-r_price_r">
+              + 880 ₽
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="PRICE-SECTION-ITEM">
+        <div class="PRICE-SECTION-ITEM__col-l">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
+            РАСПОЛОЖЕНИЕ <br>ПАПИЛЛОМЫ НА РЕСНИЧНОМ КРАЕ
+          </div>
+          
+        </div>
+        <div class="PRICE-SECTION-ITEM__col-r">
+          <div class="PRICE-SECTION-ITEM__col-r_price">
+            <div class="PRICE-SECTION-ITEM__col-r_price_l ">
+              + 5 000 ₽
+            </div>
+            <div class="PRICE-SECTION-ITEM__col-r_price_r">
+              + 4 400 ₽
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container-sm treatment-doctors">
@@ -968,9 +1269,7 @@
       </div>
     </div>
     </div>
-    <div class=" row m-0">
-      <div class="col-12 rate__border"></div>
-    </div>
+    
   </div>
 
   <div class="container-sm articles">
@@ -1201,5 +1500,6 @@
 
   <script src="js/treatment/page-1.js"></script>
   <script src="js/treatment/faq.js"></script>
+  <script src="js/treatment/procedure.js"></script>
 </body>
 </html>

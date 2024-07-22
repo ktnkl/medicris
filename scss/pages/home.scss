@@ -222,6 +222,7 @@ color: #242424;
   font-weight: 600;
   font-size: 10px;
   line-height: 15px;
+  padding-inline: 0;
   /* or 150% */
   text-transform: uppercase;
 
@@ -348,7 +349,7 @@ color: #242424;
   flex-direction: column;
   align-items: center;
   padding: 10px 0px;
-
+  margin-left: 0;
   position: relative;
   width: 170px;
   height: 400px;
@@ -407,6 +408,19 @@ color: #242424;
       align-items: center;
       row-gap: 13px;
       column-gap: 36px;
+      width: 100%;
+      &-TEXT {
+        &_sub {
+          font-family: Nunito Sans;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          text-align: left;
+          color: #242424;
+          text-transform: uppercase;
+        }
+      }
       
     }
     &-DROPDOWN {
@@ -1140,6 +1154,8 @@ color: #242424;
       color: #242424;
       padding-bottom: 8px;
       border-bottom: #000 1px solid;
+      padding-inline: 0;
+      margin-inline: 11px;
     }
   }
   &-stars {
@@ -1744,6 +1760,8 @@ color: #242424;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+    margin-inline: 11px;
+    padding-inline: 0;
 
     /* TEXT 2 */
     color: #999999;
@@ -1752,6 +1770,7 @@ color: #242424;
     
   }
   &-slider {
+    margin-top: 8px;
     &__scroller {
       width: 100%;
       margin: 11px 0;
@@ -1810,7 +1829,7 @@ color: #242424;
     margin: 37px 0;
   }
   &__button {
-    
+    margin-inline: 11px;
   }
   &__desc-title {
     margin-top: 82px;
@@ -1836,7 +1855,7 @@ color: #242424;
   padding: 0 20px;
   background-color: rgba(242, 242, 242, 1);
   &__title {
-    width: 100%;
+    margin-inline: 11px;
     padding: 11px 0;
     border-bottom: #000 1px solid;
   }
@@ -1895,12 +1914,15 @@ color: #242424;
 }
 
 .yes-wrapper {
-  padding: 0 20px;
+  padding: 0;
+  margin-left: 11px;
+  width: 170px;
 }
 .no-wrapper {
   position: relative;
   top:180px;
-  padding: 0 20px;
+  margin-left: 15px;
+  width: 172px
 }
 
 .protocol {
@@ -1909,7 +1931,8 @@ color: #242424;
   &__title {
     padding-top: 18px;
     padding-bottom: 9px;
-
+    padding-inline: 0;
+    margin-inline: 11px;
     border-bottom: #000 1px solid;
   }
   &-video-wrapper {
@@ -1974,6 +1997,8 @@ color: #242424;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    padding-inline: 0;
+    margin-inline: 0;
   }
   &__link {
     margin-top: 64px;
@@ -2022,6 +2047,8 @@ color: #242424;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    padding-inline: 0;
+    margin-inline: 0;
   }
 }
 .personal-protocol {
@@ -2142,5 +2169,13 @@ color: #242424;
 }
 
 [data-dropdown-opened="false"] {
+  display: none !important;
+}
+
+
+[data-procedure-1="invisible"] {
+  display: none !important;
+}
+[data-procedure-2="invisible"] {
   display: none !important;
 }
