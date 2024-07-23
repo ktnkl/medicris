@@ -307,8 +307,6 @@ a {
   width: 353.03px;
   height: 70px;
   border-top: 1px solid #000;
-  /* State=Default */
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -342,6 +340,10 @@ a {
     font-weight: 400;
     line-height: 18px;
     text-align: left; }
+    .FAQ-ITEM-DROPDOWN-sub-text {
+      margin-bottom: 17px; }
+    .FAQ-ITEM-DROPDOWN-sub-img {
+      margin-bottom: 17px; }
 
 .methods {
   display: flex;
@@ -406,11 +408,15 @@ a {
     width: 172px;
     height: 493px;
     /* FON 2 PAGE */
-    background: #D9D9D9; }
+    background: #F2F2F2; }
     .methods .methods-r__head {
       border-top: 1px solid #242424;
       border-bottom: 1px solid #242424;
-      width: 100%; }
+      width: 100%;
+      height: 71.6px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
       .methods .methods-r__head_top {
         margin-top: 10px;
         font-family: Nunito Sans;
@@ -430,6 +436,17 @@ a {
         letter-spacing: 0.03em;
         text-align: left;
         color: #999999; }
+      .methods .methods-r__head__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .methods .methods-r__head__buttons_f {
+          transform: rotate(270deg);
+          margin-top: 4px; }
+        .methods .methods-r__head__buttons_b {
+          transform: rotate(90deg);
+          opacity: .3;
+          margin-bottom: 4px; }
     .methods .methods-r__body {
       display: flex;
       flex-direction: column;
@@ -449,7 +466,7 @@ a {
         width: 100%;
         text-transform: uppercase; }
       .methods .methods-r__body_item_2 {
-        height: 63.8px;
+        height: 64.8px;
         font-family: 'Nunito Sans';
         font-size: 12px;
         font-weight: 700;
@@ -1776,5 +1793,8 @@ a {
 
 [data-procedure-2="invisible"] {
   display: none !important; }
+
+#twentytwentycontainer {
+  height: 400px !important; }
 
 /*# sourceMappingURL=home.css.map */

@@ -386,21 +386,15 @@ color: #242424;
     width: 353.03px;
     height: 70px;
     border-top: 1px solid #000;
-    /* State=Default */
 
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     align-content: flex-start;
     padding: 17px 0px;
-    
-
     /* FON 1 PAGE */
     background: #F2F2F2;
-
-    
     &-TITLE {
       display: flex;
       flex-direction: row;
@@ -433,7 +427,14 @@ color: #242424;
       font-weight: 400;
       line-height: 18px;
       text-align: left;
-
+      &-sub {
+        &-text {
+          margin-bottom: 17px;
+        }
+        &-img {
+          margin-bottom: 17px;
+        }
+      }
     }
   }
 }
@@ -509,11 +510,15 @@ color: #242424;
     width: 172px;
     height: 493px;
     /* FON 2 PAGE */
-    background: #D9D9D9;
+    background: #F2F2F2;
     &__head {
       border-top: 1px solid #242424;
       border-bottom: 1px solid #242424;
       width: 100%;
+      height: 71.6px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       &_top {
         margin-top: 10px;
 
@@ -538,6 +543,20 @@ color: #242424;
         color: #999999;
         
       }
+      &__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_f {
+          transform: rotate(270deg);
+          margin-top: 4px;
+        }
+        &_b {
+          transform: rotate(90deg);
+          opacity: .3;
+          margin-bottom: 4px;
+        }
+      }
     }
     &__body {
       display: flex;
@@ -560,7 +579,7 @@ color: #242424;
         
       }
       &_item_2 {
-        height: 63.8px;
+        height: 64.8px;
           font-family: 'Nunito Sans';
           font-size: 12px;
           font-weight: 700;
@@ -2318,4 +2337,8 @@ color: #242424;
 }
 [data-procedure-2="invisible"] {
   display: none !important;
+}
+
+#twentytwentycontainer {
+  height: 400px !important;
 }
