@@ -1,9 +1,8 @@
 const slidesAmountResult1 = document.querySelectorAll("[data-slide-number-result-1]").length / 2
-console.log(slidesAmountResult1)
 const r_r_1 = document.getElementById('r_r_1')
 const l_r_1 = document.getElementById('l_r_1')
 const t_r_1 = document.getElementById('t_r_1')
-t_r_1.innerHTML= `1/${slidesAmountResult1}`
+t_r_1.innerHTML= `1 / ${slidesAmountResult1}`
 
 r_r_1.addEventListener("click", () => {
   let lastActive = t_r_1.getAttribute('data-slide-number-result-1')
@@ -16,7 +15,7 @@ r_r_1.addEventListener("click", () => {
       r_r_1.style.cssText = "opacity: 30%"
     }
     
-    t_r_1.innerHTML = `${newActive}/${slidesAmountResult1}`
+    t_r_1.innerHTML = `${newActive} / ${slidesAmountResult1}`
     
     const arr1 = document.querySelectorAll(`[data-slide-number-result-1="${lastActive}"]`)
     for (let i = 0; i < arr1.length; i++) {
@@ -41,7 +40,7 @@ l_r_1.addEventListener("click", () => {
     }
     const arr1 = document.querySelectorAll(`[data-slide-number-result-1="${lastActive}"]`)
     
-    t_r_1.innerHTML = `${newActive}/${slidesAmountResult1}`
+    t_r_1.innerHTML = `${newActive} / ${slidesAmountResult1}`
     for (let i = 0; i < arr1.length; i++) {
       arr1[i].setAttribute("data-visible", "false")
     }

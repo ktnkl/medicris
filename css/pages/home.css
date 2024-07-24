@@ -283,6 +283,7 @@ a {
   position: relative;
   width: 170px;
   height: 400px;
+  gap: 15px;
   /* FON 2 ACC TEXT */
   background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
   /* TEXT 1 */
@@ -295,7 +296,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 10px 0px;
-  gap: 10px;
+  gap: 15px;
   position: relative;
   width: 172px;
   height: 400px;
@@ -306,16 +307,18 @@ a {
 .FAQ-ITEM {
   width: 353.03px;
   height: 70px;
-  border-top: 1px solid #000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   align-content: flex-start;
-  padding: 17px 0px;
   /* FON 1 PAGE */
   background: #F2F2F2; }
+  .FAQ-ITEM:last-child {
+    border-bottom: 1px solid #242424; }
   .FAQ-ITEM-TITLE {
+    border-top: 1px solid #242424;
+    padding: 17px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -334,8 +337,8 @@ a {
       text-transform: uppercase; }
   .FAQ-ITEM-DROPDOWN {
     display: none;
-    margin-top: 30px;
-    font-family: Nunito Sans;
+    margin-bottom: 60px;
+    font-family: 'Nunito Sans';
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
@@ -549,7 +552,8 @@ a {
   height: 372px;
   border-top: 1px solid #000;
   margin-right: 10px;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-inline: 20px; }
   .CARD-ARTICLE-text__title {
     margin-top: 26px;
     font-family: Montserrat;
@@ -573,9 +577,10 @@ a {
     line-height: 12px;
     text-align: left; }
   .CARD-ARTICLE__link {
-    margin-top: 77px;
+    margin-top: 71px;
     display: flex;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    justify-items: flex-start; }
 
 .DOC-CARD {
   width: 293px;
@@ -957,7 +962,7 @@ a {
       letter-spacing: 0.1em;
       text-align: left;
       margin-bottom: 10px;
-      margin-top: 5px; }
+      margin-top: 10px; }
     .principle-wrapper__text {
       margin-bottom: 20px;
       width: 293px;
@@ -998,21 +1003,17 @@ a {
 
 .feedback {
   height: 618px;
-  padding: 52px 20px;
+  padding: 0 20px;
   padding-bottom: 0;
   color: #000 !important;
   background-color: #f2f2f2; }
   .feedback_n {
     height: 670px; }
   .feedback__title_t {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 22px;
+    margin-top: 63px;
     text-align: left;
     color: #242424;
-    padding-bottom: 8px;
+    padding-bottom: 11px;
     border-bottom: #000 1px solid;
     padding-inline: 0;
     margin-inline: 11px; }
@@ -1020,7 +1021,8 @@ a {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
-    padding: 34px 0; }
+    padding: 34px 0;
+    padding-bottom: 44px; }
     .feedback-stars__img {
       width: 64px; }
   .feedback__text {
@@ -1032,7 +1034,8 @@ a {
     font-weight: 400;
     line-height: 24.2px; }
     .feedback__text_n {
-      margin-top: 0; }
+      margin-top: 0;
+      height: 88px; }
   .feedback__source {
     align-self: flex-end;
     padding-right: 50px;
@@ -1047,8 +1050,18 @@ a {
     /* or 16px */
     letter-spacing: 0.07em;
     color: #08E5BE; }
+    .feedback__source_n {
+      margin-top: 31px; }
+  .feedback-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px; }
   .feedback-item {
-    padding-right: 0; }
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    justify-content: space-between; }
     .feedback-item__title {
       color: rgba(0, 0, 0, 0.4);
       font-family: Montserrat;
@@ -1056,9 +1069,7 @@ a {
       font-weight: 500;
       line-height: 16.2px;
       letter-spacing: 0.07em;
-      text-align: left;
-      margin-top: 19px;
-      margin-bottom: 8px; }
+      text-align: left; }
     .feedback-item__subtitle {
       padding: auto;
       font-family: Montserrat;
@@ -1113,6 +1124,8 @@ a {
   padding-bottom: 0;
   color: #000 !important;
   background-color: #f2f2f2; }
+  .results-photos-wrapper {
+    margin-top: 30px; }
   .results__text {
     margin-top: 60px;
     height: 152px;
@@ -1137,24 +1150,23 @@ a {
       margin-bottom: 8px; }
     .results-item__subtitle {
       padding: auto;
-      width: 232px;
+      flex-basis: 232px;
       font-family: Montserrat;
       font-size: 14px;
       font-weight: 500;
       line-height: 14px;
       text-align: left; }
     .results-item__img {
-      transform: scale(0.25) translateX(-175%) translateY(-200%);
       padding: 0;
-      margin-left: 61px;
+      width: 24px;
+      height: 24px;
       justify-items: center; }
   .results-item2 {
     height: 30px;
     padding-top: 0;
     position: relative;
     display: flex;
-    flex-direction: row;
-    column-gap: 61px; }
+    flex-direction: row; }
   .results__scroller {
     width: 100%;
     margin: 11px 0;
@@ -1174,18 +1186,11 @@ a {
     .results__scroller__text {
       width: 20px;
       padding: 0;
-      font-family: 'Montserrat Alternates';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
       /* identical to box height */
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      letter-spacing: 0.05em;
-      color: #000000; }
+      text-align: center; }
 
 [data-visible="false"] {
   display: none !important; }
@@ -1244,7 +1249,7 @@ a {
     font-size: 12px;
     line-height: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: right;
     letter-spacing: 0.05em;
@@ -1501,11 +1506,6 @@ a {
       .page-1-slider__scroller__t {
         width: 20px;
         padding: 0;
-        font-family: 'Montserrat Alternates';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
         /* identical to box height */
         display: flex;
         justify-content: center;
@@ -1529,16 +1529,19 @@ a {
   .page-1__button {
     margin-inline: 11px; }
   .page-1__desc-title {
-    margin-top: 82px; }
+    margin-top: 82px;
+    margin-bottom: 28px; }
   .page-1__desc-text {
-    margin-top: 28px;
     font-family: 'Nunito Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+    .page-1__desc-text:last-child {
+      margin-bottom: 0; }
   .page-1__desc-link {
     display: flex;
     justify-content: flex-end;
@@ -1546,7 +1549,8 @@ a {
 
 .procedure {
   padding: 0 20px;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  height: 745px; }
   .procedure__title {
     margin-inline: 11px;
     padding: 11px 0;
@@ -1555,12 +1559,15 @@ a {
     margin-top: 35px;
     margin-bottom: 14px; }
   .procedure__desc {
-    margin-top: 34px;
-    padding-bottom: 48px; }
+    margin-bottom: 10px; }
+    .procedure__desc:last-child {
+      padding-bottom: 48px;
+      margin-bottom: 0; }
   .procedure .card {
     border: #000 1px solid;
     background-color: #f2f2f2;
-    padding: 10px; }
+    padding: 10px;
+    margin-bottom: 34px; }
     .procedure .card__l {
       font-family: 'Montserrat';
       font-style: normal;
@@ -1570,8 +1577,10 @@ a {
       color: #242424;
       flex: none;
       order: 0;
-      flex-grow: 0; }
+      flex-grow: 0;
+      text-transform: uppercase; }
     .procedure .card__r {
+      text-transform: uppercase;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;

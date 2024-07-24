@@ -4,6 +4,7 @@
 
 html, body {
   overflow-x: clip;
+  
 }
 
 $bg-color: #f9f9f9;
@@ -353,6 +354,7 @@ color: #242424;
   position: relative;
   width: 170px;
   height: 400px;
+  gap: 15px;
 
   /* FON 2 ACC TEXT */
   background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
@@ -369,7 +371,7 @@ color: #242424;
   flex-direction: column;
   align-items: center;
   padding: 10px 0px;
-  gap: 10px;
+  gap: 15px;
 
   position: relative;
   width: 172px;
@@ -385,17 +387,22 @@ color: #242424;
   &-ITEM {
     width: 353.03px;
     height: 70px;
-    border-top: 1px solid #000;
+    
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     align-content: flex-start;
-    padding: 17px 0px;
+    
     /* FON 1 PAGE */
     background: #F2F2F2;
+    &:last-child {
+      border-bottom: 1px solid #242424;
+    }
     &-TITLE {
+      border-top: 1px solid #242424;
+      padding: 17px 0px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -403,6 +410,7 @@ color: #242424;
       row-gap: 13px;
       column-gap: 36px;
       width: 100%;
+      
       &-TEXT {
         &_sub {
           font-family: Nunito Sans;
@@ -420,9 +428,9 @@ color: #242424;
     &-DROPDOWN {
       display: none;
 
-      margin-top: 30px;
+      margin-bottom: 60px;
 
-      font-family: Nunito Sans;
+      font-family: 'Nunito Sans';
       font-size: 15px;
       font-weight: 400;
       line-height: 18px;
@@ -691,7 +699,7 @@ color: #242424;
   border-top: 1px solid #000;
   margin-right: 10px;
   background-color: #fff;
-
+  padding-inline: 20px;
   &-text {
     
     &__title {
@@ -720,12 +728,14 @@ color: #242424;
       font-weight: 400;
       line-height: 12px;
       text-align: left;
+      
     }
   }
   &__link {
-    margin-top: 77px;
+    margin-top: 71px;
     display: flex;
     justify-content: flex-start;
+    justify-items: flex-start;
   }
 
 }
@@ -1240,7 +1250,7 @@ color: #242424;
       text-align: left;
 
       margin-bottom: 10px;
-      margin-top: 5px;
+      margin-top: 10px;
     }
     &__text {
       margin-bottom: 20px;
@@ -1295,7 +1305,7 @@ color: #242424;
 
 .feedback {
   height: 618px;
-  padding: 52px 20px;
+  padding: 0 20px;
   padding-bottom: 0;
   color:#000 !important;
   background-color: #f2f2f2;
@@ -1304,14 +1314,10 @@ color: #242424;
   }
   &__title {
     &_t {
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 400;
-      line-height: 22px;
+      margin-top: 63px;
       text-align: left;
       color: #242424;
-      padding-bottom: 8px;
+      padding-bottom: 11px;
       border-bottom: #000 1px solid;
       padding-inline: 0;
       margin-inline: 11px;
@@ -1322,6 +1328,7 @@ color: #242424;
     flex-direction: row;
     column-gap: 20px;
     padding: 34px 0;
+    padding-bottom: 44px;
     &__img {
       width: 64px;
     }
@@ -1336,6 +1343,7 @@ color: #242424;
     line-height: 24.2px;
     &_n {
       margin-top: 0;
+      height: 88px;
     }
   }
   &__source {
@@ -1355,10 +1363,22 @@ color: #242424;
     letter-spacing: 0.07em;
 
     color: #08E5BE;
+    &_n {
+      margin-top: 31px;
+    }
   }
-
+  &-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+  }
   &-item {
+    
     padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    justify-content: space-between;
     &__title {
       color: rgba(0, 0, 0, 0.4);
       font-family: Montserrat;
@@ -1367,8 +1387,8 @@ color: #242424;
       line-height: 16.2px;
       letter-spacing: 0.07em;
       text-align: left;
-      margin-top: 19px;
-      margin-bottom: 8px;
+      // margin-top: 19px;
+      // margin-bottom: 8px;
     }
 
     &__subtitle {
@@ -1443,8 +1463,8 @@ color: #242424;
   padding-bottom: 0;
   color:#000 !important;
   background-color: #f2f2f2;
-  &__title {
-    
+  &-photos-wrapper {
+    margin-top: 30px;
   }
   &__text {
     margin-top: 60px;
@@ -1476,7 +1496,7 @@ color: #242424;
 
     &__subtitle {
       padding: auto;
-      width: 232px;
+      flex-basis: 232px;
       font-family: Montserrat;
       font-size: 14px;
       font-weight: 500;
@@ -1486,9 +1506,10 @@ color: #242424;
     }
 
     &__img {
-      transform: scale(.25) translateX(-175%) translateY(-200%);
+      
       padding: 0;
-      margin-left: 61px;
+      width: 24px;
+      height: 24px;
       justify-items: center;
     }
   }
@@ -1498,7 +1519,7 @@ color: #242424;
     position: relative;
     display: flex;
     flex-direction: row;
-    column-gap: 61px;
+    // column-gap: 61px;
   }
 
   &__scroller {
@@ -1524,21 +1545,12 @@ color: #242424;
     &__text {
       width: 20px;
       padding: 0;
-      font-family: 'Montserrat Alternates';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
+      
       /* identical to box height */
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      letter-spacing: 0.05em;
-
-      color: #000000;
-
-
     }
   }
 }
@@ -1618,7 +1630,7 @@ color: #242424;
     line-height: 15px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: right;
     letter-spacing: 0.05em;
@@ -1953,11 +1965,6 @@ color: #242424;
       &__t {
         width: 20px;
         padding: 0;
-        font-family: 'Montserrat Alternates';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
         /* identical to box height */
         display: flex;
         justify-content: center;
@@ -1990,29 +1997,37 @@ color: #242424;
   &__button {
     margin-inline: 11px;
   }
-  &__desc-title {
-    margin-top: 82px;
+  &__desc {
+    &-title {
+      margin-top: 82px;
+      margin-bottom: 28px;
+    }
+    &-text {
+      font-family: 'Nunito Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-link {
+      display: flex;
+      justify-content: flex-end;
+      margin: 28px 0;
+    }
   }
-  &__desc-text {
-    margin-top: 28px;
-    font-family: 'Nunito Sans';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  &__desc-link {
-    display: flex;
-    justify-content: flex-end;
-    margin: 28px 0;
-  }
+  
 }
 
 .procedure {
   padding: 0 20px;
   background-color: rgba(242, 242, 242, 1);
+  height: 745px;
   &__title {
     margin-inline: 11px;
     padding: 11px 0;
@@ -2023,13 +2038,18 @@ color: #242424;
     margin-bottom: 14px;
   }
   &__desc {
-    margin-top: 34px;
-    padding-bottom: 48px;
+    margin-bottom: 10px;
+    
+    &:last-child {
+      padding-bottom: 48px;
+      margin-bottom: 0;
+    }
   }
   .card {
     border: #000 1px solid;
     background-color: rgba(242, 242, 242, 1);
     padding: 10px;
+    margin-bottom: 34px;
     &__l {
       font-family: 'Montserrat';
       font-style: normal;
@@ -2042,10 +2062,10 @@ color: #242424;
       flex: none;
       order: 0;
       flex-grow: 0;
-
+      text-transform: uppercase;
     }
     &__r {
-
+      text-transform: uppercase;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;

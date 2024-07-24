@@ -2,7 +2,7 @@ const rf = document.getElementById("r_f")
 const tf = document.getElementById("t_f") 
 const lf = document.getElementById("l_f") 
 const slidesAmountF = document.querySelectorAll("[data-slide-number]").length
-tf.innerHTML = `1/${slidesAmountF}` 
+tf.innerHTML = `1 / ${slidesAmountF}` 
 rf.addEventListener("click", () => {
   let lastActive = tf.getAttribute('data-number')
   if (lastActive != slidesAmountF) { 
@@ -15,7 +15,7 @@ rf.addEventListener("click", () => {
       rf.style.cssText = "opacity: 30%"
     }
     tf.setAttribute('data-number', newActive)
-    tf.innerHTML = `${newActive}/${slidesAmountF}`
+    tf.innerHTML = `${newActive} / ${slidesAmountF}`
     document.querySelector(`[data-slide-number="${lastActive}"]`).setAttribute("data-visible", "false")
     document.querySelector(`[data-slide-number="${newActive}"]`).setAttribute("data-visible", "true")
   }
@@ -32,7 +32,7 @@ lf.addEventListener("click", () => {
       lf.style.cssText = "opacity: 30%"
     }
     tf.setAttribute('data-number', newActive)
-    tf.innerHTML = `${newActive}/${slidesAmountF}`
+    tf.innerHTML = `${newActive} / ${slidesAmountF}`
     document.querySelector(`[data-slide-number="${lastActive}"]`).setAttribute("data-visible", "false")
     document.querySelector(`[data-slide-number="${newActive}"]`).setAttribute("data-visible", "true")
   }
