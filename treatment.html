@@ -1165,7 +1165,7 @@
       </div>
       <div class="PRICE-SECTION-ITEM">
         <div class="PRICE-SECTION-ITEM__col-l">
-          <div class="PRICE-SECTION-ITEM__col-l_name LIST-3-MOB">
+          <div class="PRICE-SECTION-ITEM__col-l_name LIST-2-MOB">
             Приём (осмотр, консультация) врача-дерматовенеролога первичный
           </div>
           <div class="PRICE-SECTION-ITEM__col-l_desc">
@@ -1777,7 +1777,7 @@
     </div>
     </div>
   </div>
-  <div class="container footer fw-normal">
+  <div class="container-sm footer fw-normal">
     <div class="row">
       <div class="col text-center footer__title p-0 mx-0">
         MEDICRIS — КЛИНИКА КРАСОТЫ
@@ -2025,7 +2025,10 @@
         for (let i = 0; i < arr2.length; i++) {
           arr2[i].setAttribute("data-visible", "true")
         }
-        $(`#twentytwentycontainer2${newActive}`).twentytwenty();
+        $(`#twentytwentycontainer2${newActive}`).twentytwenty({
+          before_label: 'January 2017', // Set a custom before label
+          after_label: 'March 2017', // Set a custom after label
+        });
       }
     })
     l_r_2.addEventListener("click", () => {
@@ -2052,7 +2055,10 @@
         for (let i = 0; i < arr2.length; i++) {
           arr2[i].setAttribute("data-visible", "true")
         }
-        $(`#twentytwentycontainer2${newActive}`).twentytwenty();
+        $(`#twentytwentycontainer2${newActive}`).twentytwenty({
+          before_label: 'January 2017', // Set a custom before label
+          after_label: 'March 2017', // Set a custom after label
+        });
       }
       
     })

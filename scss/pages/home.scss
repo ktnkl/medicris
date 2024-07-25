@@ -2362,6 +2362,84 @@ color: #242424;
   }
 }
 
+//problem page
+.problem-first-screen {
+  height: 617px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-causes {
+  height: 617px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-routes {
+  height: 617px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-progress-variants {
+  height: 617px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-not-everybody {
+  height: 951px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-types {
+  height: 738px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-danger {
+  height: 470px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-all-treatments {
+  height: 651px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-articles {
+  height: 617px;
+  background-color: #D9D9D9;
+  padding: 0 20px;
+}
+.problem-mc-treatment {
+  height: 1087px;
+  background-color: #F2F2F2;
+  padding: 0 20px;
+}
+.problem-proof {
+  height: 617px;
+  background: linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(8, 229, 190, 0.5) 85.5%);
+  padding: 0 20px;
+  &-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+
+    margin-top: 108px;
+    &__item {
+      &1 {
+        width: 94px;
+        height: 30px;
+      }
+      &2 {
+        width: 103.28px;
+        height: 36.51px;
+      }
+      &3 {
+        width: 82.87px;
+        height: 34.15px;
+      }
+    }
+  }
+}
+//problem-page - end
 [data-dropdown-opened="false"] {
   display: none !important;
 }
