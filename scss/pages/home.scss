@@ -1465,6 +1465,7 @@ color: #242424;
   background-color: #f2f2f2;
   &-photos-wrapper {
     margin-top: 30px;
+    height: 400px;
   }
   &__text {
     margin-top: 60px;
@@ -1559,6 +1560,20 @@ color: #242424;
   display: none !important;
 }
 
+.photo__before {
+  ::after {
+    content: "ДО";
+    color:rgba(8, 229, 190, 1);
+    font-size: medium;
+    height: 40px;
+    width: 60px;
+    border: #000 3px solid;
+  }
+}
+
+.photo__after {
+
+}
 
 .rate {
   height: 618px;

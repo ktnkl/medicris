@@ -980,12 +980,12 @@
 
   <div class="results container-sm">
     <div class="row">
-      <div class="col results__title H2-MOB">РЕЗУЛЬТАТЫ</div>
+      <div class="col results__title H2-MOB photo__before">РЕЗУЛЬТАТЫ</div>
     </div>
-    <div class="slider-wrapper">
+    <div class="slider-wrapper " data-procedure-1="visible" >
       <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="true" data-slide-number-result-1="1">
       <div class="row">
-        <div id="twentytwentycontainer" class="results-photos-wrapper">
+        <div id="twentytwentycontainer11" class="results-photos-wrapper">
           <img src="media/twentytwenty/11.jfif" alt="">
           <img src="media/twentytwenty/12.jfif" alt="">
         </div>
@@ -993,15 +993,19 @@
       </div>
       <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="false" data-slide-number-result-1="2">
         <div class="row">
-          <div id="twentytwentycontainer">
-            <img src="media/twentytwenty/11.jfif" alt="">
-            <img src="media/twentytwenty/12.jfif" alt="">
+          <div id="twentytwentycontainer12" class="results-photos-wrapper">
+            <img src="media/twentytwenty/21.png" alt="">
+            <img src="media/twentytwenty/22.png" alt="">
           </div>
         </div>
         </div>
       <div class="row results__scroller  text-center align-self-center justify-items-end d-flex flex-row justify-content-around">
         <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__l" id="l_r_1">
-        <div class="col results__scroller__text H3-LIST-MOB" id="t_r_1" data-slide-number-result="1"></div>
+        <div 
+          class="col results__scroller__text H3-LIST-MOB" 
+          id="t_r_1" 
+          data-slide-result-1="1"
+          data-slide-result-2="1"></div>
         <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__r" id="r_r_1">
       </div>
 
@@ -1050,22 +1054,36 @@
         </div>
       </div>
       
-      
-      
     </div>
     <div class="slider-wrapper" data-procedure-2="invisible">
-      <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="true" data-slide-number-result="1">
-      <div class="row">
-        <img src="media/treatment/temp/PIC_1.png" class="col results__img align-self-center">
-      </div>
+      <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="true" data-slide-number-result-2="1">
+        <div class="row">
+          <div id="twentytwentycontainer21" class="results-photos-wrapper">
+            <img src="media/twentytwenty/11.jfif" alt="" class="photo__before">
+            <img src="media/twentytwenty/12.jfif" class="photo__after" alt="">
+          </div>
+        </div>
+        </div>
+        <div class="results-slide_top d-flex flex-column justify-content-between" data-visible="false" data-slide-number-result-2="2">
+          <div class="row">
+            <div id="twentytwentycontainer22" class="results-photos-wrapper">
+              <img src="media/twentytwenty/21.png" alt="">
+              <img src="media/twentytwenty/22.png" alt="">
+            </div>
+          </div>
+          </div>
 
-      <div class="row results__scroller  text-center align-self-center justify-items-end d-flex flex-row justify-content-around">
-        <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__l" id="l">
-        <div class="col results__scroller__text" id="t" data-number="1">1/2</div>
-        <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__r" id="r">
-      </div>
+          <div class="row results__scroller  text-center align-self-center justify-items-end d-flex flex-row justify-content-around">
+            <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__l" id="l_r_2">
+            <div 
+              class="col results__scroller__text H3-LIST-MOB" 
+              id="t_r_2" 
+            
+              data-slide-result-2="1"></div>
+            <img src="media/review/Arrow_black.svg" alt="" class="col results__scroller__r" id="r_r_2">
+          </div>
 
-      <div class="row results-item results-slide_bottom">
+      <div class="row results-item results-slide_bottom" data-visible="true" data-slide-number-result-2="1">
         <div class="col fw-medium results-item__title">
           ИНТЕРВАЛ
         </div>
@@ -1087,12 +1105,34 @@
           <img src="media/treatment/results/arrow small.svg" alt="" class="col results-item__img align-self-start">
         </div>
       </div>
+      <div class="row results-item results-slide_bottom" data-visible="false" data-slide-number-result-2="2">
+        <div class="col fw-medium results-item__title">
+          ИНТЕРВАЛ
+        </div>
+        
+        <div class="row d-flex justify-content-between pe-0 results-item2">
+          <div class="col align-self-start fw-medium results-item__subtitle">
+            1 месяц
+          </div>
+        </div>
+      
+        <div class="col fw-medium results-item__title">
+          ВРАЧ
+        </div>
+        
+        <div class="row pe-0 results-item2">
+          <div class="col align-self-start fw-medium results-item__subtitle">
+            Дерматолог-косметолог<br>Забродина В.В.
+          </div>
+          <img src="media/treatment/results/arrow small.svg" alt="" class="col results-item__img align-self-start">
+        </div>
+      </div>
       </div>
       
       
       
     </div>
-  </div>
+  
 
   <div class="treatment-cost container-sm">
     <div class="row">
@@ -1889,11 +1929,133 @@
   <script src="js/twentytwenty/js/jquery.twentytwenty.js"></script>
   <script src="js/twentytwenty/js/jquery.event.move.js"></script>
   <script src="js/feedbackSwiper.js"></script>
-  <script src="js/treatment/results.js"></script>
+  <!-- <script src="js/treatment/results.js"></script> -->
   <script>
     $(function() {
-	    $('#twentytwentycontainer').twentytwenty();
+      
+	    $('#twentytwentycontainer11').twentytwenty();
+      $('#twentytwentycontainer21').twentytwenty();
     });
+    const slidesAmountResult1 = document.querySelectorAll("[data-slide-number-result-1]").length / 2
+    const r_r_1 = document.getElementById('r_r_1')
+    const l_r_1 = document.getElementById('l_r_1')
+    const t_r_1 = document.getElementById('t_r_1')
+
+    const slidesAmountResult2 = document.querySelectorAll("[data-slide-number-result-2]").length / 2
+    const r_r_2 = document.getElementById('r_r_2')
+    const l_r_2 = document.getElementById('l_r_2')
+    const t_r_2 = document.getElementById('t_r_2')
+
+    t_r_1.innerHTML= `1 / ${slidesAmountResult1}`
+    console.log('test')
+    r_r_1.addEventListener("click", () => {
+      let lastActive = t_r_1.getAttribute('data-slide-result-1')
+      
+      if (lastActive != slidesAmountResult1) { 
+        if (lastActive == 1) {
+          l_r_1.style.cssText = "opacity: 100%"
+        }
+        let newActive = Number(lastActive) + 1
+        
+        if (newActive == slidesAmountResult1) {
+          r_r_1.style.cssText = "opacity: 30%"
+        }
+        
+        t_r_1.innerHTML = `${newActive} / ${slidesAmountResult1}`
+        t_r_1.setAttribute('data-slide-result-1', newActive)
+        const arr1 = document.querySelectorAll(`[data-slide-number-result-1="${lastActive}"]`)
+        for (let i = 0; i < arr1.length; i++) {
+          arr1[i].setAttribute("data-visible", "false")
+        }
+        const arr2 = document.querySelectorAll(`[data-slide-number-result-1="${newActive}"]`)
+        for (let i = 0; i < arr2.length; i++) {
+          arr2[i].setAttribute("data-visible", "true")
+        }
+        $(`#twentytwentycontainer1${newActive}`).twentytwenty();
+      }
+    })
+    l_r_1.addEventListener("click", () => {
+      let lastActive = t_r_1.getAttribute('data-slide-result-1')
+      console.log(lastActive)
+      if (lastActive != 1) {
+        if (lastActive == slidesAmountResult1) {
+          r_r_1.style.cssText = "opacity: 100%"
+        }
+        let newActive = Number(lastActive) - 1
+        console.log(newActive)
+        if (newActive == 1) {
+          l_r_1.style.cssText = "opacity: 30%"
+        }
+        const arr1 = document.querySelectorAll(`[data-slide-number-result-1="${lastActive}"]`)
+        console.log(arr1)
+        t_r_1.innerHTML = `${newActive} / ${slidesAmountResult1}`
+        t_r_1.setAttribute('data-slide-result-1', newActive)
+        for (let i = 0; i < arr1.length; i++) {
+          arr1[i].setAttribute("data-visible", "false")
+        }
+        const arr2 = document.querySelectorAll(`[data-slide-number-result-1="${newActive}"]`)
+        console.log(arr2)
+        for (let i = 0; i < arr2.length; i++) {
+          arr2[i].setAttribute("data-visible", "true")
+        }
+        $(`#twentytwentycontainer1${newActive}`).twentytwenty();
+      }
+      
+    })
+    r_r_2.addEventListener("click", () => {
+      let lastActive = t_r_2.getAttribute('data-slide-result-2')
+      
+      if (lastActive != slidesAmountResult1) { 
+        if (lastActive == 1) {
+          l_r_2.style.cssText = "opacity: 100%"
+        }
+        let newActive = Number(lastActive) + 1
+        
+        if (newActive == slidesAmountResult1) {
+          r_r_2.style.cssText = "opacity: 30%"
+        }
+        
+        t_r_2.innerHTML = `${newActive} / ${slidesAmountResult1}`
+        t_r_2.setAttribute('data-slide-result-2', newActive)
+        const arr1 = document.querySelectorAll(`[data-slide-number-result-2="${lastActive}"]`)
+        for (let i = 0; i < arr1.length; i++) {
+          arr1[i].setAttribute("data-visible", "false")
+        }
+        const arr2 = document.querySelectorAll(`[data-slide-number-result-2="${newActive}"]`)
+        for (let i = 0; i < arr2.length; i++) {
+          arr2[i].setAttribute("data-visible", "true")
+        }
+        $(`#twentytwentycontainer2${newActive}`).twentytwenty();
+      }
+    })
+    l_r_2.addEventListener("click", () => {
+      let lastActive = t_r_2.getAttribute('data-slide-result-2')
+      console.log(lastActive)
+      if (lastActive != 1) {
+        if (lastActive == slidesAmountResult1) {
+          r_r_2.style.cssText = "opacity: 100%"
+        }
+        let newActive = Number(lastActive) - 1
+        console.log(newActive)
+        if (newActive == 1) {
+          l_r_2.style.cssText = "opacity: 30%"
+        }
+        const arr1 = document.querySelectorAll(`[data-slide-number-result-2="${lastActive}"]`)
+        console.log(arr1)
+        t_r_2.innerHTML = `${newActive} / ${slidesAmountResult1}`
+        t_r_2.setAttribute('data-slide-result-2', newActive)
+        for (let i = 0; i < arr1.length; i++) {
+          arr1[i].setAttribute("data-visible", "false")
+        }
+        const arr2 = document.querySelectorAll(`[data-slide-number-result-2="${newActive}"]`)
+        console.log(arr2)
+        for (let i = 0; i < arr2.length; i++) {
+          arr2[i].setAttribute("data-visible", "true")
+        }
+        $(`#twentytwentycontainer2${newActive}`).twentytwenty();
+      }
+      
+    })
   </script>
 </body>
 </html>
