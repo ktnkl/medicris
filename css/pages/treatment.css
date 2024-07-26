@@ -1103,13 +1103,13 @@ a {
       object-fit: scale-down;
       transform: rotate(180deg);
       opacity: 30%;
-      margin-left: -8px; }
+      margin-right: -90px; }
     .feedback__scroller__r {
       margin: 0 30px 0 0;
       width: 50px;
       padding-right: 0;
       object-fit: scale-down;
-      margin-right: -8px; }
+      margin-left: -90px; }
     .feedback__scroller__text {
       width: 20px;
       padding: 0;
