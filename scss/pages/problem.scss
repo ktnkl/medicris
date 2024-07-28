@@ -658,18 +658,31 @@ a {
     
   }
   &__subtext {
+    /* CARD / ACCIDENT TEXT */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 1px 15px 15px;
+    gap: 10px;
+
+    
     width: 292px;
     height: 105px;
-    
-    margin-left: 81px;
-    padding: 15px 1px 15px 15px;
+    margin-left: 73px;
     margin-top: 46px;
-    border-left: 1px solid #242424;
-    opacity: 0px;
+    margin-right: 8px;
 
+    /* FON ACC TEXT */
     background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
+    /* TEXT 1 */
+    border-left: 1px solid #242424;
 
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
@@ -824,7 +837,9 @@ a {
     background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
     /* TEXT 1 */
     border-left: 1px solid #242424;
-
+    &__item {
+      padding-right: 0;
+    }
   }
   &__link {
     width: 117px;
@@ -1173,6 +1188,9 @@ a {
     &:first-child {
       margin-top: 3px;
     }
+    &:last-child {
+      margin-bottom: 0;
+    }
     &__item {
       align-self: center;
     }
@@ -1184,7 +1202,7 @@ a {
   }
 
   &__adress {
-    margin-top: 15px;
+    margin-top: 37px;
     
     width: 353px;
     height: 24px;
@@ -1205,7 +1223,7 @@ a {
   }
 
   &__maps {
-    border-top: #000 solid 2px;
+    border-top: #000 solid 1px;
     margin: 0 10px;
     padding: 3.5px 0px;
 
@@ -1226,15 +1244,17 @@ a {
       mix-blend-mode: darken;
       padding: 3.5px 0;
       margin: 0 10px;
-      border-top: #000 solid 2px;
-      border-bottom: #000 solid 2px;
+      border-top: #000 solid 1px;
+      border-bottom: #000 solid 1px;
     }
   }
 
   &__navimg {
-    transform: scale(.4);
-    &_l {
-      transform: scale(.4) rotate(270deg);
+    transform: scale(.33);
+    margin-right: -13px;
+    &_last {
+      transform: scale(.33) rotate(270deg);
+      margin-right: -13px;
     }
   }
 
