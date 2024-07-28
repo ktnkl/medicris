@@ -1411,6 +1411,7 @@ color: #242424;
       font-size: 14px;
       line-height: 14px;
       text-align: left;
+      font-weight: 500;
     }
 
     &__img {
@@ -1492,6 +1493,32 @@ color: #242424;
   }
   &__img {
     margin-top: 26px;
+  }
+
+  &-before-after-wrapper {
+    position: relative;
+  }
+
+  &-photos-overlay {
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+    width: 293px;
+    color: #242424;
+    &__top {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 12px;
+      text-align: left;  
+    }
+    &__bottom {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      text-align: left;
+    }
   }
 
   &-item {
@@ -1753,6 +1780,7 @@ color: #242424;
 .footer {
   padding: 20px;
   background-color: #fff;
+  color: #242424;
   &__title {
     margin: 30px;
     /* MEDICRIS — КЛИНИКА КРАСОТЫ */
@@ -1765,7 +1793,7 @@ color: #242424;
     font-size: 20px;
     line-height: 24px;
     /* identical to box height, or 120% */
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
   }
   &__info {
@@ -1778,15 +1806,25 @@ color: #242424;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height, or 150% */
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
   }
 
-  &-soc-wrapper {
+  &-icons-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    column-gap: 14px;
+    column-gap: 36px;
+    justify-content: end;
+    margin-bottom: 22px;
+    &:first-child {
+      margin-top: 3px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__item {
+      align-self: center;
+    }
   }
   
   &__socials {
@@ -1795,7 +1833,7 @@ color: #242424;
   }
 
   &__adress {
-    margin-top: 42px;
+    margin-top: 37px;
     
     width: 353px;
     height: 24px;
@@ -1805,45 +1843,52 @@ color: #242424;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
   }
 
   &__map-img {
     object-fit: cover;
+    margin-top: 24px;
+    margin-bottom: 22px;
   }
 
   &__maps {
     border-top: #000 solid 1px;
-    margin: 0 10px;
+    margin: 0 12px;
     padding: 3.5px 0px;
 
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
     &_last {
-      font-family: 'Montserrat Alternates';
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: #242424;
       mix-blend-mode: darken;
       padding: 3.5px 0;
-      margin: 0 10px;
+      margin: 0;
       border-top: #000 solid 1px;
       border-bottom: #000 solid 1px;
+      & > .col {
+        padding-inline: 0;
+      }
     }
   }
 
   &__navimg {
     transform: scale(.5);
-    &_l {
+    margin-right: -13px;
+    &_last {
       transform: scale(.5) rotate(270deg);
+      margin-right: -24px;
     }
   }
 
