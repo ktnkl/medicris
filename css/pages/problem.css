@@ -183,7 +183,7 @@ a {
   .BUTTON-BIG-MOB:hover {
     background: rgba(8, 229, 190, 0.5); }
 
-.BUTTON-1-MOB {
+.button-1-mob {
   font-family: 'Montserrat Alternates';
   font-size: 10px;
   font-weight: 700;
@@ -192,10 +192,10 @@ a {
   padding: 9px 20px 9px 20px;
   border-radius: 50px;
   border: 1px solid #242424; }
-  .BUTTON-1-MOB:hover {
+  .button-1-mob:hover {
     background: rgba(8, 229, 190, 0.5); }
 
-.BUTTON-2-MOB {
+.button-2-mob {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
@@ -306,7 +306,7 @@ a {
   /* TEXT 1 */
   border-top: 1px solid #242424; }
 
-.CARD-ARTICLE {
+.card-article {
   width: 293px !important;
   height: 372px;
   border-top: 1px solid #000;
@@ -314,7 +314,7 @@ a {
   background-color: #fff;
   padding-inline: 20px;
   color: #242424; }
-  .CARD-ARTICLE-text__title {
+  .card-article-text__title {
     margin-top: 26px;
     font-family: Montserrat;
     font-size: 15px;
@@ -322,21 +322,21 @@ a {
     line-height: 20.25px;
     letter-spacing: 0.02em;
     text-align: left; }
-  .CARD-ARTICLE-text__author {
+  .card-article-text__author {
     margin-top: 20px;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     text-align: left; }
-  .CARD-ARTICLE-text__main {
+  .card-article-text__main {
     margin-top: 32px;
     font-family: 'Nunito Sans';
     font-size: 10px;
     font-weight: 400;
     line-height: 12px;
     text-align: left; }
-  .CARD-ARTICLE__link {
+  .card-article__link {
     margin-top: 68px;
     display: flex;
     justify-content: flex-start;

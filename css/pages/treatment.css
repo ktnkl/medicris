@@ -16,7 +16,7 @@ a {
 .ma {
   font-family: "Montserrat alternates"; }
 
-.ACC-1-MOB {
+.acc-1-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -25,7 +25,7 @@ a {
   /* or 135% */
   color: #242424; }
 
-.ACC-2-MOB {
+.acc-2-mob {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 400;
@@ -33,7 +33,7 @@ a {
   line-height: 110%;
   color: #242424; }
 
-.ACC-3-MOB {
+.acc-3-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.ACC-4-MOB {
+.acc-4-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
@@ -53,7 +53,7 @@ a {
   /* or 120% */
   text-transform: uppercase; }
 
-.ACC-5-MOB {
+.acc-5-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -63,7 +63,7 @@ a {
   letter-spacing: 0.07em;
   color: #242424; }
 
-.ACC-6-MOB {
+.acc-6-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -73,7 +73,7 @@ a {
   letter-spacing: 0.02em;
   color: #000000; }
 
-.ACC-7-MOB {
+.acc-7-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -83,7 +83,7 @@ a {
   letter-spacing: 0.02em;
   color: #000000; }
 
-.H1-MOB {
+.h1-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -93,7 +93,7 @@ a {
   color: #242424;
   mix-blend-mode: darken; }
 
-.H2-MOB {
+.h2-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -103,7 +103,7 @@ a {
   align-items: center;
   color: #242424; }
 
-.H3-LIST-MOB {
+.h3-list-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -113,7 +113,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.H4-MOB {
+.h4-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,7 @@ a {
   letter-spacing: 0.07em;
   color: #242424; }
 
-.H6-MOB {
+.h6-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -131,7 +131,7 @@ a {
   line-height: 12px;
   color: #242424; }
 
-.BODY-1-MOB {
+.body-1-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -140,7 +140,7 @@ a {
   /* or 106% */
   color: #242424; }
 
-.BODY-2-MOB {
+.body-2-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -149,7 +149,7 @@ a {
   /* or 120% */
   color: #000000; }
 
-.LIST-1-MOB {
+.list-1-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
@@ -160,7 +160,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.LIST-2-MOB {
+.list-2-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 600;
@@ -170,7 +170,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.LIST-3-MOB {
+.list-3-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -181,7 +181,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.BUTTON-BIG-MOB {
+.button-big-mob {
   box-sizing: border-box;
   /* Auto layout */
   display: flex;
@@ -201,10 +201,10 @@ a {
   line-height: 12.19px;
   letter-spacing: 0.03em;
   text-align: center; }
-  .BUTTON-BIG-MOB:hover {
+  .button-big-mob:hover {
     background: rgba(8, 229, 190, 0.5); }
 
-.BUTTON-1-MOB {
+.button-1-mob {
   font-family: 'Montserrat Alternates';
   font-size: 10px;
   font-weight: 700;
@@ -213,10 +213,10 @@ a {
   padding: 9px 20px 9px 20px;
   border-radius: 50px;
   border: 1px solid #242424; }
-  .BUTTON-1-MOB:hover {
+  .button-1-mob:hover {
     background: rgba(8, 229, 190, 0.5); }
 
-.BUTTON-2-MOB {
+.button-2-mob {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
@@ -231,7 +231,7 @@ a {
   text-transform: uppercase;
   color: #000000; }
 
-.LINK-MOB {
+.link-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -245,7 +245,7 @@ a {
   text-transform: uppercase;
   color: #08E5BE; }
 
-.FILTER-2-MOB {
+.filter-2-mob {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
@@ -257,14 +257,14 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #242424; }
-  .FILTER-2-MOB_no {
+  .filter-2-mob_no {
     background-image: url(../../media/treatment/procedure/Ellipse_26.svg);
     width: 15px;
     height: 15px;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 5px; }
-  .FILTER-2-MOB_choosen {
+  .filter-2-mob_choosen {
     background-image: url(../../media/treatment/procedure/Ellipse_26_black.svg);
     width: 15px;
     height: 15px;
@@ -272,7 +272,7 @@ a {
     background-size: contain;
     margin-right: 5px; }
 
-.YES-LIST {
+.yes-list {
   box-sizing: border-box;
   /* Auto layout */
   display: flex;
@@ -289,7 +289,7 @@ a {
   /* TEXT 1 */
   border-top: 1px solid #242424; }
 
-.NO-LIST {
+.no-list {
   box-sizing: border-box;
   /* Auto layout */
   display: flex;
@@ -304,7 +304,7 @@ a {
   /* TEXT 1 */
   border-top: 1px solid #242424; }
 
-.FAQ-ITEM {
+.faq-item {
   height: 70px;
   color: #242424 !important;
   display: flex;
@@ -314,9 +314,9 @@ a {
   align-content: flex-start;
   /* FON 1 PAGE */
   background: #F2F2F2; }
-  .FAQ-ITEM:last-child {
+  .faq-item:last-child {
     border-bottom: 1px solid #242424; }
-  .FAQ-ITEM-TITLE {
+  .faq-item-title {
     border-top: 1px solid #242424;
     padding: 17px 0px;
     display: flex;
@@ -326,7 +326,7 @@ a {
     row-gap: 13px;
     column-gap: 36px;
     width: 100%; }
-    .FAQ-ITEM-TITLE-TEXT_sub {
+    .faq-item-title-text_sub {
       font-family: Nunito Sans;
       font-size: 12px;
       font-weight: 700;
@@ -335,7 +335,7 @@ a {
       text-align: left;
       color: #242424;
       text-transform: uppercase; }
-  .FAQ-ITEM-DROPDOWN {
+  .faq-item-dropdown {
     display: none;
     margin-bottom: 60px;
     width: 100%;
@@ -344,13 +344,13 @@ a {
     font-weight: 400;
     line-height: 18px;
     text-align: left; }
-    .FAQ-ITEM-DROPDOWN > .FAQ-ITEM {
+    .faq-item-dropdown > .faq-item {
       height: 50px; }
-      .FAQ-ITEM-DROPDOWN > .FAQ-ITEM > .FAQ-ITEM-TITLE {
+      .faq-item-dropdown > .faq-item > .faq-item-title {
         padding: 13px 0; }
-    .FAQ-ITEM-DROPDOWN-sub-text {
+    .faq-item-dropdown-sub-text {
       margin-bottom: 17px; }
-    .FAQ-ITEM-DROPDOWN-sub-img {
+    .faq-item-dropdown-sub-img {
       width: 100%;
       margin-bottom: 17px; }
 
@@ -490,11 +490,11 @@ a {
         width: 100%;
         text-transform: uppercase; }
 
-.PRICE-SECTION {
+.price-section {
   margin-top: 58px; }
-  .PRICE-SECTION-HEADER__top {
+  .price-section-header__top {
     padding-bottom: 8px; }
-  .PRICE-SECTION-HEADER__bottom {
+  .price-section-header__bottom {
     height: 20px;
     margin: 0;
     padding: 20px 0;
@@ -510,16 +510,16 @@ a {
     justify-content: space-between;
     align-items: center;
     column-gap: 13px; }
-    .PRICE-SECTION-HEADER__bottom-price {
+    .price-section-header__bottom-price {
       display: flex;
       flex-direction: row;
       text-align: right; }
-      .PRICE-SECTION-HEADER__bottom-price_base {
+      .price-section-header__bottom-price_base {
         width: 65px; }
-      .PRICE-SECTION-HEADER__bottom-price_sale {
+      .price-section-header__bottom-price_sale {
         width: 67px;
         text-decoration: underline; }
-  .PRICE-SECTION-ITEM {
+  .price-section-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -527,12 +527,12 @@ a {
     padding-top: 18px;
     padding-bottom: 18px;
     border-bottom: #000 1px solid; }
-    .PRICE-SECTION-ITEM__col-l {
+    .price-section-item__col-l {
       display: flex;
       flex-direction: column;
       row-gap: 12px;
       text-transform: uppercase; }
-      .PRICE-SECTION-ITEM__col-l_desc {
+      .price-section-item__col-l_desc {
         text-transform: none;
         font-family: 'Nunito Sans';
         font-size: 12px;
@@ -540,12 +540,12 @@ a {
         line-height: 14px;
         text-align: left;
         color: #242424; }
-    .PRICE-SECTION-ITEM__col-r {
+    .price-section-item__col-r {
       display: flex;
       flex-direction: column;
       row-gap: 13px;
       align-items: flex-end; }
-      .PRICE-SECTION-ITEM__col-r_price {
+      .price-section-item__col-r_price {
         display: flex;
         flex-direction: row;
         font-family: Nunito Sans;
@@ -554,19 +554,19 @@ a {
         line-height: 16px;
         text-align: right;
         column-gap: 13px; }
-        .PRICE-SECTION-ITEM__col-r_price_l {
+        .price-section-item__col-r_price_l {
           width: 65px; }
-        .PRICE-SECTION-ITEM__col-r_price_r {
+        .price-section-item__col-r_price_r {
           width: 67px; }
 
-.CARD-ARTICLE {
+.card-article {
   width: 293px !important;
   height: 372px;
   border-top: 1px solid #000;
   margin-right: 10px;
   background-color: #fff;
   padding-inline: 20px; }
-  .CARD-ARTICLE-text__title {
+  .card-article-text__title {
     margin-top: 26px;
     font-family: Montserrat;
     font-size: 15px;
@@ -574,35 +574,35 @@ a {
     line-height: 20.25px;
     letter-spacing: 0.02em;
     text-align: left; }
-  .CARD-ARTICLE-text__author {
+  .card-article-text__author {
     margin-top: 20px;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     text-align: left; }
-  .CARD-ARTICLE-text__main {
+  .card-article-text__main {
     margin-top: 32px;
     font-family: 'Nunito Sans';
     font-size: 10px;
     font-weight: 400;
     line-height: 12px;
     text-align: left; }
-  .CARD-ARTICLE__link {
+  .card-article__link {
     margin-top: 68px;
     display: flex;
     justify-content: flex-start;
     justify-items: flex-start; }
 
-.DOC-CARD {
+.doc-card {
   width: 293px;
   height: 423px;
   margin-right: 10px; }
-  .DOC-CARD__img {
+  .doc-card__img {
     padding: 0;
     height: 293px;
     width: 423px; }
-  .DOC-CARD__name {
+  .doc-card__name {
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 700;
@@ -611,7 +611,7 @@ a {
     text-align: left;
     margin-top: 15px;
     padding: 0; }
-  .DOC-CARD__position {
+  .doc-card__position {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -1874,13 +1874,13 @@ a {
         text-align: center;
         color: #000000; }
 
-.faq {
+.faq-container {
   padding: 0 20px;
   background-color: #F2F2F2; }
-  .faq__title {
+  .faq-container__title {
     margin-top: 56px;
     margin-bottom: 24px; }
-  .faq__bottom {
+  .faq-container__bottom {
     height: 155px;
     display: flex;
     justify-content: end;

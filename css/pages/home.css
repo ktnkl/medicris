@@ -17,7 +17,7 @@ a {
 .ma {
   font-family: "Montserrat alternates"; }
 
-.ACC-1-MOB {
+.acc-1-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -26,7 +26,7 @@ a {
   /* or 135% */
   color: #242424; }
 
-.ACC-2-MOB {
+.acc-2-mob {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 400;
@@ -34,7 +34,7 @@ a {
   line-height: 110%;
   color: #242424; }
 
-.ACC-3-MOB {
+.acc-3-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -45,17 +45,16 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.ACC-4-MOB {
+.acc-4-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   /* or 120% */
-  text-transform: uppercase;
-  color: #000000; }
+  text-transform: uppercase; }
 
-.ACC-5-MOB {
+.acc-5-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -63,9 +62,9 @@ a {
   line-height: 14px;
   /* or 117% */
   letter-spacing: 0.07em;
-  color: #000000; }
+  color: #242424; }
 
-.ACC-6-MOB {
+.acc-6-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -75,7 +74,7 @@ a {
   letter-spacing: 0.02em;
   color: #000000; }
 
-.ACC-7-MOB {
+.acc-7-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -85,7 +84,7 @@ a {
   letter-spacing: 0.02em;
   color: #000000; }
 
-.H1-MOB {
+.h1-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -95,7 +94,7 @@ a {
   color: #242424;
   mix-blend-mode: darken; }
 
-.H2-MOB {
+.h2-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -105,7 +104,7 @@ a {
   align-items: center;
   color: #242424; }
 
-.H3-LIST-MOB {
+.h3-list-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -115,7 +114,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.H4-MOB {
+.h4-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -125,7 +124,7 @@ a {
   letter-spacing: 0.07em;
   color: #242424; }
 
-.H6-MOB {
+.h6-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -133,7 +132,7 @@ a {
   line-height: 12px;
   color: #242424; }
 
-.BODY-1-MOB {
+.body-1-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -142,7 +141,7 @@ a {
   /* or 106% */
   color: #242424; }
 
-.BODY-2-MOB {
+.body-2-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -151,7 +150,7 @@ a {
   /* or 120% */
   color: #000000; }
 
-.LIST-1-MOB {
+.list-1-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
@@ -162,7 +161,7 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.LIST-2-MOB {
+.list-2-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 600;
@@ -172,31 +171,53 @@ a {
   text-transform: uppercase;
   color: #242424; }
 
-.LIST-3-MOB {
+.list-3-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
   line-height: 15px;
+  padding-inline: 0;
   /* or 150% */
   text-transform: uppercase;
   color: #242424; }
 
-.BUTTON-1-MOB {
+.button-big-mob {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 75px;
+  gap: 10px;
+  width: 353px;
+  height: 50px;
+  /* TEXT 1 */
+  border: 1px solid #242424;
+  border-radius: 50px;
+  font-family: Montserrat Alternates;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12.19px;
+  letter-spacing: 0.03em;
+  text-align: center; }
+  .button-big-mob:hover {
+    background: rgba(8, 229, 190, 0.5); }
+
+.button-1-mob {
   font-family: 'Montserrat Alternates';
   font-size: 10px;
   font-weight: 700;
   line-height: 12.19px;
   letter-spacing: 0.03em;
-  width: 117px;
-  height: 50px;
   padding: 9px 20px 9px 20px;
   border-radius: 50px;
   border: 1px solid #242424; }
-  .BUTTON-1-MOB:hover {
+  .button-1-mob:hover {
     background: rgba(8, 229, 190, 0.5); }
 
-.BUTTON-2-MOB {
+.button-2-mob {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
@@ -206,11 +227,12 @@ a {
   display: flex;
   align-items: center;
   text-align: right;
+  column-gap: 7px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000; }
 
-.LINK-MOB {
+.link-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -224,7 +246,7 @@ a {
   text-transform: uppercase;
   color: #08E5BE; }
 
-.FILTER-2-MOB {
+.filter-2-mob {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
@@ -236,144 +258,156 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #242424; }
+  .filter-2-mob_no {
+    background-image: url(../../media/treatment/procedure/Ellipse_26.svg);
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px; }
+  .filter-2-mob_choosen {
+    background-image: url(../../media/treatment/procedure/Ellipse_26_black.svg);
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px; }
 
-.YES-LIST {
-  box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0px;
-  position: relative;
-  width: 170px;
-  height: 400px;
-  /* FON 2 ACC TEXT */
-  background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
-  /* TEXT 1 */
-  border-top: 1px solid #242424; }
-
-.NO-LIST {
-  box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0px;
-  gap: 10px;
-  position: relative;
-  width: 172px;
-  height: 400px;
-  background: linear-gradient(180deg, rgba(206, 206, 206, 0.5) 0%, rgba(242, 242, 242, 0.5) 63%);
-  /* TEXT 1 */
-  border-top: 1px solid #242424; }
-
-.PRICE-SECTION-HEADER__top {
-  margin-bottom: 10px; }
-.PRICE-SECTION-HEADER__bottom {
-  height: 20px;
-  margin: 20px 0;
-  font-family: Montserrat;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 10px;
-  color: #999999;
+.methods {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
-  .PRICE-SECTION-HEADER__bottom-price {
+  margin-inline: 0;
+  padding-inline: 0;
+  column-gap: 10px; }
+  .methods .methods-l {
     display: flex;
-    flex-direction: row;
-    text-align: right; }
-    .PRICE-SECTION-HEADER__bottom-price_base {
-      width: 65px; }
-    .PRICE-SECTION-HEADER__bottom-price_sale {
-      width: 67px; }
-.PRICE-SECTION-ITEM {
-  display: flex;
-  flex-direction: row; }
-  .PRICE-SECTION-ITEM__col-l {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    flex: 1;
+    height: 493px;
+    /* FON 2 PAGE */
+    background: #D9D9D9; }
+    .methods .methods-l__head {
+      border-top: 1px solid #242424;
+      border-bottom: 1px solid #242424;
+      width: 100%; }
+      .methods .methods-l__head_top {
+        margin-top: 10px;
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #999999; }
+      .methods .methods-l__head_bottom {
+        margin-top: 26px;
+        margin-bottom: 10px;
+        font-family: 'Nunito Sans';
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #999999; }
+    .methods .methods-l__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px; }
+      .methods .methods-l__body_item {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #242424;
+        padding: 16px 0;
+        border-bottom: 1px solid #242424;
+        width: 100%;
+        text-transform: uppercase; }
+        .methods .methods-l__body_item_twostring {
+          height: 64px; }
+  .methods .methods-r {
     display: flex;
-    flex-direction: column; }
-    .PRICE-SECTION-ITEM__col-l_desc {
-      font-family: Nunito Sans;
-      font-size: 12px;
-      font-weight: 300;
-      line-height: 14px;
-      text-align: left; }
-  .PRICE-SECTION-ITEM__col-r {
-    display: flex;
-    flex-direction: column; }
-    .PRICE-SECTION-ITEM__col-r_price {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    flex: 1;
+    height: 493px;
+    /* FON 2 PAGE */
+    background: #F2F2F2; }
+    .methods .methods-r__head {
+      border-top: 1px solid #242424;
+      border-bottom: 1px solid #242424;
+      width: 100%;
+      height: 71.6px;
       display: flex;
       flex-direction: row;
-      font-family: Nunito Sans;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 16px;
-      text-align: right; }
-      .PRICE-SECTION-ITEM__col-r_price_l {
-        width: 65px; }
-      .PRICE-SECTION-ITEM__col-r_price_r {
-        width: 67px; }
-
-.CARD-ARTICLE {
-  width: 293px !important;
-  height: 372px;
-  border-top: 1px solid #000;
-  margin-right: 10px;
-  background-color: #fff; }
-  .CARD-ARTICLE-text__title {
-    margin-top: 26px;
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 20.25px;
-    letter-spacing: 0.02em;
-    text-align: left; }
-  .CARD-ARTICLE-text__author {
-    margin-top: 20px;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left; }
-  .CARD-ARTICLE-text__main {
-    margin-top: 32px;
-    font-family: 'Nunito Sans';
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    text-align: left; }
-  .CARD-ARTICLE__link {
-    margin-top: 77px;
-    display: flex;
-    justify-content: flex-start; }
-
-.DOC-CARD {
-  width: 293px;
-  height: 423px;
-  margin-right: 10px; }
-  .DOC-CARD__img {
-    padding: 0;
-    height: 293px;
-    width: 423px; }
-  .DOC-CARD__name {
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 20.25px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-top: 15px;
-    padding: 0; }
-  .DOC-CARD__position {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-    margin-top: 13px;
-    padding: 0; }
+      justify-content: space-between; }
+      .methods .methods-r__head_top {
+        margin-top: 10px;
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #999999; }
+      .methods .methods-r__head_bottom {
+        margin-top: 26px;
+        margin-bottom: 10px;
+        font-family: 'Nunito Sans';
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #999999; }
+      .methods .methods-r__head__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .methods .methods-r__head__buttons_f {
+          transform: rotate(270deg);
+          margin-top: 4px; }
+        .methods .methods-r__head__buttons_b {
+          transform: rotate(90deg);
+          opacity: .3;
+          margin-bottom: 4px; }
+    .methods .methods-r__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      width: 100%; }
+      .methods .methods-r__body_item {
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #242424;
+        padding: 16px 0;
+        border-bottom: 1px solid #242424;
+        width: 100%;
+        text-transform: uppercase; }
+      .methods .methods-r__body_item_2 {
+        height: 64px;
+        font-family: 'Nunito Sans';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #242424;
+        padding: 16px 0;
+        border-bottom: 1px solid #242424;
+        width: 100%;
+        text-transform: uppercase; }
 
 .s20 {
   font-size: 20px; }
