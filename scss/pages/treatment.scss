@@ -1481,6 +1481,7 @@ color: #242424;
   padding-bottom: 0;
   color:#000 !important;
   background-color: #f2f2f2;
+  position: relative;
   &-photos-wrapper {
     margin-top: 30px;
     height: 400px;
@@ -1497,6 +1498,32 @@ color: #242424;
   }
   &__img {
     margin-top: 26px;
+  }
+
+  &-before-after-wrapper {
+    position: relative;
+  }
+
+  &-photos-overlay {
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+    width: 293px;
+    color: #242424;
+    &__top {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 12px;
+      text-align: left;  
+    }
+    &__bottom {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      text-align: left;
+    }
   }
 
   &-item {
@@ -1787,11 +1814,14 @@ color: #242424;
     mix-blend-mode: darken;
   }
 
-  &-soc-wrapper {
+  &-icons-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 14px;
+    flex: row;
+    column-count: 2;
+    justify-content: space-around;
+    &__item {
+
+    }
   }
   
   &__socials {
@@ -1815,12 +1845,14 @@ color: #242424;
   }
 
   &__map-img {
-    object-fit: cover;
+    object-fit: contain;
+    margin-top: 24px;
+    margin-bottom: 22px;
   }
 
   &__maps {
     border-top: #000 solid 1px;
-    margin: 0 10px;
+    margin: 0 13px;
     padding: 3.5px 0px;
 
     font-family: 'Montserrat Alternates';
@@ -1839,16 +1871,18 @@ color: #242424;
       color: #000000;
       mix-blend-mode: darken;
       padding: 3.5px 0;
-      margin: 0 10px;
+      margin: 0 13px;
       border-top: #000 solid 1px;
       border-bottom: #000 solid 1px;
     }
   }
 
   &__navimg {
-    transform: scale(.4);
+    transform: scale(.33);
+    margin-right: -13px;
     &_l {
-      transform: scale(.4) rotate(270deg);
+      transform: scale(.33) rotate(270deg);
+      margin-right: -13px;
     }
   }
 

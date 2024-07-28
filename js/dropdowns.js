@@ -4,7 +4,7 @@ $ddbtn_1.addEventListener('click', () => {
   const img = document.querySelector("#ddbtn-1 > .footer__navimg")
   if ($ddbtn_1.classList.contains('closed')) {
     img.style.cssText = `
-      transform: rotate(180deg) scale(.5);
+      transform: rotate(180deg) scale(.33);
     `
     document.getElementById('ddbody-1').style.cssText = `display: block`
     $ddbtn_1.classList.remove('closed')
@@ -20,7 +20,7 @@ $ddbtn_2.addEventListener('click', () => {
   const img = document.querySelector("#ddbtn-2 > .footer__navimg")
   if ($ddbtn_2.classList.contains('closed')) {
     img.style.cssText = `
-      transform: rotate(180deg) scale(.5);
+      transform: rotate(180deg) scale(.33);
     `
     document.getElementById('ddbody-2').style.cssText = `display: block`
     $ddbtn_2.classList.remove('closed')

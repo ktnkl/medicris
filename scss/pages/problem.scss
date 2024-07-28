@@ -41,6 +41,17 @@ a {
   color: #242424;
 }
 
+%acc-1-mob {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 35px;
+  /* or 135% */
+
+  color: #242424;
+}
+
 
 .ACC-2-MOB {
   font-family: 'Montserrat';
@@ -50,9 +61,16 @@ a {
   line-height: 110%;
   color: #242424;
 }
+%acc-2-mob {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+  color: #242424;
+}
 
-
-.ACC-3-MOB {
+%acc-3-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -64,7 +82,7 @@ a {
   color: #242424;
 }
 
-.ACC-4-MOB {
+%acc-4-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
@@ -75,19 +93,19 @@ a {
 
 }
 
-.ACC-5-MOB {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-/* or 117% */
-letter-spacing: 0.07em;
+%acc-5-mob {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* or 117% */
+  letter-spacing: 0.07em;
 
-color: #242424;
+  color: #242424;
 }
 
-.ACC-6-MOB {
+%acc-6-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -99,7 +117,7 @@ color: #242424;
   color: #000000;
 }
 
-.ACC-7-MOB {
+%acc-7-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -112,7 +130,7 @@ color: #242424;
 }
 
 
-.H1-MOB {
+%h1-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -137,6 +155,18 @@ color: #242424;
   color: #242424;
 }
 
+%h2-mob {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #242424;
+}
+
 .H3-LIST-MOB {
   font-family: 'Montserrat';
   font-style: normal;
@@ -149,7 +179,19 @@ color: #242424;
   color: #242424;
 }
 
-.H4-MOB {
+%h3-list-mob {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: #242424;
+}
+
+%h4-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -160,7 +202,7 @@ color: #242424;
   color: #242424;
 }
 
-.H6-MOB {
+%h6-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -170,7 +212,7 @@ color: #242424;
   color: #242424;
 }
 
-.BODY-1-MOB {
+%body-1-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -190,8 +232,17 @@ color: #242424;
   color: #000000;
 }
 
+%body-2-mob {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* or 120% */
+  color: #000000;
+}
 
-.LIST-1-MOB {
+%list-1-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
@@ -204,7 +255,7 @@ color: #242424;
   color: #242424;
 }
 
-.LIST-2-MOB {
+%list-2-mob {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 600;
@@ -216,7 +267,7 @@ color: #242424;
   color: #242424;
 }
 
-.LIST-3-MOB {
+%list-3-mob {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -424,6 +475,7 @@ color: #242424;
   margin-right: 10px;
   background-color: #fff;
   padding-inline: 20px;
+  color: #242424;
   &-text {
     
     &__title {
@@ -527,14 +579,7 @@ color: #242424;
     height: 55.14px;
     margin-top: 45px;
   
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    display: flex;
-    align-items: end;
+    @extend %h1-mob
   }
   &__breadcrumbs {
     height: 12px;
@@ -557,30 +602,21 @@ color: #242424;
     margin-top: 10px;
     width: 353px;
     height: 24px;
-    
-
-    /* ACCIDENT TEXT MOBILE/ACC 7 MOB */
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    /* or 120% */
     text-align: right;
-    letter-spacing: 0.02em;
-
-    /* TEXT 1 */
     color: #242424;
-
-
+    
+    @extend %acc-7-mob;
   }
   &__text {
+    @extend %acc-3-mob;
     margin-top: 42px;
+    
   }
   &__img {
     margin-top: 10px;
   }
   &__content {
+    @extend %h6-mob;
     margin-top: 23px;
   }
   &-buttons-wrapper {
@@ -593,26 +629,8 @@ color: #242424;
     flex: 0 1 auto;
 
     &__item {
+      color:#242424;
       margin-top: 10px;
-      
-      // &_1 {
-      //   flex-basis: 150px;
-      // }
-      // &_2 {
-      //   flex-basis: 129px;
-      // }
-      // &_3 {
-      //   flex-basis: 57px;
-      // }
-      // &_4 {
-      //   flex-basis: 92px;
-      // }
-      // &_1 {
-      //   flex-basis: 134px;
-      // }
-      // &_1 {
-      //   flex-basis: 108px;
-      // }
     }
   }
 }
@@ -621,6 +639,7 @@ color: #242424;
   background-color: #F2F2F2;
   padding: 0 20px;
   &__title {
+    @extend %h2-mob;
     margin-top: 40px;
     text-align: left;
     color: #242424;
@@ -630,6 +649,8 @@ color: #242424;
     margin-inline: 11px;
   }
   &__text {
+    @extend %body-2-mob;
+    color:#242424;
     &:first-child {
       margin-top: 29px;
       margin-bottom: 10px;
@@ -663,6 +684,7 @@ color: #242424;
   background-color: #F2F2F2;
   padding: 0 20px;
   &__title {
+    @extend %h2-mob;
     margin-top: 40px;
     text-align: left;
     color: #242424;
@@ -672,7 +694,9 @@ color: #242424;
     margin-inline: 11px;
   }
   &__text {
+    @extend %body-2-mob;
     margin-top: 19px;
+    color: #242424;
   }
   &__img {
     position: absolute;
@@ -691,7 +715,13 @@ color: #242424;
     &__item {
       margin-bottom: 22px;
       &__title {
+        @extend %h3-list-mob;
         margin-bottom: 6px;
+        color: #000;
+      }
+      &__body {
+        @extend %body-2-mob;
+        color: #242424;
       }
     }
   }
@@ -702,6 +732,7 @@ color: #242424;
   background-color: #F2F2F2;
   padding: 0 20px;
   &__title {
+    @extend %h2-mob;
     margin-top: 10px;
     text-align: left;
     color: #242424;
@@ -711,7 +742,9 @@ color: #242424;
     margin-inline: 11px;
   }
   &__text {
+    @extend %body-2-mob;
     margin-top: 19px;
+    color: #242424;
   }
   &__img {
     position: absolute;
@@ -730,7 +763,13 @@ color: #242424;
     &__item {
       margin-bottom: 22px;
       &__title {
+        @extend %h3-list-mob;
         margin-bottom: 6px;
+        color: #000
+      }
+      &__body {
+        @extend %body-2-mob;
+        color: #242424;
       }
     }
   }
@@ -741,10 +780,15 @@ color: #242424;
   background-color: #F2F2F2;
   padding: 0 20px;
   &__title {
+    @extend %acc-4-mob;
     margin-top: 28px;
+    color: #242424;
   }
   &__text {
+    @extend %body-2-mob;
+    color: #242424;
     &:first-child {
+      @extend %body-2-mob;
       margin-top: 29px;
       margin-bottom: 10px;
     }
@@ -774,6 +818,7 @@ color: #242424;
     font-weight: 400;
     line-height: 15px;
     text-align: left;
+    color: #242424;
 
     /* FON ACC TEXT */
     background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
@@ -785,6 +830,7 @@ color: #242424;
     width: 117px;
     margin-top: 33px;
     margin-left: 61px;
+    color: #242424;
   }
 }
 .problem-types {
@@ -792,6 +838,7 @@ color: #242424;
   background-color: #F2F2F2;
   padding: 0 20px;
   &__title {
+    @extend %h2-mob;
     margin-top: 40px;
     text-align: left;
     color: #242424;
@@ -810,22 +857,64 @@ color: #242424;
     margin-inline: 0;
   }
   &-card {
+    position: relative;
     width:293px;
     margin-right: 10px;
 
     padding-inline: 0;
     &__img {
       height: 293px;
+      &_second {
+        height: 293px;
+        transform: rotate(-90deg)
+      }
+    }
+    &__number {
+      @extend %h1-mob;
+      position: absolute;
+      top: 14px;
+      left: 13px;
+      z-index: 333;
+      border: 1.9px solid #242424ad;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      padding-top: 6px;
+    }
+    &__clinic-name {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      writing-mode: vertical-rl;
+      transform: rotate(-180deg); 
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 12px;
+      text-align: left;
+      color: #242424; 
+      width: 74px;
+      height: 12px;
+      top: 266.21px;
+      left: 250.21px;
+      
+ 
     }
     &__title {
+      @extend %h3-list-mob;
       margin-top: 22px;
     }
     &__text {
+      @extend %body-2-mob;
       margin-top: 22px;
       margin-bottom: 10px;
+      color: #242424;
     }
     &-list {
+      @extend %body-2-mob;
       margin-left: 23px;
+      color: #242424;
     }
   }
 }
@@ -833,18 +922,27 @@ color: #242424;
   height: 470px;
   background-color: #F2F2F2;
   padding: 0 20px;
+  color: #242424;
   &__title {
+    @extend %acc-4-mob;
     margin-top: 28px;
   }
   &__text {
+    
     &1 {
       margin-top: 24px;
+      @extend %body-2-mob;
+    }
+    &2 {
+      @extend %body-2-mob;
     }
   }
   &-list {
+    @extend %body-2-mob;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 25px;
+    color: #242424;
   }
   &__link {
     width: 117px;
@@ -857,7 +955,7 @@ color: #242424;
   background-color: #F2F2F2;
   padding: 0 20px;
   &__title {
-    
+    @extend %h2-mob;
     text-align: left;
     color: #242424;
     padding-bottom: 11px;
@@ -866,18 +964,14 @@ color: #242424;
     margin-inline: 11px;
   }
   &-list {
+    @extend %list-1-mob;
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     margin-top: 9px;
-
+    color: #242424;
   }
   &-link {
-    /* BUTTON/ ARROW */
-
-/* State=BUTTON 2 DEFAULT */
-
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -885,7 +979,7 @@ color: #242424;
     padding: 0px;
     gap: 7px;
     margin-right: 12px;
-
+    color: #242424;
     margin-top: 34px;
     width: 194px;
     height: 15px;
@@ -914,6 +1008,7 @@ color: #242424;
     font-weight: 400;
     line-height: 15px;
     text-align: left;
+    color: #242424;
 
     /* FON ACC TEXT */
     background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
@@ -926,6 +1021,7 @@ color: #242424;
   background-color: #D9D9D9;
   padding: 0 20px;
   &__title {
+    @extend %h2-mob;
     margin-top: 80px;
     margin-bottom: 10px;
   }
@@ -945,7 +1041,9 @@ color: #242424;
   height: 1087px;
   background-color: #F2F2F2;
   padding: 0 20px;
+  color: #242424;
   &__title {
+    @extend %h2-mob;
     margin-top: 80px;
     text-align: left;
     color: #242424;
@@ -1002,6 +1100,7 @@ color: #242424;
   padding: 0 20px;
   &__title {
     margin-top: 60px;
+    @extend %h4-mob;
   }
   &-img-wrapper {
     display: flex;
@@ -1035,6 +1134,7 @@ color: #242424;
 .footer {
   padding: 20px;
   background-color: #fff;
+  color: #242424;
   &__title {
     margin: 30px;
     /* MEDICRIS — КЛИНИКА КРАСОТЫ */
@@ -1047,7 +1147,7 @@ color: #242424;
     font-size: 20px;
     line-height: 24px;
     /* identical to box height, or 120% */
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
   }
   &__info {
@@ -1060,15 +1160,22 @@ color: #242424;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height, or 150% */
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
   }
 
-  &-soc-wrapper {
+  &-icons-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    column-gap: 14px;
+    column-gap: 36px;
+    justify-content: end;
+    margin-bottom: 22px;
+    &:first-child {
+      margin-top: 3px;
+    }
+    &__item {
+      align-self: center;
+    }
   }
   
   &__socials {
@@ -1077,7 +1184,7 @@ color: #242424;
   }
 
   &__adress {
-    margin-top: 42px;
+    margin-top: 15px;
     
     width: 353px;
     height: 24px;
@@ -1087,12 +1194,14 @@ color: #242424;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
   }
 
   &__map-img {
     object-fit: cover;
+    margin-top: 24px;
+    margin-bottom: 22px;
   }
 
   &__maps {
@@ -1100,12 +1209,12 @@ color: #242424;
     margin: 0 10px;
     padding: 3.5px 0px;
 
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #242424;
     mix-blend-mode: darken;
     &_last {
       font-family: 'Montserrat Alternates';
@@ -1113,7 +1222,7 @@ color: #242424;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #000000;
+      color: #242424;
       mix-blend-mode: darken;
       padding: 3.5px 0;
       margin: 0 10px;
