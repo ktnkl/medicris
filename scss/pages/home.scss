@@ -522,10 +522,8 @@ color: #000000;
   }
   &__img {
     height: 44px;
-    
     background: url(../../media/main_page/logo.svg) center no-repeat;
     background-size:contain;
-
   }
 }
 
@@ -1078,31 +1076,28 @@ color: #000000;
 
     &__subtitle {
       padding: auto;
-
       font-family: Montserrat;
       font-size: 14px;
       font-weight: 500;
       line-height: 14px;
       text-align: left;
-
     }
 
     &__img {
-      transform: scale(.25) translateX(150%) translateY(-150%);
+      transform: scale(.4);
       padding: 0;
-      
+      margin-top: -25px;
     }
   }
   &-item2 {
     height: 30px;
-    padding-top: 0;
-    position: relative;
+    padding: 0;
+    margin: 0;
   }
 
   &__scroller {
     width: 100%;
-    margin-top: 19px;
-    margin-inline: 0;
+    margin: 17px 0 20px;
     border-top: #000 solid 1px;
     border-bottom: #000 solid 1px;
     padding: 38px 0;
@@ -1114,14 +1109,12 @@ color: #000000;
       object-fit: scale-down;
       transform: rotate(180deg);
       opacity: 30%;
-      margin-right: -90px;
     }
     &__r {
       margin: 0 30px 0 0;
       width: 50px;
       padding-left: 0;
       object-fit: scale-down;
-      margin-left: -90px;
     }
     &__text {
       width: 20px;
@@ -1215,36 +1208,26 @@ color: #000000;
     row-gap: 22px;
   }
   &-arrow__text {
-    width: 90px;
     height: 15px;
-    margin-top: 16px;
-
     font-family: 'Montserrat Alternates';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-
-    
-    text-align: right;
     letter-spacing: 0.05em;
-
     color: #000000;
   }
 
   &-item {
-    width: 171px;
+    width: 48%;
     padding: 0;
     &__link {
       display: flex;
       flex-direction: row;
       column-gap: 15px;
-      
-    }
-    &__link1 {
-      margin-top: 12.59px;
-      column-gap: 15px;
-      
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 15px;
     }
   }
 
@@ -1388,8 +1371,6 @@ color: #000000;
 
   &__map-img {
     object-fit: cover;
-    margin-top: 24px;
-    margin-bottom: 22px;
   }
 
   &__maps {
@@ -1420,9 +1401,9 @@ color: #000000;
   }
 
   &__navimg {
-    transform: scale(.33);
+    transform: scale(.5);
     &_l {
-      transform: scale(.33) rotate(270deg);
+      transform: scale(.5) rotate(270deg);
     }
   }
 
