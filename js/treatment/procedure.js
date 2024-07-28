@@ -4,10 +4,10 @@ const radio1 = document.querySelector(`[data-procedure-radio="1"]`)
 const radio2 = document.querySelector(`[data-procedure-radio="2"]`)
 
 procedure1.addEventListener("click", () => {
-  radio1.classList.add('FILTER-2-MOB_choosen')
-  radio1.classList.remove('FILTER-2-MOB_no')
-  radio2.classList.remove('FILTER-2-MOB_choosen')
-  radio2.classList.add('FILTER-2-MOB_no')
+  radio1.classList.add('filter-2-mob_choosen')
+  radio1.classList.remove('filter-2-mob_no')
+  radio2.classList.remove('filter-2-mob_choosen')
+  radio2.classList.add('filter-2-mob_no')
 
   
   let arr2 = document.querySelectorAll(`[data-procedure-2]`)
@@ -22,10 +22,10 @@ procedure1.addEventListener("click", () => {
 })
 
 procedure2.addEventListener("click", () => {
-  radio2.classList.add('FILTER-2-MOB_choosen')
-  radio2.classList.remove('FILTER-2-MOB_no')
-  radio1.classList.remove('FILTER-2-MOB_choosen')
-  radio1.classList.add('FILTER-2-MOB_no')
+  radio2.classList.add('filter-2-mob_choosen')
+  radio2.classList.remove('filter-2-mob_no')
+  radio1.classList.remove('filter-2-mob_choosen')
+  radio1.classList.add('filter-2-mob_no')
 
   let arr1 = document.querySelectorAll(`[data-procedure-1]`)
   for (let i = 0; i < arr1.length; i++) {

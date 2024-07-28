@@ -289,6 +289,9 @@ color: #242424;
   text-transform: uppercase;
 
   color: #000000;
+  &:hover {
+    column-gap: 22px;
+  }
 }
 
 .link-mob {
@@ -305,6 +308,9 @@ color: #242424;
   text-transform: uppercase;
 
   color: #08E5BE;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .filter-2-mob {
@@ -1246,7 +1252,7 @@ color: #242424;
     &__link {
       display: flex;
       flex-direction: row;
-      column-gap: 15px;
+      
       justify-content: flex-start;
       align-items: center;
       margin-top: 15px;

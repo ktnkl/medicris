@@ -231,6 +231,8 @@ a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000; }
+  .button-2-mob:hover {
+    column-gap: 22px; }
 
 .link-mob {
   font-family: 'Montserrat';
@@ -245,6 +247,8 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #08E5BE; }
+  .link-mob:hover {
+    text-decoration: underline; }
 
 .filter-2-mob {
   font-family: 'Montserrat Alternates';
@@ -967,7 +971,6 @@ a {
     .news-item__link {
       display: flex;
       flex-direction: row;
-      column-gap: 15px;
       justify-content: flex-start;
       align-items: center;
       margin-top: 15px; }

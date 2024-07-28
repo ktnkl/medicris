@@ -293,6 +293,9 @@ color: #242424;
   text-transform: uppercase;
 
   color: #000000;
+  &:hover {
+    column-gap: 22px;
+  }
 }
 
 .link-mob {
@@ -303,12 +306,14 @@ color: #242424;
   line-height: 135%;
   /* or 16px */
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
   text-align: right;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
   color: #08E5BE;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .filter-2-mob {
@@ -1364,6 +1369,7 @@ color: #242424;
   &__source {
     align-self: flex-end;
     padding-right: 20px;
+    justify-content: flex-end;
     /* ЧИТАТЬ ИСТОЧНИК */
     width: 141px;
     height: 16px;

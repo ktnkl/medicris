@@ -209,6 +209,8 @@ a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000; }
+  .button-2-mob:hover {
+    column-gap: 22px; }
 
 .LINK-MOB {
   font-family: 'Montserrat';
@@ -223,6 +225,8 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #08E5BE; }
+  .LINK-MOB:hover {
+    text-decoration: underline; }
 
 .filter-1 {
   box-sizing: border-box;

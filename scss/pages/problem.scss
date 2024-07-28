@@ -346,6 +346,9 @@ a {
   text-transform: uppercase;
 
   color: #000000;
+  &:hover {
+    column-gap: 22px;
+  }
 }
 
 .LINK-MOB {
@@ -362,6 +365,9 @@ a {
   text-transform: uppercase;
 
   color: #08E5BE;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .filter-1 {
