@@ -1,10 +1,10 @@
 :root {
-  --bs-body-font-family: 'Montserrat', sans-serif;
+  --bs-body-font-family: "Montserrat", sans-serif;
 }
 
-html, body {
+html,
+body {
   overflow-x: clip;
-  
 }
 
 $bg-color: #f9f9f9;
@@ -18,7 +18,7 @@ $bg-color-1: #f2f2f2;
 
 a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 
 .ma {
@@ -29,9 +29,8 @@ a {
 
 //fonts
 
-
 .ACC-1-MOB {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 26px;
@@ -42,7 +41,7 @@ a {
 }
 
 %acc-1-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 26px;
@@ -52,9 +51,8 @@ a {
   color: #242424;
 }
 
-
 .ACC-2-MOB {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 22px;
@@ -62,7 +60,7 @@ a {
   color: #242424;
 }
 %acc-2-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 22px;
@@ -71,7 +69,7 @@ a {
 }
 
 %acc-3-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -83,18 +81,17 @@ a {
 }
 
 %acc-4-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   /* or 120% */
   text-transform: uppercase;
-
 }
 
 %acc-5-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -106,7 +103,7 @@ a {
 }
 
 %acc-6-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -118,7 +115,7 @@ a {
 }
 
 %acc-7-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -129,9 +126,8 @@ a {
   color: #000000;
 }
 
-
 %h1-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -144,7 +140,7 @@ a {
 }
 
 .H2-MOB {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -156,7 +152,7 @@ a {
 }
 
 %h2-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -168,7 +164,7 @@ a {
 }
 
 .H3-LIST-MOB {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -180,7 +176,7 @@ a {
 }
 
 %h3-list-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -192,7 +188,7 @@ a {
 }
 
 %h4-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -203,7 +199,7 @@ a {
 }
 
 %h6-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -213,7 +209,7 @@ a {
 }
 
 %body-1-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -223,7 +219,7 @@ a {
 }
 
 .BODY-2-MOB {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -233,7 +229,7 @@ a {
 }
 
 %body-2-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -243,7 +239,7 @@ a {
 }
 
 %list-1-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -256,7 +252,7 @@ a {
 }
 
 %list-2-mob {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -268,7 +264,7 @@ a {
 }
 
 %list-3-mob {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
@@ -292,7 +288,6 @@ a {
   padding: 19px 75px;
   gap: 10px;
 
-  
   width: 353px;
   height: 50px;
 
@@ -314,7 +309,7 @@ a {
 }
 
 .button-1-mob {
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-size: 10px;
   font-weight: 700;
   line-height: 12.19px;
@@ -325,14 +320,12 @@ a {
   border: 1px solid #242424;
   &:hover {
     background: rgba(8, 229, 190, 0.5);
-
   }
 }
 
-
-
-.button-2-mob { //arrow-link
-  font-family: 'Montserrat Alternates';
+.button-2-mob {
+  //arrow-link
+  font-family: "Montserrat Alternates";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -352,7 +345,7 @@ a {
 }
 
 .LINK-MOB {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -364,7 +357,7 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
 
-  color: #08E5BE;
+  color: #08e5be;
   &:hover {
     text-decoration: underline;
   }
@@ -386,7 +379,7 @@ a {
   border-radius: 50px;
 
   //styleName: BUTTONS MOBILE/FILTER 1 MOB;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-size: 10px;
   font-weight: 700;
   line-height: 13.64px;
@@ -399,11 +392,10 @@ a {
   &:hover {
     background-color: rgba(8, 229, 190, 0.5);
   }
-
 }
 
 .FILTER-2-MOB {
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -433,7 +425,6 @@ a {
   }
 }
 
-
 .YES-LIST {
   box-sizing: border-box;
   /* Auto layout */
@@ -448,13 +439,16 @@ a {
   gap: 15px;
 
   /* FON 2 ACC TEXT */
-  background: linear-gradient(180deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 229, 190, 0.5) 0%,
+    rgba(242, 242, 242, 0.5) 85.5%
+  );
   /* TEXT 1 */
   border-top: 1px solid #242424;
 }
 
 .NO-LIST {
-
   box-sizing: border-box;
 
   /* Auto layout */
@@ -467,9 +461,12 @@ a {
   position: relative;
   width: 172px;
   height: 400px;
-  
 
-  background: linear-gradient(180deg, rgba(206, 206, 206, 0.5) 0%, rgba(242, 242, 242, 0.5) 63%);
+  background: linear-gradient(
+    180deg,
+    rgba(206, 206, 206, 0.5) 0%,
+    rgba(242, 242, 242, 0.5) 63%
+  );
   /* TEXT 1 */
   border-top: 1px solid #242424;
 }
@@ -483,7 +480,6 @@ a {
   padding-inline: 20px;
   color: #242424;
   &-text {
-    
     &__title {
       margin-top: 26px;
       font-family: Montserrat;
@@ -505,12 +501,11 @@ a {
     &__main {
       margin-top: 32px;
 
-      font-family: 'Nunito Sans';
+      font-family: "Nunito Sans";
       font-size: 10px;
       font-weight: 400;
       line-height: 12px;
       text-align: left;
-      
     }
   }
   &__link {
@@ -519,9 +514,7 @@ a {
     justify-content: flex-start;
     justify-items: flex-start;
   }
-
 }
-
 
 //global styles - end
 
@@ -539,7 +532,7 @@ a {
     height: 19px;
   }
   &__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
@@ -551,7 +544,6 @@ a {
     color: #000000;
 
     mix-blend-mode: darken;
-
   }
 }
 
@@ -568,31 +560,29 @@ a {
   }
   &__img {
     height: 44px;
-    
-    background: url(../../media/main_page/logo.svg) center no-repeat;
-    background-size:contain;
 
+    background: url(../../media/main_page/logo.svg) center no-repeat;
+    background-size: contain;
   }
-  
 }
 //problem page
 .problem-first-screen {
   height: 617px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     width: 353px;
     height: 55.14px;
     margin-top: 45px;
-  
-    @extend %h1-mob
+    padding-top: 30px;
+    @extend %h1-mob;
   }
   &__breadcrumbs {
     height: 12px;
     margin-top: 9px;
     padding-bottom: 19px;
     border-bottom: solid #000 1px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -602,7 +592,7 @@ a {
 
     /* TEXT 2 */
     color: #999999;
-    position: relative;    
+    position: relative;
   }
   &__dates {
     margin-top: 10px;
@@ -610,13 +600,12 @@ a {
     height: 24px;
     text-align: right;
     color: #242424;
-    
+
     @extend %acc-7-mob;
   }
   &__text {
     @extend %acc-3-mob;
     margin-top: 42px;
-    
   }
   &__img {
     margin-top: 10px;
@@ -628,21 +617,25 @@ a {
   &-buttons-wrapper {
     display: flex;
     flex-direction: row;
-    
+
     column-gap: 9.63px;
     // row-gap: 10px;
-    
+
     flex: 0 1 auto;
 
     &__item {
-      color:#242424;
+      color: #242424;
       margin-top: 10px;
+      clear: both;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
 }
 .problem-causes {
   height: 617px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     @extend %h2-mob;
@@ -656,12 +649,11 @@ a {
   }
   &__text {
     @extend %body-2-mob;
-    color:#242424;
+    color: #242424;
     &:first-child {
       margin-top: 29px;
       margin-bottom: 10px;
     }
-    
   }
   &__subtext {
     /* CARD / ACCIDENT TEXT */
@@ -676,7 +668,6 @@ a {
     padding: 15px 1px 15px 15px;
     gap: 10px;
 
-    
     width: 292px;
     height: 105px;
     margin-left: 73px;
@@ -684,23 +675,26 @@ a {
     margin-right: 8px;
 
     /* FON ACC TEXT */
-    background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
+    background: linear-gradient(
+      90deg,
+      rgba(8, 229, 190, 0.5) 0%,
+      rgba(242, 242, 242, 0.5) 85.5%
+    );
     /* TEXT 1 */
     border-left: 1px solid #242424;
 
-    font-family: 'Nunito Sans';
+    font-family: "Nunito Sans";
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
     line-height: 15px;
     text-align: left;
-
   }
 }
 .problem-routes {
   position: relative;
   height: 617px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     @extend %h2-mob;
@@ -715,18 +709,12 @@ a {
   &__text {
     @extend %body-2-mob;
     margin-top: 19px;
-    
-  }
-  &__img {
-    position: absolute;
-    width: 27.55px;
-    height: 21.65px;
-    top: 158px;
-    left: 123px;
-    padding: 0px;
-    gap: 0px;
-    opacity: 0px;
-
+    &:after {
+      content: url("../../media/problem/routes/Frame.svg");
+      position: absolute;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
   }
   &-list-wrapper {
     margin-top: 38px;
@@ -748,7 +736,7 @@ a {
 .problem-progress-variants {
   position: relative;
   height: 617px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     @extend %h2-mob;
@@ -764,6 +752,12 @@ a {
     @extend %body-2-mob;
     margin-top: 19px;
     color: #000;
+    &:after {
+      content: url("../../media/problem/routes/Frame.svg");
+      position: absolute;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
   }
   &__img {
     position: absolute;
@@ -774,7 +768,6 @@ a {
     padding: 0px;
     gap: 0px;
     opacity: 0px;
-
   }
   &-list-wrapper {
     margin-top: 38px;
@@ -784,7 +777,7 @@ a {
       &__title {
         @extend %h3-list-mob;
         margin-bottom: 6px;
-        color: #000
+        color: #000;
       }
       &__body {
         @extend %body-2-mob;
@@ -792,11 +785,10 @@ a {
       }
     }
   }
-  
 }
 .problem-not-everybody {
   height: 951px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     @extend %acc-4-mob;
@@ -812,7 +804,6 @@ a {
       margin-top: 29px;
       margin-bottom: 10px;
     }
-    
   }
   &-subtext {
     /* CARD / ACCIDENT TEXT */
@@ -832,7 +823,7 @@ a {
     margin-left: 61px;
     margin-top: 48px;
 
-    font-family: 'Nunito Sans';
+    font-family: "Nunito Sans";
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
@@ -841,7 +832,11 @@ a {
     color: #242424;
 
     /* FON ACC TEXT */
-    background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
+    background: linear-gradient(
+      90deg,
+      rgba(8, 229, 190, 0.5) 0%,
+      rgba(242, 242, 242, 0.5) 85.5%
+    );
     /* TEXT 1 */
     border-left: 1px solid #242424;
     &__item {
@@ -857,7 +852,7 @@ a {
 }
 .problem-types {
   // height: 738px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     @extend %h2-mob;
@@ -880,7 +875,7 @@ a {
   }
   &-card {
     position: relative;
-    width:293px;
+    width: 293px;
     margin-right: 10px;
 
     padding-inline: 0;
@@ -888,7 +883,7 @@ a {
       height: 293px;
       &_second {
         height: 293px;
-        transform: rotate(-90deg)
+        transform: rotate(-90deg);
       }
     }
     &__number {
@@ -909,19 +904,17 @@ a {
       top: 20px;
       left: 20px;
       writing-mode: vertical-rl;
-      transform: rotate(-180deg); 
+      transform: rotate(-180deg);
       font-family: Montserrat;
       font-size: 12px;
       font-weight: 300;
       line-height: 12px;
       text-align: left;
-      color: #242424; 
+      color: #242424;
       width: 74px;
       height: 12px;
       top: 266.21px;
       left: 250.21px;
-      
- 
     }
     &__title {
       @extend %h3-list-mob;
@@ -942,7 +935,7 @@ a {
 }
 .problem-danger {
   height: 470px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   color: #242424;
   &__title {
@@ -950,7 +943,6 @@ a {
     margin-top: 28px;
   }
   &__text {
-    
     &1 {
       margin-top: 24px;
       @extend %body-2-mob;
@@ -974,7 +966,7 @@ a {
 }
 .problem-all-treatments {
   height: 651px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
     @extend %h2-mob;
@@ -1024,7 +1016,7 @@ a {
     margin-left: 61px;
     margin-top: 36px;
 
-    font-family: 'Nunito Sans';
+    font-family: "Nunito Sans";
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
@@ -1033,14 +1025,18 @@ a {
     color: #242424;
 
     /* FON ACC TEXT */
-    background: linear-gradient(90deg, rgba(8, 229, 190, 0.5) 0%, rgba(242, 242, 242, 0.5) 85.5%);
+    background: linear-gradient(
+      90deg,
+      rgba(8, 229, 190, 0.5) 0%,
+      rgba(242, 242, 242, 0.5) 85.5%
+    );
     /* TEXT 1 */
     border-left: 1px solid #242424;
   }
 }
 .problem-articles {
   height: 617px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   padding: 0 20px;
   &__title {
     @extend %h2-mob;
@@ -1048,8 +1044,7 @@ a {
     margin-bottom: 10px;
   }
   &-container {
-    
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     height: 372px;
     display: flex;
     flex-direction: row;
@@ -1061,7 +1056,7 @@ a {
 }
 .problem-mc-treatment {
   height: 1087px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 0 20px;
   color: #242424;
   &__title {
@@ -1112,13 +1107,17 @@ a {
       flex-grow: 0;
     }
     &__link {
-      order: 1
+      order: 1;
     }
   }
 }
 .problem-proof {
   height: 617px;
-  background: linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(8, 229, 190, 0.5) 85.5%);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(8, 229, 190, 0.5) 85.5%
+  );
   padding: 0 20px;
   &__title {
     margin-top: 60px;
@@ -1162,8 +1161,8 @@ a {
     /* MEDICRIS — КЛИНИКА КРАСОТЫ */
     width: 353px;
     height: 24px;
-    
-    font-family: 'Montserrat';
+
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1176,7 +1175,7 @@ a {
     width: 353px;
     height: 24px;
 
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1202,7 +1201,7 @@ a {
       align-self: center;
     }
   }
-  
+
   &__socials {
     padding: 0;
     max-width: 25px;
@@ -1210,11 +1209,11 @@ a {
 
   &__adress {
     margin-top: 37px;
-    
+
     width: 353px;
     height: 24px;
 
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1234,7 +1233,7 @@ a {
     margin: 0 12px;
     padding: 3.5px 0px;
 
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1242,7 +1241,7 @@ a {
     color: #242424;
     mix-blend-mode: darken;
     &_last {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -1260,10 +1259,10 @@ a {
   }
 
   &__navimg {
-    transform: scale(.5);
+    transform: scale(0.5);
     margin-right: -13px;
     &_last {
-      transform: scale(.5) rotate(270deg);
+      transform: scale(0.5) rotate(270deg);
       margin-right: -24px;
     }
   }
@@ -1298,7 +1297,6 @@ a {
     }
   }
   &-license {
-    
     margin-bottom: 160px;
     &__first {
       font-family: Montserrat;
@@ -1318,5 +1316,4 @@ a {
       }
     }
   }
-  
 }
