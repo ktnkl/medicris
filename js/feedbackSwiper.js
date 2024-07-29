@@ -1,6 +1,6 @@
-const rf = document.getElementById("r_f");
-const tf = document.getElementById("t_f");
-const lf = document.getElementById("l_f");
+const rf = document.getElementById("feedbackBlock__rightButton");
+const tf = document.getElementById("feedbackBlock__text");
+const lf = document.getElementById("feedbackBlock__leftButton");
 const slidesAmountF = document.querySelectorAll("[data-slide-number]").length;
 tf.innerHTML = `1 / ${slidesAmountF}`;
 rf.addEventListener("click", () => {
