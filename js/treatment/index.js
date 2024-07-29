@@ -1,6 +1,8 @@
 $(function () {
   $("#twentytwentycontainer11").twentytwenty();
+  $("#twentytwentycontainer12").twentytwenty();
   $("#twentytwentycontainer21").twentytwenty();
+  $("#twentytwentycontainer22").twentytwenty();
 });
 const slidesAmountResult1 =
   document.querySelectorAll("[data-slide-number-result-1]").length / 2;

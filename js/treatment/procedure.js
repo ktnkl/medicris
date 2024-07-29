@@ -1,3 +1,10 @@
+$(function () {
+  $("#twentytwentycontainer11").twentytwenty();
+  $("#twentytwentycontainer12").twentytwenty();
+  $("#twentytwentycontainer21").twentytwenty();
+  $("#twentytwentycontainer22").twentytwenty();
+});
+
 const procedure1 = document.querySelector(`#procedure1`);
 const procedure2 = document.querySelector(`#procedure2`);
 const radio1 = document.querySelector(`[data-procedure-radio="1"]`);
@@ -17,6 +24,8 @@ procedure1.addEventListener("click", () => {
   for (let i = 0; i < arr1.length; i++) {
     arr1[i].setAttribute("data-procedure-1", "visible");
   }
+  $(`#twentytwentycontainer12`).twentytwenty();
+  $(`#twentytwentycontainer11`).twentytwenty();
 });
 
 procedure2.addEventListener("click", () => {
@@ -33,4 +42,6 @@ procedure2.addEventListener("click", () => {
   for (let i = 0; i < arr2.length; i++) {
     arr2[i].setAttribute("data-procedure-2", "visible");
   }
+  $(`#twentytwentycontainer21`).twentytwenty();
+  $(`#twentytwentycontainer22`).twentytwenty();
 });
