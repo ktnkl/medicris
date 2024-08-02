@@ -6,8 +6,7 @@ page1__leftButton.style.cssText = `
   transform: rotate(180deg);
   `;
 const slidesAmount = document.querySelectorAll("[data-slide-number-1]").length;
-console.log(slidesAmount)
-console.log(page1__text)
+
 page1__text.innerHTML = `1 / ${slidesAmount}`;
 page1__rightButton.addEventListener("click", () => {
   let lastActive = page1__text.getAttribute("data-number");

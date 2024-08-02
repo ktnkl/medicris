@@ -479,6 +479,9 @@ a {
   background-color: #fff;
   padding-inline: 20px;
   color: #242424;
+  &:last-child {
+    margin-right: 20px;
+  }
   &-text {
     &__title {
       margin-top: 26px;
@@ -853,7 +856,7 @@ a {
 .problem-types {
   // height: 738px;
   background-color: #f2f2f2;
-  padding: 0 20px;
+  padding: 0  0 0 20px;
   &__title {
     @extend %h2-mob;
     margin-top: 40px;
@@ -872,6 +875,10 @@ a {
     overflow-x: scroll;
     padding-inline: 0;
     margin-inline: 0;
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
   }
   &-card {
     position: relative;
@@ -879,6 +886,9 @@ a {
     margin-right: 10px;
 
     padding-inline: 0;
+    &:last-child {
+      margin-right: 20px;
+    }
     &__img {
       height: 293px;
       &_second {
@@ -914,7 +924,8 @@ a {
       width: 74px;
       height: 12px;
       top: 266.21px;
-      left: 250.21px;
+      left: 240.21px;
+      margin-right: 0;
     }
     &__title {
       @extend %h3-list-mob;
@@ -1037,7 +1048,7 @@ a {
 .problem-articles {
   height: 617px;
   background-color: #d9d9d9;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
   &__title {
     @extend %h2-mob;
     margin-top: 80px;
@@ -1052,6 +1063,10 @@ a {
     overflow-x: scroll;
     padding-inline: 0;
     margin-inline: 0;
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
   }
 }
 .problem-mc-treatment {
