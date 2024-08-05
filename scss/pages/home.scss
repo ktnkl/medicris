@@ -531,8 +531,9 @@ a {
   }
   &__img {
     height: 44px;
-    background: url(../../media/main_page/logo.svg) center no-repeat;
-    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 

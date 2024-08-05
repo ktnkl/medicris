@@ -53,8 +53,8 @@ a {
   color: #242424;
 }
 
-.problem-not-everybody__title,
-.problem-danger__title {
+.problem-danger__title,
+.problem-not-everybody__title {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
@@ -75,8 +75,8 @@ a {
   color: #000000;
 }
 
-.problem-first-screen__title,
-.problem-types-card__number {
+.problem-types-card__number,
+.problem-first-screen__title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -98,13 +98,13 @@ a {
   color: #242424;
 }
 
-.problem-causes__title,
-.problem-routes__title,
-.problem-progress-variants__title,
-.problem-types__title,
-.problem-all-treatments__title,
+.problem-mc-treatment__title,
 .problem-articles__title,
-.problem-mc-treatment__title {
+.problem-all-treatments__title,
+.problem-types__title,
+.problem-progress-variants__title,
+.problem-routes__title,
+.problem-causes__title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -126,9 +126,9 @@ a {
   color: #242424;
 }
 
-.problem-routes-list-wrapper__item__title,
+.problem-types-card__title,
 .problem-progress-variants-list-wrapper__item__title,
-.problem-types-card__title {
+.problem-routes-list-wrapper__item__title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -169,18 +169,18 @@ a {
   color: #000000;
 }
 
-.problem-causes__text,
-.problem-routes__text,
-.problem-routes-list-wrapper__item__body,
-.problem-progress-variants__text,
-.problem-progress-variants-list-wrapper__item__body,
-.problem-not-everybody__text,
-.problem-not-everybody__text:first-child,
-.problem-types-card__text,
-.problem-types-card-list,
-.problem-danger__text1,
+.problem-danger-list,
 .problem-danger__text2,
-.problem-danger-list {
+.problem-danger__text1,
+.problem-types-card-list,
+.problem-types-card__text,
+.problem-not-everybody__text:first-child,
+.problem-not-everybody__text,
+.problem-progress-variants-list-wrapper__item__body,
+.problem-progress-variants__text,
+.problem-routes-list-wrapper__item__body,
+.problem-routes__text,
+.problem-causes__text {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -459,8 +459,9 @@ a {
 }
 .header__img {
   height: 44px;
-  background: url(../../media/main_page/logo.svg) center no-repeat;
-  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .problem-first-screen {
@@ -766,7 +767,7 @@ a {
   top: 14px;
   left: 13px;
   z-index: 333;
-  border: 1.9px solid #242424ad;
+  border: 1.9px solid rgba(36, 36, 36, 0.6784313725);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -972,7 +973,11 @@ a {
 
 .problem-proof {
   height: 617px;
-  background: linear-gradient(180deg, #f2f2f2 0%, rgba(8, 229, 190, 0.5) 85.5%);
+  background: linear-gradient(
+    180deg,
+    rgb(242, 242, 242) 0%,
+    rgba(8, 229, 190, 0.5) 85.5%
+  );
   padding: 0 20px;
 }
 .problem-proof__title {

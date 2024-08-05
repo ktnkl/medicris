@@ -495,8 +495,9 @@ a {
 }
 .header__img {
   height: 44px;
-  background: url(../../media/main_page/logo.svg) center no-repeat;
-  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .first-page {
@@ -588,7 +589,7 @@ a {
 }
 
 .page-2 {
-  background-color: #f2f0ee;
+  background-color: rgb(242, 240, 238);
   height: 100vh;
   width: 100%;
   padding-left: 20px;
@@ -1389,7 +1390,7 @@ a {
 }
 
 .page-1 {
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
   padding: 0 20px;
 }
 .page-1__header {
