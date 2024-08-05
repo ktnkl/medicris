@@ -660,19 +660,13 @@ a {
   }
   &__subtext {
     /* CARD / ACCIDENT TEXT */
-
-    box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 15px 1px 15px 15px;
     gap: 10px;
-
     width: 292px;
-    height: 105px;
     margin-left: 73px;
     margin-top: 46px;
     margin-right: 8px;
@@ -715,8 +709,8 @@ a {
     &:after {
       content: url('../../media/problem/routes/Frame.svg');
       position: absolute;
-      padding-top: 10px;
-      padding-left: 5px;
+      padding-top: 9px;
+      padding-left: 6px;
     }
   }
   &-list-wrapper {
@@ -940,6 +934,7 @@ a {
     &-list {
       @extend %body-2-mob;
       margin-left: 23px;
+      margin-bottom: 40px;
       color: #242424;
     }
   }
@@ -976,9 +971,8 @@ a {
   }
 }
 .problem-all-treatments {
-  height: 651px;
   background-color: #f2f2f2;
-  padding: 0 20px;
+  padding: 0 20px 80px;
   &__title {
     @extend %h2-mob;
     text-align: left;
@@ -1046,9 +1040,8 @@ a {
   }
 }
 .problem-articles {
-  height: 617px;
   background-color: #d9d9d9;
-  padding: 0 0 0 20px;
+  padding: 0 0 107px 20px;
   &__title {
     @extend %h2-mob;
     margin-top: 80px;
