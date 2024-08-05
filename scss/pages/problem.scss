@@ -35,8 +35,6 @@ a {
   font-weight: 300;
   font-size: 26px;
   line-height: 35px;
-  /* or 135% */
-
   color: #242424;
 }
 
@@ -46,8 +44,6 @@ a {
   font-weight: 300;
   font-size: 26px;
   line-height: 35px;
-  /* or 135% */
-
   color: #242424;
 }
 
@@ -74,7 +70,6 @@ a {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  /* or 133% */
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #242424;
@@ -86,7 +81,6 @@ a {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  /* or 120% */
   text-transform: uppercase;
 }
 
@@ -96,9 +90,7 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  /* or 117% */
   letter-spacing: 0.07em;
-
   color: #242424;
 }
 
@@ -108,9 +100,7 @@ a {
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
-  /* or 140% */
   letter-spacing: 0.02em;
-
   color: #000000;
 }
 
@@ -120,9 +110,7 @@ a {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
-  /* or 120% */
   letter-spacing: 0.02em;
-
   color: #000000;
 }
 
@@ -133,9 +121,7 @@ a {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.03em;
-
   color: #242424;
-
   mix-blend-mode: darken;
 }
 
@@ -183,7 +169,6 @@ a {
   line-height: 16px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
   color: #242424;
 }
 
@@ -193,7 +178,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 135%;
-  /* or 16px */
   letter-spacing: 0.07em;
   color: #242424;
 }
@@ -204,7 +188,6 @@ a {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
-
   color: #242424;
 }
 
@@ -214,7 +197,6 @@ a {
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  /* or 106% */
   color: #242424;
 }
 
@@ -224,7 +206,6 @@ a {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  /* or 120% */
   color: #000000;
 }
 
@@ -234,7 +215,6 @@ a {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  /* or 120% */
   color: #000000;
 }
 
@@ -244,10 +224,8 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 35px;
-  /* or 292% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #242424;
 }
 
@@ -257,9 +235,7 @@ a {
   font-weight: 600;
   font-size: 11px;
   line-height: 16px;
-  /* or 145% */
   text-transform: uppercase;
-
   color: #242424;
 }
 
@@ -270,32 +246,23 @@ a {
   font-size: 10px;
   line-height: 15px;
   padding-inline: 0;
-  /* or 150% */
   text-transform: uppercase;
-
   color: #242424;
 }
 
 //buttons
 .BUTTON-BIG-MOB {
   box-sizing: border-box;
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 19px 75px;
   gap: 10px;
-
-  width: 353px;
+  width: 100%;
   height: 50px;
-
-  /* TEXT 1 */
   border: 1px solid #242424;
   border-radius: 50px;
-
-  //styleName: BUTTONS MOBILE/BUTTON 1 MOB;
   font-family: Montserrat Alternates;
   font-size: 10px;
   font-weight: 700;
@@ -314,7 +281,6 @@ a {
   font-weight: 700;
   line-height: 12.19px;
   letter-spacing: 0.03em;
-
   padding: 9px 20px 9px 20px;
   border-radius: 50px;
   border: 1px solid #242424;
@@ -330,14 +296,12 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: right;
   column-gap: 7px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
   color: #000000;
   &:hover {
     column-gap: 22px;
@@ -350,13 +314,11 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 135%;
-  /* or 16px */
   display: flex;
   align-items: center;
   text-align: right;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
   color: #08e5be;
   &:hover {
     text-decoration: underline;
@@ -427,7 +389,6 @@ a {
 
 .YES-LIST {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,23 +396,17 @@ a {
   margin-left: 0;
   position: relative;
   width: 170px;
-  height: 400px;
   gap: 15px;
-
-  /* FON 2 ACC TEXT */
   background: linear-gradient(
     180deg,
     rgba(8, 229, 190, 0.5) 0%,
     rgba(242, 242, 242, 0.5) 85.5%
   );
-  /* TEXT 1 */
   border-top: 1px solid #242424;
 }
 
 .NO-LIST {
   box-sizing: border-box;
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -460,20 +415,17 @@ a {
 
   position: relative;
   width: 172px;
-  height: 400px;
 
   background: linear-gradient(
     180deg,
     rgba(206, 206, 206, 0.5) 0%,
     rgba(242, 242, 242, 0.5) 63%
   );
-  /* TEXT 1 */
   border-top: 1px solid #242424;
 }
 
 .card-article {
   width: 293px !important;
-  height: 372px;
   border-top: 1px solid #000;
   margin-right: 10px;
   background-color: #fff;
@@ -513,6 +465,7 @@ a {
   }
   &__link {
     margin-top: 68px;
+    margin-bottom: 27px;
     display: flex;
     justify-content: flex-start;
     justify-items: flex-start;
@@ -540,12 +493,9 @@ a {
     font-weight: 500;
     font-size: 10px;
     line-height: 16px;
-    /* or 160% */
     text-align: center;
     letter-spacing: 0.02em;
-
     color: #000000;
-
     mix-blend-mode: darken;
   }
 }
@@ -568,13 +518,12 @@ a {
     width: 100%;
   }
 }
-//problem page
+
 .problem-first-screen {
-  height: 617px;
   background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
-    width: 353px;
+    width: 100%;
     height: 55.14px;
     margin-top: 45px;
     padding-top: 30px;
@@ -592,14 +541,12 @@ a {
     line-height: 12px;
     margin-inline: 11px;
     padding-inline: 0;
-
-    /* TEXT 2 */
     color: #999999;
     position: relative;
   }
   &__dates {
     margin-top: 10px;
-    width: 353px;
+    width: 100%;
     height: 24px;
     text-align: right;
     color: #242424;
@@ -620,10 +567,7 @@ a {
   &-buttons-wrapper {
     display: flex;
     flex-direction: row;
-
     column-gap: 9.63px;
-    // row-gap: 10px;
-
     flex: 0 1 auto;
 
     &__item {
@@ -637,7 +581,6 @@ a {
   }
 }
 .problem-causes {
-  height: 617px;
   background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
@@ -667,19 +610,13 @@ a {
     padding: 15px 1px 15px 15px;
     gap: 10px;
     width: 292px;
-    margin-left: 73px;
-    margin-top: 46px;
-    margin-right: 8px;
-
-    /* FON ACC TEXT */
+    margin: 46px 8px 73px 73px;
     background: linear-gradient(
       90deg,
       rgba(8, 229, 190, 0.5) 0%,
       rgba(242, 242, 242, 0.5) 85.5%
     );
-    /* TEXT 1 */
     border-left: 1px solid #242424;
-
     font-family: 'Nunito Sans';
     font-size: 14px;
     font-style: italic;
@@ -690,9 +627,8 @@ a {
 }
 .problem-routes {
   position: relative;
-  height: 617px;
   background-color: #f2f2f2;
-  padding: 0 20px;
+  padding: 0 20px 67px;
   &__title {
     @extend %h2-mob;
     margin-top: 40px;
@@ -732,7 +668,6 @@ a {
 }
 .problem-progress-variants {
   position: relative;
-  height: 617px;
   background-color: #f2f2f2;
   padding: 0 20px;
   &__title {
@@ -752,8 +687,8 @@ a {
     &:after {
       content: url('../../media/problem/routes/Frame.svg');
       position: absolute;
-      padding-top: 10px;
-      padding-left: 5px;
+      padding-top: 9px;
+      padding-left: 6px;
     }
   }
   &__img {
@@ -784,9 +719,9 @@ a {
   }
 }
 .problem-not-everybody {
-  height: 951px;
   background-color: #f2f2f2;
   padding: 0 20px;
+  padding-bottom: 67px;
   &__title {
     @extend %acc-4-mob;
     margin-top: 28px;
@@ -804,10 +739,7 @@ a {
   }
   &-subtext {
     /* CARD / ACCIDENT TEXT */
-
     box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -815,11 +747,8 @@ a {
     padding: 15px 1px 15px 0;
     gap: 10px;
     width: 292px;
-    height: 260px;
-
     margin-left: 61px;
     margin-top: 48px;
-
     font-family: 'Nunito Sans';
     font-size: 14px;
     font-style: italic;
@@ -827,14 +756,11 @@ a {
     line-height: 15px;
     text-align: left;
     color: #242424;
-
-    /* FON ACC TEXT */
     background: linear-gradient(
       90deg,
       rgba(8, 229, 190, 0.5) 0%,
       rgba(242, 242, 242, 0.5) 85.5%
     );
-    /* TEXT 1 */
     border-left: 1px solid #242424;
     &__item {
       padding-right: 0;
@@ -848,7 +774,6 @@ a {
   }
 }
 .problem-types {
-  // height: 738px;
   background-color: #f2f2f2;
   padding: 0 0 0 20px;
   &__title {
@@ -940,9 +865,9 @@ a {
   }
 }
 .problem-danger {
-  height: 470px;
   background-color: #f2f2f2;
   padding: 0 20px;
+  padding-bottom: 90px;
   color: #242424;
   &__title {
     @extend %acc-4-mob;
@@ -1004,11 +929,7 @@ a {
     height: 15px;
   }
   &-subtext {
-    /* CARD / ACCIDENT TEXT */
-
     box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1016,11 +937,9 @@ a {
     padding: 15px 1px 15px 0;
     gap: 10px;
     width: 292px;
-    height: 120px;
     padding-left: 15px;
     margin-left: 61px;
     margin-top: 36px;
-
     font-family: 'Nunito Sans';
     font-size: 14px;
     font-style: italic;
@@ -1028,14 +947,11 @@ a {
     line-height: 15px;
     text-align: left;
     color: #242424;
-
-    /* FON ACC TEXT */
     background: linear-gradient(
       90deg,
       rgba(8, 229, 190, 0.5) 0%,
       rgba(242, 242, 242, 0.5) 85.5%
     );
-    /* TEXT 1 */
     border-left: 1px solid #242424;
   }
 }
@@ -1049,7 +965,6 @@ a {
   }
   &-container {
     background-color: #d9d9d9;
-    height: 372px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1063,7 +978,6 @@ a {
   }
 }
 .problem-mc-treatment {
-  height: 1087px;
   background-color: #f2f2f2;
   padding: 0 20px;
   color: #242424;
@@ -1086,8 +1000,7 @@ a {
     row-gap: 14px;
 
     position: relative;
-    width: 353px;
-    height: 449.01px;
+    width: 100%;
     margin-top: 27px;
     &_first {
       margin-top: 20px;
@@ -1100,7 +1013,7 @@ a {
       padding: 0px;
       gap: 36px;
 
-      width: 353px;
+      width: 100%;
       height: 36px;
 
       font-family: Montserrat;
@@ -1117,16 +1030,22 @@ a {
     &__link {
       order: 1;
     }
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 .problem-proof {
-  height: 617px;
   background: linear-gradient(
     180deg,
     rgba(242, 242, 242, 1) 0%,
     rgba(8, 229, 190, 0.5) 85.5%
   );
   padding: 0 20px;
+  padding-bottom: 47px;
   &__title {
     margin-top: 60px;
     @extend %h4-mob;
@@ -1167,28 +1086,24 @@ a {
   &__title {
     margin: 30px;
     /* MEDICRIS — КЛИНИКА КРАСОТЫ */
-    width: 353px;
+    width: 100%;
     height: 24px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height, or 120% */
     color: #242424;
     mix-blend-mode: darken;
   }
   &__info {
-    width: 353px;
+    width: 100%;
     height: 24px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
     color: #242424;
     mix-blend-mode: darken;
   }
@@ -1217,10 +1132,8 @@ a {
 
   &__adress {
     margin-top: 37px;
-
-    width: 353px;
+    width: 100%;
     height: 24px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -1240,7 +1153,6 @@ a {
     border-top: #000 solid 1px;
     margin: 0 12px;
     padding: 3.5px 0px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
