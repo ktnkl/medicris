@@ -375,7 +375,7 @@ a {
 
   position: relative;
   width: 172px;
-  height: 400px;
+  
 
   background: linear-gradient(
     180deg,
@@ -1106,7 +1106,7 @@ a {
   height: 60px;
   backdrop-filter: blur(50px);
   text-align: center;
-
+  border-top: #242424 solid .3px;
   &__img {
     width: 19px;
     height: 19px;
@@ -2106,9 +2106,9 @@ a {
 }
 
 .procedure {
-  padding: 0 20px;
+  padding: 0 20px 84px 20px;
   background-color: rgba(242, 242, 242, 1);
-  height: 745px;
+  
   &__title {
     margin-inline: 11px;
     padding: 11px 0;
@@ -2122,7 +2122,7 @@ a {
     margin-bottom: 10px;
 
     &:last-child {
-      padding-bottom: 48px;
+      
       margin-bottom: 0;
     }
   }
@@ -2170,13 +2170,20 @@ a {
 
 .yes-no {
   background-color: rgba(242, 242, 242, 1);
-  height: 576px;
-  padding: 0 20px;
+  
+  padding: 0 20px 120px 20px;
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 }
 
 .yes-wrapper {
   padding: 0;
   margin-left: 11px;
+ 
   width: 170px;
   &__title {
     margin-bottom: 8px;
@@ -2184,9 +2191,9 @@ a {
   }
 }
 .no-wrapper {
-  position: relative;
-  top: 180px;
-  margin-left: 15px;
+  margin-right: 11px;
+  margin-top: 180px;
+  
   width: 172px;
   &__title {
     margin-bottom: 8px;
@@ -2404,7 +2411,6 @@ a {
         color: #000000;
       }
       &__t {
-        /* ПЕРСОНАЛЬНЫЙ ПРОТОКОЛ */
         width: 114px;
         height: 26px;
 
@@ -2415,7 +2421,6 @@ a {
         letter-spacing: 0.03em;
         text-align: center;
 
-        /* or 108% */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2443,88 +2448,6 @@ a {
   }
 }
 
-//problem page
-.problem-first-screen {
-  height: 617px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-causes {
-  height: 617px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-routes {
-  height: 617px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-progress-variants {
-  height: 617px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-not-everybody {
-  height: 951px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-types {
-  height: 738px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-danger {
-  height: 470px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-all-treatments {
-  height: 651px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-articles {
-  height: 617px;
-  background-color: #d9d9d9;
-  padding: 0 20px;
-}
-.problem-mc-treatment {
-  height: 1087px;
-  background-color: #f2f2f2;
-  padding: 0 20px;
-}
-.problem-proof {
-  height: 617px;
-  background: linear-gradient(
-    180deg,
-    rgba(242, 242, 242, 1) 0%,
-    rgba(8, 229, 190, 0.5) 85.5%
-  );
-  padding: 0 20px;
-  &-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 36px;
-
-    margin-top: 108px;
-    &__item {
-      &1 {
-        width: 94px;
-        height: 30px;
-      }
-      &2 {
-        width: 103.28px;
-        height: 36.51px;
-      }
-      &3 {
-        width: 82.87px;
-        height: 34.15px;
-      }
-    }
-  }
-}
-//problem-page - end
 [data-dropdown-opened='false'] {
   display: none !important;
 }
