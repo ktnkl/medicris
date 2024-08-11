@@ -204,6 +204,43 @@
     background-size: contain;
     margin-right: 5px; }
 
+.card-article {
+  width: 293px;
+  height: 372px;
+  border-top: 1px solid #000;
+  margin-right: 10px;
+  background-color: #fff;
+  padding-inline: 20px; }
+  .card-article:last-child {
+    margin-right: 20px; }
+  .card-article-text__title {
+    margin-top: 26px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20.25px;
+    letter-spacing: 0.02em;
+    text-align: left; }
+  .card-article-text__author {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left; }
+  .card-article-text__main {
+    margin-top: 32px;
+    font-family: 'Nunito Sans';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left; }
+  .card-article__link {
+    margin-top: 68px;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start; }
+
 :root {
   --bs-body-font-family: 'Montserrat', sans-serif; }
 
