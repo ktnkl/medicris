@@ -105,6 +105,8 @@
   margin-right: 10px;
   background-color: #fff;
   padding-inline: 20px; }
+  .card-article:first-child {
+    margin-left: 20px; }
   .card-article:last-child {
     margin-right: 20px; }
   .card-article-text__title {
@@ -253,6 +255,8 @@
   width: 293px;
   height: 423px;
   margin-right: 10px; }
+  .doc-card:first-child {
+    margin-left: 20px; }
   .doc-card:last-child {
     margin-right: 20px; }
   .doc-card__img {
@@ -1439,10 +1443,13 @@ a {
     margin-top: 50px; }
 
 .treatment-doctors {
-  padding: 0 0 0 20px;
+  padding-top: 20px;
+  --bs-gutter-x: 0;
   background-color: #f2f2f2; }
   .treatment-doctors__title {
-    margin-top: 110px; }
+    margin-top: 110px;
+    margin-inline: 31px;
+    padding-inline: 0; }
   .treatment-doctors-container {
     margin-top: 63px;
     display: flex;
@@ -1460,10 +1467,12 @@ a {
     justify-content: center; }
 
 .articles {
-  padding: 0 0 0 20px;
+  --bs-gutter-x: 0;
   background-color: #f2f2f2; }
   .articles__title {
-    margin-top: 17px; }
+    margin-top: 17px;
+    margin-inline: 31px;
+    padding-inline: 0; }
   .articles__text {
     margin: 39px 20px 0 121px;
     width: 100%;

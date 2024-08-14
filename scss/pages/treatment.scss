@@ -680,11 +680,14 @@ a {
 }
 
 .treatment-doctors {
-  padding: 0 0 0 20px;
+  padding-top: 20px;
+  --bs-gutter-x: 0;
   background-color: #f2f2f2;
   &__title {
     @extend %h2-mob;
     margin-top: 110px;
+    margin-inline: 31px;
+    padding-inline: 0;
   }
   &-container {
     margin-top: 63px;
@@ -707,11 +710,13 @@ a {
 }
 
 .articles {
-  padding: 0 0 0 20px;
+  --bs-gutter-x: 0;
   background-color: #f2f2f2;
   &__title {
     @extend %h2-mob;
     margin-top: 17px;
+    margin-inline: 31px;
+    padding-inline: 0;
   }
   &__text {
     margin: 39px 20px 0 121px;

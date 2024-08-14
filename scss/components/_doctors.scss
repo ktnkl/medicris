@@ -2,6 +2,9 @@
   width: 293px;
   height: 423px;
   margin-right: 10px;
+  &:first-child {
+    margin-left: 20px;
+  }
   &:last-child {
     margin-right: 20px;
   }
