@@ -570,6 +570,7 @@ a {
     margin-bottom: 20px; }
     .principle-wrapper__number {
       font-family: Montserrat;
+      font-size: 23px;
       border: #000 solid 1px;
       border-radius: 50%;
       height: 40px;
@@ -578,7 +579,7 @@ a {
     .principle-wrapper__title {
       text-align: left;
       margin-bottom: 10px;
-      margin-top: 5px; }
+      margin-top: 10px; }
     .principle-wrapper__link {
       margin-bottom: 100px; }
 
