@@ -71,8 +71,8 @@ a {
       margin-top: 240px;
       min-height: 70px;
       width: calc(100vw - 40px);
-      &__f,
-      &__m {
+      &__female,
+      &__male {
         border: #000 solid 1px;
         border-radius: 50px;
         padding: 14px 0;
@@ -90,7 +90,7 @@ a {
         letter-spacing: 0.03em;
         color: #000000;
       }
-      &__t {
+      &__text {
         width: 114px;
         height: 26px;
         font-family: Montserrat;
@@ -378,7 +378,7 @@ a {
   }
 }
 
-.threeg {
+.clients {
   width: 100%;
   height: 620px;
   background-image: url(../../media/3g.png);
@@ -434,7 +434,7 @@ a {
       text-align: left;
       margin-top: 43px;
       margin-bottom: 8px;
-      &_l {
+      &_lower {
         margin-top: 26px;
       }
     }
@@ -467,7 +467,7 @@ a {
     border-bottom: #000 solid 1px;
     padding: 38px 0;
 
-    &__l {
+    &__left-button {
       margin: 0 0 0 30px;
       width: 50px;
       padding-right: 0;
@@ -475,7 +475,7 @@ a {
       transform: rotate(180deg);
       opacity: 30%;
     }
-    &__r {
+    &__right-button {
       margin: 0 30px 0 0;
       width: 50px;
       padding-left: 0;
@@ -714,295 +714,5 @@ a {
   &-6 {
     background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_6.png);
     background-size: cover;
-  }
-}
-
-.page-1 {
-  background-color: rgba(242, 242, 242, 1);
-  padding: 0 20px;
-  &__header {
-    height: 55.14px;
-    margin-top: 45px;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    display: flex;
-    align-items: end;
-  }
-  &__breadcrumbs {
-    height: 12px;
-    margin-top: 9px;
-    padding-bottom: 19px;
-    border-bottom: solid #000 1px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: #999999;
-    position: relative;
-  }
-  &-slider {
-    &__scroller {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 9px 0;
-    }
-    &__l {
-      width: 50px;
-      height: 11px;
-      padding: 0;
-    }
-    &__t {
-      font-family: Montserrat;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 16px;
-      letter-spacing: 0.07em;
-      text-align: center;
-      color: #242424;
-    }
-    &__r {
-      width: 50px;
-      height: 11px;
-    }
-  }
-  &__text {
-    display: flex;
-    justify-content: center;
-    width: 172px;
-    height: 60px;
-  }
-  &__price {
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    text-align: center;
-
-    margin: 37px 0;
-  }
-  &__desc-title {
-    margin-top: 82px;
-  }
-  &__desc-text {
-    margin-top: 13px;
-    font-family: 'Nunito Sans';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  &__desc-link {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.procedure {
-  padding: 0 20px;
-  &__title {
-    width: 100%;
-    padding: 17px 0;
-    border-bottom: #000 1px solid;
-  }
-  .card {
-    border: #000 1px solid;
-    padding: 10px;
-    &__l {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 20px;
-
-      color: #242424;
-
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-    }
-    &__r {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 20px;
-      text-align: right;
-      color: #242424;
-      flex: none;
-      order: 1;
-      flex-grow: 0;
-    }
-  }
-}
-
-.protocol {
-  padding: 0 20px;
-  &__title {
-    padding-top: 18px;
-    padding-bottom: 9px;
-
-    border-bottom: #000 1px solid;
-  }
-}
-
-.treatment-cost {
-  &__title {
-    margin-top: 34px;
-  }
-  &__text {
-    margin-top: 15px;
-  }
-  &-table {
-    margin-top: 50px;
-  }
-}
-
-.treatment-doctors {
-  padding: 0 20px;
-  height: 768px;
-  background-color: #f2f2f2;
-  &__title {
-    margin-top: 85px;
-  }
-  &-container {
-    margin-top: 63px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
-  &__link {
-    margin-top: 64px;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.articles {
-  height: 824px;
-  padding: 0 20px;
-  background-color: #f2f2f2;
-  &__title {
-    margin-top: 17px;
-  }
-  &__text {
-    margin-top: 39px;
-    width: 232px;
-    height: 80px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: #242424;
-  }
-  &-container {
-    margin-top: 70px;
-    background-color: #f2f2f2;
-    height: 372px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
-}
-.personal-protocol {
-  position: relative;
-  height: 970px;
-  background: #e0d8d0;
-
-  .photos-wrapper {
-    height: 970px;
-    background:
-      url(../../media/treatment/personal-protocol/62a483e603a3ed0869d1aa90ff1aff9c\ 2.webp)
-        left bottom no-repeat,
-      url(../../media/treatment/personal-protocol/15xn2dhcpcpaasgraso0anji1ngo8w68\ 1.webp)
-        right bottom no-repeat;
-    background-size: contain;
-    &__item {
-      height: 617px;
-      width: auto;
-      overflow-y: hidden;
-    }
-  }
-
-  .text-and-buttons {
-    height: 677px;
-    padding-top: 72px;
-    padding-bottom: 0;
-    &__text {
-      height: 120px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: 0.07em;
-      color: #000000;
-      mix-blend-mode: darken;
-    }
-
-    &__arrow {
-      width: 40px;
-      margin-top: 70px;
-    }
-
-    &__buttons {
-      background-color: rgba(8, 229, 190, 0.45);
-      backdrop-filter: blur(10px);
-      color: #000;
-      border-radius: 50px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-top: 580px;
-      min-height: 70px;
-      &__f,
-      &__m {
-        border: #000 solid 1px;
-        border-radius: 50px;
-        padding: 14px 0;
-        width: 106px;
-        height: 10.83px;
-        font-family: 'Montserrat Alternates';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #000000;
-      }
-      &__t {
-        width: 114px;
-        height: 26px;
-        font-family: Montserrat;
-        font-size: 8.43px;
-        font-weight: 500;
-        line-height: 9.94px;
-        letter-spacing: 0.03em;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #000000;
-      }
-    }
   }
 }

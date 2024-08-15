@@ -265,7 +265,7 @@
       line-height: 10.8px;
       text-align: left;
       padding-bottom: 12px; }
-    .footer__dropdown_dist {
+    .footer__dropdown_distantion {
       font-family: Montserrat;
       font-size: 12px;
       font-style: italic;
@@ -274,7 +274,7 @@
       text-align: left;
       color: #999;
       padding-bottom: 14px; }
-    .footer__dropdown_desc {
+    .footer__dropdown_description {
       font-family: Montserrat;
       font-size: 12px;
       font-weight: 500;
@@ -352,7 +352,7 @@ a {
       margin-top: 240px;
       min-height: 70px;
       width: calc(100vw - 40px); }
-      .first-page .text-and-buttons__buttons__f, .first-page .text-and-buttons__buttons__m {
+      .first-page .text-and-buttons__buttons__female, .first-page .text-and-buttons__buttons__male {
         border: #000 solid 1px;
         border-radius: 50px;
         padding: 14px 0;
@@ -369,7 +369,7 @@ a {
         text-align: center;
         letter-spacing: 0.03em;
         color: #000000; }
-      .first-page .text-and-buttons__buttons__t {
+      .first-page .text-and-buttons__buttons__text {
         width: 114px;
         height: 26px;
         font-family: Montserrat;
@@ -602,7 +602,7 @@ a {
   letter-spacing: 0.05em;
   color: #000000; }
 
-.threeg {
+.clients {
   width: 100%;
   height: 620px;
   background-image: url(../../media/3g.png);
@@ -653,7 +653,7 @@ a {
       text-align: left;
       margin-top: 43px;
       margin-bottom: 8px; }
-      .feedback-item__title_l {
+      .feedback-item__title_lower {
         margin-top: 26px; }
     .feedback-item__subtitle {
       padding: auto;
@@ -676,14 +676,14 @@ a {
     border-top: #000 solid 1px;
     border-bottom: #000 solid 1px;
     padding: 38px 0; }
-    .feedback__scroller__l {
+    .feedback__scroller__left-button {
       margin: 0 0 0 30px;
       width: 50px;
       padding-right: 0;
       object-fit: scale-down;
       transform: rotate(180deg);
       opacity: 30%; }
-    .feedback__scroller__r {
+    .feedback__scroller__right-button {
       margin: 0 30px 0 0;
       width: 50px;
       padding-left: 0;
@@ -867,240 +867,5 @@ a {
 .slide-6 {
   background-image: url(../../media/swiper/Property\ 1=CLINIC_CAROUSEL_6.png);
   background-size: cover; }
-
-.page-1 {
-  background-color: #f2f2f2;
-  padding: 0 20px; }
-  .page-1__header {
-    height: 55.14px;
-    margin-top: 45px;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    display: flex;
-    align-items: end; }
-  .page-1__breadcrumbs {
-    height: 12px;
-    margin-top: 9px;
-    padding-bottom: 19px;
-    border-bottom: solid #000 1px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: #999999;
-    position: relative; }
-  .page-1-slider__scroller {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 9px 0; }
-  .page-1-slider__l {
-    width: 50px;
-    height: 11px;
-    padding: 0; }
-  .page-1-slider__t {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.07em;
-    text-align: center;
-    color: #242424; }
-  .page-1-slider__r {
-    width: 50px;
-    height: 11px; }
-  .page-1__text {
-    display: flex;
-    justify-content: center;
-    width: 172px;
-    height: 60px; }
-  .page-1__price {
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin: 37px 0; }
-  .page-1__desc-title {
-    margin-top: 82px; }
-  .page-1__desc-text {
-    margin-top: 13px;
-    font-family: 'Nunito Sans';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-transform: uppercase; }
-  .page-1__desc-link {
-    display: flex;
-    justify-content: flex-end; }
-
-.procedure {
-  padding: 0 20px; }
-  .procedure__title {
-    width: 100%;
-    padding: 17px 0;
-    border-bottom: #000 1px solid; }
-  .procedure .card {
-    border: #000 1px solid;
-    padding: 10px; }
-    .procedure .card__l {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 20px;
-      color: #242424;
-      flex: none;
-      order: 0;
-      flex-grow: 0; }
-    .procedure .card__r {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 20px;
-      text-align: right;
-      color: #242424;
-      flex: none;
-      order: 1;
-      flex-grow: 0; }
-
-.protocol {
-  padding: 0 20px; }
-  .protocol__title {
-    padding-top: 18px;
-    padding-bottom: 9px;
-    border-bottom: #000 1px solid; }
-
-.treatment-cost__title {
-  margin-top: 34px; }
-.treatment-cost__text {
-  margin-top: 15px; }
-.treatment-cost-table {
-  margin-top: 50px; }
-
-.treatment-doctors {
-  padding: 0 20px;
-  height: 768px;
-  background-color: #f2f2f2; }
-  .treatment-doctors__title {
-    margin-top: 85px; }
-  .treatment-doctors-container {
-    margin-top: 63px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll; }
-  .treatment-doctors__link {
-    margin-top: 64px;
-    display: flex;
-    justify-content: center; }
-
-.articles {
-  height: 824px;
-  padding: 0 20px;
-  background-color: #f2f2f2; }
-  .articles__title {
-    margin-top: 17px; }
-  .articles__text {
-    margin-top: 39px;
-    width: 232px;
-    height: 80px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: #242424; }
-  .articles-container {
-    margin-top: 70px;
-    background-color: #f2f2f2;
-    height: 372px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll; }
-
-.personal-protocol {
-  position: relative;
-  height: 970px;
-  background: #e0d8d0; }
-  .personal-protocol .photos-wrapper {
-    height: 970px;
-    background: url(../../media/treatment/personal-protocol/62a483e603a3ed0869d1aa90ff1aff9c\ 2.webp) left bottom no-repeat, url(../../media/treatment/personal-protocol/15xn2dhcpcpaasgraso0anji1ngo8w68\ 1.webp) right bottom no-repeat;
-    background-size: contain; }
-    .personal-protocol .photos-wrapper__item {
-      height: 617px;
-      width: auto;
-      overflow-y: hidden; }
-  .personal-protocol .text-and-buttons {
-    height: 677px;
-    padding-top: 72px;
-    padding-bottom: 0; }
-    .personal-protocol .text-and-buttons__text {
-      height: 120px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: 0.07em;
-      color: #000000;
-      mix-blend-mode: darken; }
-    .personal-protocol .text-and-buttons__arrow {
-      width: 40px;
-      margin-top: 70px; }
-    .personal-protocol .text-and-buttons__buttons {
-      background-color: rgba(8, 229, 190, 0.45);
-      backdrop-filter: blur(10px);
-      color: #000;
-      border-radius: 50px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-top: 580px;
-      min-height: 70px; }
-      .personal-protocol .text-and-buttons__buttons__f, .personal-protocol .text-and-buttons__buttons__m {
-        border: #000 solid 1px;
-        border-radius: 50px;
-        padding: 14px 0;
-        width: 106px;
-        height: 10.83px;
-        font-family: 'Montserrat Alternates';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #000000; }
-      .personal-protocol .text-and-buttons__buttons__t {
-        width: 114px;
-        height: 26px;
-        font-family: Montserrat;
-        font-size: 8.43px;
-        font-weight: 500;
-        line-height: 9.94px;
-        letter-spacing: 0.03em;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #000000; }
 
 /*# sourceMappingURL=home.css.map */
