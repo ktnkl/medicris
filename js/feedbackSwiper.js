@@ -1,20 +1,20 @@
-const rf = document.getElementById('feedbackBlock__rightButton')
-const tf = document.getElementById('feedbackBlock__text')
-const lf = document.getElementById('feedbackBlock__leftButton')
+const rightButton = document.getElementById('feedbackBlock__rightButton')
+const textArea = document.getElementById('feedbackBlock__text')
+const leftButton = document.getElementById('feedbackBlock__leftButton')
 const slidesAmountF = document.querySelectorAll('[data-slide-number]').length
-tf.innerHTML = `1 / ${slidesAmountF}`
-rf.addEventListener('click', () => {
-  let lastActive = tf.getAttribute('data-number')
+textArea.innerHTML = `1 / ${slidesAmountF}`
+rightButton.addEventListener('click', () => {
+  let lastActive = textArea.getAttribute('data-number')
   if (lastActive != slidesAmountF) {
     if (lastActive == 1) {
-      lf.style.cssText = 'opacity: 100%'
+      leftButton.style.cssText = 'opacity: 100%'
     }
     let newActive = Number(lastActive) + 1
     if (newActive == slidesAmountF) {
-      rf.style.cssText = 'opacity: 30%'
+      rightButton.style.cssText = 'opacity: 30%'
     }
-    tf.setAttribute('data-number', newActive)
-    tf.innerHTML = `${newActive} / ${slidesAmountF}`
+    textArea.setAttribute('data-number', newActive)
+    textArea.innerHTML = `${newActive} / ${slidesAmountF}`
     let lastActiveElement = document.querySelector(
       `[data-slide-number="${lastActive}"]`
     )
@@ -27,18 +27,18 @@ rf.addEventListener('click', () => {
     setTimeout(() => newActiveElement.classList.add('open'), 50)
   }
 })
-lf.addEventListener('click', () => {
-  let lastActive = tf.getAttribute('data-number')
+leftButton.addEventListener('click', () => {
+  let lastActive = textArea.getAttribute('data-number')
   if (lastActive != 1) {
     if (lastActive == slidesAmountF) {
-      rf.style.cssText = 'opacity: 100%'
+      rightButton.style.cssText = 'opacity: 100%'
     }
     let newActive = Number(lastActive) - 1
     if (newActive == 1) {
-      lf.style.cssText = 'opacity: 30%'
+      leftButton.style.cssText = 'opacity: 30%'
     }
-    tf.setAttribute('data-number', newActive)
-    tf.innerHTML = `${newActive} / ${slidesAmountF}`
+    textArea.setAttribute('data-number', newActive)
+    textArea.innerHTML = `${newActive} / ${slidesAmountF}`
     let lastActiveElement = document.querySelector(
       `[data-slide-number="${lastActive}"]`
     )

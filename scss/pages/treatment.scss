@@ -9,6 +9,7 @@
 @import "../components/header";
 @import "../components/menu";
 @import "../components/footer";
+@import "../components/navigation";
 
 :root {
   --bs-body-font-family: 'Montserrat', sans-serif;
@@ -823,4 +824,39 @@ a {
 
 #twentytwentycontainer {
   height: 400px !important;
+}
+
+
+@media (min-width: 650px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    padding-inline: 50px;
+  }
+  .first-page {
+    .text-and-buttons {
+      &__buttons {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+  .header, .menu, .page-2__note, .page-2__link, .header-plug {
+    display: none;
+  }
+  .personal-protocol .text-and-buttons__buttons {
+    width: calc(100%);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding-inline: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding-inline: 450px;
+  }
 }

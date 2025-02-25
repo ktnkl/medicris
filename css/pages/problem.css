@@ -411,6 +411,17 @@
       .footer-license__others_underline {
         text-decoration: underline; }
 
+.navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #242424;
+  padding: 15px; }
+
 :root {
   --bs-body-font-family: 'Montserrat', sans-serif; }
 
@@ -703,7 +714,7 @@ a {
   .problem-danger__link {
     width: 117px;
     margin-top: 26px;
-    margin-left: calc(100% - 129px); }
+    margin-left: calc(100% - 137px); }
 
 .problem-all-treatments {
   background-color: #f2f2f2;
@@ -757,7 +768,6 @@ a {
 
 .problem-articles {
   background-color: #d9d9d9;
-  padding-top: 107px;
   padding-bottom: 20px;
   --bs-gutter-x: 0; }
   .problem-articles__title {
@@ -836,21 +846,46 @@ a {
     flex-direction: column;
     row-gap: 36px;
     margin-top: 108px; }
-    .problem-proof-img-wrapper__item {
-      transform: scale(1.1); }
-      .problem-proof-img-wrapper__item1 {
-        width: 94px;
-        height: 30px;
-        margin-left: -35px; }
-      .problem-proof-img-wrapper__item2 {
-        width: 103.28px;
-        height: 36.51px;
-        margin-left: -30px; }
-      .problem-proof-img-wrapper__item3 {
-        width: 82.87px;
-        height: 34.15px;
-        margin-left: -41px; }
+    .problem-proof-img-wrapper__item1 {
+      width: 94px;
+      height: 30px;
+      margin: 0;
+      padding: 0; }
+    .problem-proof-img-wrapper__item2 {
+      width: 103.28px;
+      height: 36.51px;
+      margin: 0;
+      padding: 0; }
+    .problem-proof-img-wrapper__item3 {
+      width: 82.87px;
+      height: 34.15px;
+      margin: 0;
+      padding: 0; }
   .problem-proof__link {
-    margin-top: 31px; }
+    margin-top: 31px;
+    margin-left: -22px; }
+
+@media (min-width: 650px) {
+  * {
+    box-sizing: border-box; }
+
+  body {
+    padding-inline: 50px; }
+
+  .first-page .text-and-buttons__buttons {
+    width: calc(100% - 40px); }
+
+  .header, .menu, .page-2__note, .page-2__link, .header-plug {
+    display: none; }
+
+  .problem-first-screen-sticky-content {
+    position: relative;
+    margin-top: -65px; } }
+@media (min-width: 1000px) {
+  body {
+    padding-inline: 350px; } }
+@media (min-width: 1200px) {
+  body {
+    padding-inline: 450px; } }
 
 /*# sourceMappingURL=problem.css.map */
